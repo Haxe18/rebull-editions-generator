@@ -1,0 +1,44 @@
+**CONTEXT:**
+The input JSON contains Red Bull product data, grouped by Countries (e.g., "International", "United Kingdom", "United States"). The data is in its original language and may have inconsistent naming for the same product across different regions. The United Kingdom, United States, and International locales should be used as the primary reference for flavor names and edition naming conventions.
+
+**INSTRUCTIONS:**
+
+1.  **Analyze the entire input JSON:** Understand all products available across all countries before making decisions.
+
+2.  **Standardize Flavors:**
+    *   Translate all non-English flavor names (`flavour`) into clear, concise English.
+    *   Use the flavors from the reference locales (GB, US, INT) as the ground truth. For example, if you see "Gusto Anguria" in Italy and "Watermelon" in the US for the same edition, the final flavor for both should be "Watermelon".
+    *   If a flavor is unique, provide a direct and simple English translation (e.g., "Holunderblüte" -> "Elderflower").
+
+3.  **Consolidate Edition Names:**
+    *   Group similar editions under a consistent name based on flavor and appearance. For example, "The Red Edition", "The Watermelon Edition", and "The Sandia Edition" should all be normalized to "The Red Edition".
+    *   If an edition is a "White Edition" and has a coconut flavor, it should be named "The Coconut/White Edition". Similarly, for "Tropical/Yellow Edition".
+    *   Pay close attention to "Sugarfree" and "Zero" variants. Ensure this is reflected correctly in the `sugarfree` boolean and, if necessary, in the name.
+    *   You can use the `details.id` to compare the editions and use this as help for editon naming.
+
+4.  **Data Cleaning & Formatting (Apply to all string values):**
+    *   **Trim Whitespace:** Remove any leading or trailing whitespace from all generated string values (like `name` and `flavor`).
+    *   **Handle Slashed Flavors:** If a flavor contains a slash (`/`), analyze both parts.
+        *   If one part is a direct subset or synonym of the other (e.g., "Tropical/Tropical Fruits"), use the more descriptive and clean part ("Tropical Fruits").
+        *   If they are distinct flavors (e.g., "Kiwi/Apple"), combine them cleanly without the slash (e.g., "Kiwi Apple").
+    *   **Handle Null/Empty Values:** If a flavor or description is missing, `null`, or an empty string, the corresponding output field should be an empty string `""`.
+    *   **Simplify Flavor Text:** Remove generic words like "flavor", "taste", "Geschmack", "sabor", "aroma", etc., from the final flavor string.
+
+5.  **Structure the Output:**
+    *   The output MUST be a single, valid JSON object.
+    *   The root of the object should have the lowercase country name (e.g., "germany") as keys.
+    *   Each country key object must contain:
+        *   `country_code`: The original country name from the input, do not touch.
+        *   `flag`: The emoji flag for the country, which you can generate from the `metadata.flag`. If you find a "Worldwide" generate a emoji based on the object's key which represents the country, eg. middle east = desert, Caribbean = palm, etc.
+        *   `editions`: A list of product objects.
+    *   Each product object in the `editions` list must contain:
+        *   `id`: Keep exactly the same as given via input, do not modify.
+        *   `name`: The standardized edition name (e.g., "Energy Drink", "The Red Edition", "The Blue Edition"), do NOT add the flavor in any way to the name.
+        *   `flavor`: The standardized and cleaned English flavor (e.g., "Watermelon").
+        *   `flavor_description`: The text in `details.standfirst` translated into English. The text should relate to the flavor.
+        *   `sugarfree`: A boolean (`true` or `false`). Set to `true` if the original name or flavor contains keywords like 'sugarfree', 'zero', 'zuckerfrei', 'sin azúcar', 'sans sucre', etc.
+
+Your response must be ONLY the final, clean JSON object. Do not include any other text, explanations, or Markdown formatting.
+
+**INPUT DATA (RAW JSON):**
+{raw_json_str}
