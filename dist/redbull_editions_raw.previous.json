@@ -103,7 +103,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/jp2xxmkwiaakvuvkgwpn/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:es-AR",
@@ -401,7 +401,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "7fb8538f-2111-4fa9-9c59-6297145e92bd:az-AZ",
@@ -457,7 +457,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:nl-BE",
@@ -467,7 +467,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/6/o2ul3qtneew61p3fbvqf/red-bull-zero-energy-drink",
                     "alt_text": "Red Bull Zero Energy Drink",
-                    "product_url": "http://www.redbull.com/zero"
+                    "product_url": "https://www.redbull.com/zero"
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:nl-BE",
@@ -553,7 +553,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/a7gray7pe7pj9kykb4eh/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:bs-BA",
@@ -629,7 +629,17 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
+                },
+                {
+                    "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:pt-BR",
+                    "name": "Zero",
+                    "flavour": "Zero Sugar",
+                    "standfirst": "ZERO AÇÚCAR, 100% AAASAS.",
+                    "color": "#FFFFFF",
+                    "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/7/18/kt20buw9rtrf2yyzzhuv/red-bull-zero-energy-drink",
+                    "alt_text": "Red Bull Zero Energy Drink",
+                    "product_url": "https://www.redbull.com/br-pt/energydrink/products/red-bull-zero"
                 },
                 {
                     "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:pt-BR",
@@ -811,7 +821,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/7/2/g6uyaawau7vlalspsagj/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:fr-CA",
@@ -907,7 +917,7 @@
             "flag_url": "https://rbds-static.redbull.com/@cosmos/foundation/latest/flags/cosmos-flag-CA.svg"
         },
         "Caribbean": {
-            "flag": "country related emoji",
+            "flag": "Worldwide",
             "editions": [
                 {
                     "id": "82e096b8-cdbe-425f-ab64-9908419911af:es-CAR",
@@ -927,7 +937,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/c6axpdpxsice8p7sx7j9/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "9f5e826b-3589-4e15-8da7-86759325fc9b:es-CAR",
@@ -983,7 +993,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/yzoi2x5scetxf9jikkoo/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:es-CL",
@@ -1095,7 +1105,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/olhvicc0fvhiessvg8gb/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:es-CO",
@@ -1151,7 +1161,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/12/13/ll2cjjmmczoqpf7ituiv/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:hr-HR",
@@ -1237,7 +1247,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/gkhxrgywhssovuqm0zzi/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:cs-CZ",
@@ -1247,7 +1257,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/12/30/mcynhr2nqmlccozcycmb/red-bull-zero-energy-drink",
                     "alt_text": "Red Bull Zero Energy Drink",
-                    "product_url": "http://www.redbull.com/zero"
+                    "product_url": "https://www.redbull.com/zero"
                 },
                 {
                     "id": "252c2121-8871-4996-90dd-06d374834ead:cs-CZ",
@@ -1333,7 +1343,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/12/19/er2izmcfvfevdlhkusd0/red-bull-zero-energy-drink",
                     "alt_text": "NUL KALORIER, 100% VIIINGER.",
-                    "product_url": "http://www.redbull.com/zero"
+                    "product_url": "https://www.redbull.com/zero"
                 },
                 {
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:da-DK",
@@ -1343,7 +1353,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/sgnwxpxjfccqeqpodelr/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:da-DK",
@@ -1439,7 +1449,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/ls8ljayofa3phe0h5yvl/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "2b3e7c7e-5b79-4e5f-8d41-88abc9c5d5dd:ar-EG",
@@ -1505,7 +1515,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "add1ea51-ee5f-4c6c-a2d2-efd59791e8f8:et-EE",
@@ -1631,7 +1641,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/iay2mvrmbfvf4ghqdkwk/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:fi-FI",
@@ -1747,7 +1757,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/qi3pa5urmhoynobr6sct/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:fr-FR",
@@ -2009,7 +2019,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/17/vqvioin3gzkx4nnyxuqa/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:el-GR",
@@ -2019,7 +2029,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/17/ccteotd7obpnre9vv6en/red-bull-zero-energy-drink",
                     "alt_text": "Red Bull Zero Energy Drink",
-                    "product_url": "http://www.redbull.com/zero"
+                    "product_url": "https://www.redbull.com/zero"
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:el-GR",
@@ -2095,7 +2105,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/rnj0dtvbdom21gekucws/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:zh-HK",
@@ -2141,7 +2151,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/a3vlbeubmmfv5gtjbyyc/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:hu-HU",
@@ -2227,7 +2237,17 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/xxjnj0gedzaeglcj550a/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
+                },
+                {
+                    "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:en-IN",
+                    "name": "Green Edition",
+                    "flavour": "Curuba and Elderflower",
+                    "standfirst": "The Red Bull Green Edition with the exotic taste of Curuba and Elderflower.",
+                    "color": "#78b941",
+                    "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/7/31/pjbtsont8bcgrw8tmuei/red-bull-green-edition-image",
+                    "alt_text": "Red Bull Green Edition - image",
+                    "product_url": "https://www.redbull.com/in-en/energydrink/red-bull-green-edition"
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:en-IN",
@@ -2289,7 +2309,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:en-INT",
@@ -2325,7 +2345,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/27/um67dlilbjkvcrvqfxxu/red-bull-zero",
                     "alt_text": "Red Bull Zero",
-                    "product_url": "http://www.redbull.com/zero"
+                    "product_url": "https://www.redbull.com/zero"
                 },
                 {
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:en-IE",
@@ -2335,7 +2355,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:en-IE",
@@ -2431,7 +2451,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:it-IT",
@@ -2441,7 +2461,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/11/29/zzpkuaukxnr9xsqrwlpt/red-bull-zero-energy-drink",
                     "alt_text": "Red Bull Zero Energy Drink",
-                    "product_url": "http://www.redbull.com/zero"
+                    "product_url": "https://www.redbull.com/zero"
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:it-IT",
@@ -2537,7 +2557,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/wihqwfys6ai1hr1elc3e/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:ja-JP",
@@ -2593,7 +2613,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/auawecgf2rxtjgrqrwlj/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:ru-KZ",
@@ -2650,6 +2670,16 @@
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
                     "product_url": "https://www.redbull.com/ke-en/energydrink/red-bull-sugarfree"
+                },
+                {
+                    "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:en-KE",
+                    "name": "Red Edition",
+                    "flavour": "Watermelon",
+                    "standfirst": "The RedBull Red Edition with the taste of watermelon.*",
+                    "color": "#e03c31",
+                    "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/7/30/q9fy1mjaocbdwunpu0gi/red-bull-red-edition-image",
+                    "alt_text": "Red Bull Red Edition - image",
+                    "product_url": "https://www.redbull.com/en-ke/energydrink/red-bull-red-edition"
                 }
             ],
             "flag_url": "https://rbds-static.redbull.com/@cosmos/foundation/latest/flags/cosmos-flag-KE.svg"
@@ -2721,7 +2751,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/i7optopapwnvyajw4euw/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "dad80e1f-c37e-4b2b-bea7-d080dc0f439f:lv-LV",
@@ -2797,7 +2827,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "add1ea51-ee5f-4c6c-a2d2-efd59791e8f8:lt-LT",
@@ -2883,7 +2913,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 }
             ],
             "flag_url": "https://rbds-static.redbull.com/@cosmos/foundation/latest/flags/cosmos-flag-MY.svg"
@@ -2909,7 +2939,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/8/9/thvcombc617v3ebuab95/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:es-MX",
@@ -2945,7 +2975,7 @@
             "flag_url": "https://rbds-static.redbull.com/@cosmos/foundation/latest/flags/cosmos-flag-MX.svg"
         },
         "Middle East": {
-            "flag": "country related emoji",
+            "flag": "Worldwide",
             "editions": [
                 {
                     "id": "82e096b8-cdbe-425f-ab64-9908419911af:en-MEA",
@@ -2965,7 +2995,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:en-MEA",
@@ -3031,7 +3061,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/qo6ioe2m9vwtooljmuwp/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:nl-NL",
@@ -3041,7 +3071,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/12/18/icsbq5jswobifza9ovay/red-bull-zero-energy-drink",
                     "alt_text": "0% suiker. 100% vleugels.. Zelfde vleugels.",
-                    "product_url": "http://www.redbull.com/zero"
+                    "product_url": "https://www.redbull.com/zero"
                 },
                 {
                     "id": "add1ea51-ee5f-4c6c-a2d2-efd59791e8f8:nl-NL",
@@ -3239,7 +3269,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/rdygf9vw7ykwea2t5emw/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "add1ea51-ee5f-4c6c-a2d2-efd59791e8f8:mk-MK",
@@ -3295,7 +3325,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:no-NO",
@@ -3411,7 +3441,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 }
             ],
             "flag_url": "https://rbds-static.redbull.com/@cosmos/foundation/latest/flags/cosmos-flag-PK.svg"
@@ -3437,7 +3467,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/c6axpdpxsice8p7sx7j9/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:es-PE",
@@ -3529,7 +3559,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:pl-PL",
@@ -3635,7 +3665,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/4/30/ynx1rqxwjtojtzhcgaig/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:pt-PT",
@@ -3721,7 +3751,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/9/18/q1otsvfgjcr3xogyzb3j/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:ro-RO",
@@ -3807,7 +3837,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/ptiyqmqtolvlcfzyvxyu/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:sr-RS",
@@ -3873,7 +3903,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/bi3ulrancqfi3qtiwz5b/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 }
             ],
             "flag_url": "https://rbds-static.redbull.com/@cosmos/foundation/latest/flags/cosmos-flag-SG.svg"
@@ -3899,7 +3929,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/sycuewnwhbselpwzvlqs/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:sk-SK",
@@ -3909,7 +3939,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/12/20/tml1phfk5exvvhvlutsp/red-bull-zero-energy-drink",
                     "alt_text": "Red Bull Zero Energy Drink",
-                    "product_url": "http://www.redbull.com/zero"
+                    "product_url": "https://www.redbull.com/zero"
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:sk-SK",
@@ -4015,7 +4045,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/vumrbqonijhcrj9o7hz3/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:sl-SI",
@@ -4025,7 +4055,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/12/19/kxghnf4xfvd1a33mtbu2/red-bull-zero-energy-drink",
                     "alt_text": "Red Bull Zero Energy Drink",
-                    "product_url": "http://www.redbull.com/zero"
+                    "product_url": "https://www.redbull.com/zero"
                 },
                 {
                     "id": "365b9d1d-1fe3-41ea-86f1-c6f9967799a7:sl-SI",
@@ -4101,7 +4131,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/vumrbqonijhcrj9o7hz3/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:en-ZA",
@@ -4273,7 +4303,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/uq0i9bmflb5osciizovk/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:en-SE",
@@ -4399,7 +4429,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/9/30/ql9hd0mte1xvjzsreslv/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:fr-CH",
@@ -4515,7 +4545,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "add1ea51-ee5f-4c6c-a2d2-efd59791e8f8:zh-TW",
@@ -4581,7 +4611,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "252c2121-8871-4996-90dd-06d374834ead:tr-TR",
@@ -4667,7 +4697,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:uk-UA",
@@ -4713,7 +4743,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:en-GB",
@@ -4859,7 +4889,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/a7yynvdpmiehgytcx9pr/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "http://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:en-US",
@@ -4869,7 +4899,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/6/odcxjsbtedqnjucjjipo/red-bull-zero-energy-drink",
                     "alt_text": "Red Bull Zero Energy Drink",
-                    "product_url": "http://www.redbull.com/zero"
+                    "product_url": "https://www.redbull.com/zero"
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:en-US",
