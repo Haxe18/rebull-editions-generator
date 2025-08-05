@@ -1,44 +1,54 @@
-**CONTEXT:**
-The input JSON contains Red Bull product data, grouped by Countries (e.g., "International", "United Kingdom", "United States"). The data is in its original language and may have inconsistent naming for the same product across different regions. The United Kingdom, United States, and International locales should be used as the primary reference for flavor names and edition naming conventions.
+CONTEXT:
+The input JSON contains Red Bull product data. The goal is to clean and structure this data while preserving the original product identity. The primary objective is to separate the core edition name from its flavor description. Translation and standardization should only be applied where necessary to ensure readability and remove inconsistencies.
 
-**INSTRUCTIONS:**
+INSTRUCTIONS:
 
-1.  **Analyze the entire input JSON:** Understand all products available across all countries before making decisions.
+1. Global Analysis:
+* Analyze the entire input JSON to understand the data structure before processing each item.
 
-2.  **Standardize Flavors:**
-    *   Translate all non-English flavor names (`flavour`) into clear, concise English.
-    *   Use the flavors from the reference locales (GB, US, INT) as the ground truth. For example, if you see "Gusto Anguria" in Italy and "Watermelon" in the US for the same edition, the final flavor for both should be "Watermelon".
-    *   If a flavor is unique, provide a direct and simple English translation (e.g., "Holunderblüte" -> "Elderflower").
+2. Data Extraction and Standardization (per Product):
 
-3.  **Consolidate Edition Names:**
-    *   Group similar editions under a consistent name based on flavor and appearance. For example, "The Red Edition", "The Watermelon Edition", and "The Sandia Edition" should all be normalized to "The Red Edition".
-    *   If an edition is a "White Edition" and has a coconut flavor, it should be named "The Coconut/White Edition". Similarly, for "Tropical/Yellow Edition".
-    *   Pay close attention to "Sugarfree" and "Zero" variants. Ensure this is reflected correctly in the `sugarfree` boolean and, if necessary, in the name.
-    *   You can use the `details.id` to compare the editions and use this as help for editon naming.
+* ID:
+    * Use the `id` from the input directly. Do not modify.
 
-4.  **Data Cleaning & Formatting (Apply to all string values):**
-    *   **Trim Whitespace:** Remove any leading or trailing whitespace from all generated string values (like `name` and `flavor`).
-    *   **Handle Slashed Flavors:** If a flavor contains a slash (`/`), analyze both parts.
-        *   If one part is a direct subset or synonym of the other (e.g., "Tropical/Tropical Fruits"), use the more descriptive and clean part ("Tropical Fruits").
-        *   If they are distinct flavors (e.g., "Kiwi/Apple"), combine them cleanly without the slash (e.g., "Kiwi Apple").
-    *   **Handle Null/Empty Values:** If a flavor or description is missing, `null`, or an empty string, the corresponding output field should be an empty string `""`.
-    *   **Simplify Flavor Text:** Remove generic words like "flavor", "taste", "Geschmack", "sabor", "aroma", etc., from the final flavor string.
+* Edition Name (`name`):
+    * The final `name` must ONLY contain the edition's core title (e.g., "The Summer Edition", "The Red Edition Sugarfree"). All flavor descriptions (e.g., "White Peach", "Watermelon Flavor") MUST be removed from the name.
+    * Apply the following hierarchy of rules to the original name:
+        * 1. Initial Translation: If the original name is in a non-Latin script (e.g., `無糖能量飲料`), translate the entire string to its clean English equivalent first before applying other rules.
+        * 2. Sugar-Free Status: Identify if the name contains a sugar-free keyword (like 'Sugarfree', 'Zero', etc.). Set the `sugarfree` boolean to `true` and remember this status.
+        * 3. Separate Flavor: From the (potentially translated) name, separate the core edition title from the flavor description. For example, in "The Green Edition Exotic Passion Fruit Flavor", the core title is "The Green Edition".
+        * 4. Preserve Otherwise: If a name in a Latin script is already clean and contains no flavor text (e.g., "The Cereja Edition" remains "The Cereja Edition"), it MUST be preserved as is.
 
-5.  **Structure the Output:**
-    *   The output MUST be a single, valid JSON object.
-    *   The root of the object should have the lowercase country name (e.g., "germany") as keys.
-    *   Each country key object must contain:
-        *   `country_code`: The original country name from the input, do not touch.
-        *   `flag`: The emoji flag for the country, which you can generate from the `metadata.flag`. If you find a "Worldwide" generate a emoji based on the object's key which represents the country, eg. middle east = desert, Caribbean = palm, etc.
-        *   `editions`: A list of product objects.
-    *   Each product object in the `editions` list must contain:
-        *   `id`: Keep exactly the same as given via input, do not modify.
-        *   `name`: The standardized edition name (e.g., "Energy Drink", "The Red Edition", "The Blue Edition"), do NOT add the flavor in any way to the name.
-        *   `flavor`: The standardized and cleaned English flavor (e.g., "Watermelon").
-        *   `flavor_description`: The text in `details.standfirst` translated into English. The text should relate to the flavor.
-        *   `sugarfree`: A boolean (`true` or `false`). Set to `true` if the original name or flavor contains keywords like 'sugarfree', 'zero', 'zuckerfrei', 'sin azúcar', 'sans sucre', etc.
+* Flavor Description (`flavor_description`):
+    * This step is mandatory and unconditional for every product.
+    * Take the `details.standfirst` text from the input.
+    * It MUST ALWAYS be translated into proper English, regardless of its content.
+    * The resulting English text is the final value for `flavor_description`. There are no exceptions to this translation rule.
+
+* Flavor (`flavor`):
+    * 1. Primary Extraction: First, attempt to extract a specific, named taste (like a fruit, herb, etc., e.g., "Juneberry" or "Woodruff and Pink Grapefruit") from the English `flavor_description` that was created in the previous step.
+    * 2. Fallback Logic:
+        * a. If a specific taste IS found in the `flavor_description`, that taste becomes the base for the final `flavor`.
+        * b. If NO specific taste is found in the `flavor_description` (e.g., the text is generic like "Wings without sugar..."), then the base for the final `flavor` MUST be the original, unmodified value from the input's `flavour` field.
+    * 3. Mandatory Cleaning and Formatting: Apply the following rules to the flavor base that was determined in the previous step:
+        * a. Remove Keywords: Strictly remove the following exact words (case-insensitive): "Flavor", "Taste", "Flavour".
+        * b. Standardize Connectors: Convert hyphens (-) and ampersands (&) to " and ". Preserve " and ".
+        * c. Preserve Compound Flavors: Keep full flavor names intact (e.g., "Pink Grapefruit").
+        * d. Apply Title Case.
+
+3. Output Structure Specification
+
+* The final output MUST be a single, valid JSON object.
+* The order and original casing of the root country keys MUST be preserved.
+* Each country object must contain `flag` and a list of `editions`.
+* Each product object in `editions` must contain `id`, `name`, `flavor`, `flavor_description`, `sugarfree`.
+* Flag Logic: This is a mandatory conversion.
+    * 1. If the `flag` value is a standard country code (e.g., "US", "DE"), it MUST be converted into the corresponding country flag emoji (e.g., "US" becomes 🇺🇸, "DE" becomes 🇩🇪).
+    * 2. If the `flag` is "Worldwide" and the root key is "international", the output flag MUST be the globe emoji 🌍.
+    * 3. If the `flag` is "Worldwide" and the root key is a region (e.g., "caribbean", "middle-east"), the output flag MUST be a suitable regional emoji (e.g., "caribbean" -> 🌴, "middle-east" -> 🐪). For any other regions, choose a suitable representative emoji.
+* Final Text Cleaning: Trim leading/trailing whitespace and remove special characters (`*`, `#`) and footnote text from all final string values.
 
 Your response must be ONLY the final, clean JSON object. Do not include any other text, explanations, or Markdown formatting.
 
-**INPUT DATA (RAW JSON):**
+INPUT DATA (RAW JSON):
 {raw_json_str}

@@ -131,11 +131,12 @@ class RedBullGenerator:
             formatted_image_url = image_url_template.format(op='e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000')
 
         product_id = gql_data.get('id', '').replace('rrn:content:energy-drinks:', '')
+
         return {
             "id": product_id,
-            "name": gql_data.get('title'),
+            "name": f"The {title}" if "Edition" in (title := gql_data.get('title') or "") else title,
             "flavour": gql_data.get('flavour'),
-            "standfirst": gql_data.get('standfirst'),
+            "standfirst": gql_data.get('standfirst').strip(' "'),
             "color": gql_data.get('brandingHexColorCode'),
             "image_url": formatted_image_url,
             "alt_text": gql_data.get('image', {}).get('altText'),
@@ -204,7 +205,7 @@ class RedBullGenerator:
         return {"raw_data_by_locale": all_raw_data}
 
     def normalize_with_gemini(self, raw_data: Dict[str, Any]) -> Optional[Dict[str, Any]]:
-        """Sends the entire raw data to Gemini for normalization."""
+        """Sends the entire raw data to Gemini for normalization with retry logic for 503 errors."""
         logging.info("--- STAGE 3: Normalizing data with Gemini API ---")
         try:
             with open(PROMPT_FILE, "r", encoding="utf-8") as prompt_file:
@@ -217,29 +218,51 @@ class RedBullGenerator:
         prompt = prompt_template.format(raw_json_str=raw_json_str)
         logging.debug("Full prompt sent to Gemini.")
 
-        try:
-            logging.info("Sending request to Gemini... (This may take a moment)")
-            logging.debug(prompt)
-            response = self.gemini_client.models.generate_content(
-                model=GEMINI_MODEL_TO_USE,
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    system_instruction='You are an expert data normalization and translation AI. Your task is to process a raw JSON object containing Red Bull product data from various countries and transform it into a clean, standardized, internationalized english language and consolidated JSON format.',
-                    response_mime_type='application/json',
+        max_retries = 3
+        retry_delay = 60  # 1 minute
+
+        for attempt in range(1, max_retries + 1):
+            try:
+                logging.info("Sending request to Gemini... (Attempt %d/%d)", attempt, max_retries)
+                logging.debug(prompt)
+                response = self.gemini_client.models.generate_content(
+                    model=GEMINI_MODEL_TO_USE,
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
+                        system_instruction='You are an expert data normalization and translation AI. Your task is to process a raw JSON object containing Red Bull product data from various countries and transform it into a clean, standardized, internationalized english language and consolidated JSON format.',
+                        response_mime_type='application/json',
+                    )
                 )
-            )
-            logging.info("Received response from Gemini. Parsing JSON...")
-            return json.loads(response.text)
-        except json.JSONDecodeError as exc:
-            logging.critical("FATAL: Could not parse Gemini's JSON response. Error: %s", exc)
-            if 'response' in locals():
-                logging.info("--- Gemini Response Text ---\n%s", response.text)
-            return None
-        except (google_exceptions, ValueError) as exc:
-            logging.critical("FATAL: An error occurred with the Gemini API. Error: %s", exc)
-            if 'response' in locals():
-                logging.info("--- Gemini Response ---\n%s", response)
-            return None
+                logging.info("Received response from Gemini. Parsing JSON...")
+                return json.loads(response.text)
+
+            except json.JSONDecodeError as exc:
+                logging.critical("FATAL: Could not parse Gemini's JSON response. Error: %s", exc)
+                if 'response' in locals():
+                    logging.info("--- Gemini Response Text ---\n%s", response.text)
+                return None
+
+            except google_exceptions as exc:
+                error_message = str(exc)
+                if "503" in error_message and "UNAVAILABLE" in error_message and attempt < max_retries:
+                    logging.warning("Gemini API returned 503 (overloaded). Retrying in %d seconds... (Attempt %d/%d)", 
+                                  retry_delay, attempt, max_retries)
+                    time.sleep(retry_delay)
+                    continue
+                else:
+                    logging.critical("FATAL: An error occurred with the Gemini API. Error: %s", exc)
+                    if 'response' in locals():
+                        logging.info("--- Gemini Response ---\n%s", response)
+                    return None
+
+            except ValueError as exc:
+                logging.critical("FATAL: An error occurred with the Gemini API. Error: %s", exc)
+                if 'response' in locals():
+                    logging.info("--- Gemini Response ---\n%s", response)
+                return None
+
+        logging.critical("FATAL: All %d attempts to call Gemini API failed.", max_retries)
+        return None
 
     def _prepare_data_for_ai(self, raw_data: Dict[str, Any]) -> Tuple[Dict, Dict, Dict]:
         """Strips non-essential data and creates lookup maps for re-hydration."""
@@ -276,15 +299,14 @@ class RedBullGenerator:
     def _rehydrate_ai_response(self, ai_response: Dict, product_map: Dict, country_map: Dict) -> Dict:
         """Re-inserts preserved details back into the AI-normalized data."""
         logging.info("Re-inserting preserved details into the normalized data.")
-        for country_value in ai_response.values():
-            original_country_name = country_value.pop('country_code', None)
-
-            if original_country_name and original_country_name in country_map:
-                country_value.update(country_map[original_country_name])
+        for country_name, country_value in ai_response.items():
+            # The country_name is the key, so we use it directly to look up in country_map
+            if country_name in country_map:
+                country_value.update(country_map[country_name])
             else:
                 logging.warning(
-                    "Could not find matching country details for original name '%s'.",
-                    original_country_name
+                    "Could not find matching country details for country name '%s'.",
+                    country_name
                 )
 
             for edition in country_value.get("editions", []):
