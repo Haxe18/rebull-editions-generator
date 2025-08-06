@@ -35,7 +35,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:sq-AL",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
                     "standfirst": "Kraaahë për verën tuaj: Pija Energjike Red Bull Summer Edition me shijen e pjeshkës së bardhë, një prekje lëkure agrumesh dhe nota lulesh.",
                     "color": "#E24585",
@@ -45,7 +45,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:sq-AL",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition me shije Shalqiri.",
                     "color": "#e03c31",
@@ -55,7 +55,7 @@
                 },
                 {
                     "id": "9f5e826b-3589-4e15-8da7-86759325fc9b:sq-AL",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Dragon Fruit",
                     "standfirst": "Red Bull Green Edition me shijen ekzotike të frutit të dragoit.",
                     "color": "#2ca44a",
@@ -107,7 +107,7 @@
                 },
                 {
                     "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:es-AR",
-                    "name": "Winter Edition",
+                    "name": "The Winter Edition",
                     "flavour": " Iced Vanilla Berry",
                     "standfirst": "Red Bull Winter Edition con el excepcional sabor a arándanos, vainilla y notas frescas de eucalipto.",
                     "color": "#53b2c2",
@@ -117,7 +117,7 @@
                 },
                 {
                     "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:es-AR",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Dragon fruit",
                     "standfirst": "Red Bull Green edition con el exótico sabor a Fruta del Dragón.",
                     "color": "#00c65e",
@@ -127,7 +127,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:es-AR",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition con sabor a Sandía. Con toda la frescura del verano.",
                     "color": "#e03c31",
@@ -155,7 +155,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:en-AU",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.\"",
+                    "standfirst": "Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/3/11/jucgb0lqr4tpi9gf0ko1/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -173,7 +173,7 @@
                 },
                 {
                     "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:en-AU",
-                    "name": "Winter Edition",
+                    "name": "The Winter Edition",
                     "flavour": " Iced Vanilla Berry",
                     "standfirst": "The Red Bull Winter Ediation: The Energy Drink with the exceptional taste of blueberry, vanilla, and icy-fresh notes of eucalyptus.",
                     "color": "#53b2c2",
@@ -183,7 +183,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:en-AU",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "The Red Bull Red Edition with the fresh taste of watermelon.",
                     "color": "#e03c31",
@@ -193,9 +193,9 @@
                 },
                 {
                     "id": "87ed9394-b809-4156-9433-5402cb4fabbd:en-AU",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Blueberry",
-                    "standfirst": "The Red Bull Blue Edition. The Energy Drink with the fruity taste of blueberry. ",
+                    "standfirst": "The Red Bull Blue Edition. The Energy Drink with the fruity taste of blueberry.",
                     "color": "#001A72",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/3/10/ch0xdem2ktbdljshhybd/red-bull-blue-edition-image",
                     "alt_text": "Red Bull Blue Edition - image",
@@ -203,7 +203,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:en-AU",
-                    "name": "Tropical Edition",
+                    "name": "The Tropical Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "The Tropical Edition. Experience the exotic taste of tropical fruits.",
                     "color": "#FFCD00",
@@ -213,9 +213,9 @@
                 },
                 {
                     "id": "252c2121-8871-4996-90dd-06d374834ead:en-AU",
-                    "name": "Berry Edition Sugarfree",
+                    "name": "The Berry Edition Sugarfree",
                     "flavour": "Forest Fruits",
-                    "standfirst": "The Sugarfree Energy Drink with the taste of forest fruits complemented by exciting herbal notes of verbena. ",
+                    "standfirst": "The Sugarfree Energy Drink with the taste of forest fruits complemented by exciting herbal notes of verbena.",
                     "color": "#c72466",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/9/hturwvswhdbq2w3waa96/red-bull-pink-edition-image",
                     "alt_text": "Red Bull Pink Edition Image",
@@ -223,9 +223,9 @@
                 },
                 {
                     "id": "a1253be0-075a-48bf-a4e7-60a9f2da0545:en-AU",
-                    "name": "Coconut Edition Sugarfree",
+                    "name": "The Coconut Edition Sugarfree",
                     "flavour": "Coconut",
-                    "standfirst": "Get ready for an extraordinary taste experience. The Red Bull White Edition with the taste of exotic coconut and fruity blueberry. ",
+                    "standfirst": "Get ready for an extraordinary taste experience. The Red Bull White Edition with the taste of exotic coconut and fruity blueberry.",
                     "color": "#0070b8",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/9/20/ibchxdh6jo6dmhvucnev/coconut-edition-sugarfree-half-can",
                     "alt_text": "Coconut Edition Sugarfree half can",
@@ -268,10 +268,10 @@
                     "product_url": "https://www.redbull.com/zero"
                 },
                 {
-                    "id": "eb9c22db-6c3d-4a68-b4e3-c915c59b1414:de-INT",
-                    "name": "Lilac Edition Sugarfree",
+                    "id": "eb9c22db-6c3d-4a68-b4e3-c915c59b1414:de-AT",
+                    "name": "The Lilac Edition Sugarfree",
                     "flavour": "Wildflower-and-Pink Grapefruit",
-                    "standfirst": "Die Red Bull Lilac Edition Sugarfree mit dem Geschmack von Waldmeister und Pink Grapefruit. ",
+                    "standfirst": "Die Red Bull Lilac Edition Sugarfree mit dem Geschmack von Waldmeister und Pink Grapefruit.",
                     "color": "#6952AD",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/7/22/hmcbrtn1xnrsqbqqf6qe/lilac-edition-sugarfree-wildflower-and-pink-grapefruit",
                     "alt_text": "Lilac-Edition-Sugarfree Wildflower-and-Pink Grapefruit",
@@ -279,7 +279,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:de-AT",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
                     "standfirst": "Die Red Bull Summer Edition mit dem Geschmack von weissem Pfirsich, einem Hauch von Zitrusschale und zarten blumigen Noten.",
                     "color": "#d30e72",
@@ -289,7 +289,7 @@
                 },
                 {
                     "id": "41e97cb8-fb1f-41a3-a380-be2a75123e1a:de-AT",
-                    "name": "Ice Edition",
+                    "name": "The Ice Edition",
                     "flavour": "Iced Gummy Bear",
                     "standfirst": "Die Red Bull Ice Edition mit dem außergewöhnlichen Geschmack von Blaubeere, Vanille und einer eisig-frischen Eukalyptusnote.",
                     "color": "#53b2c2",
@@ -299,9 +299,9 @@
                 },
                 {
                     "id": "611996f5-8813-46c3-9b18-4c193d39d9d0:de-AT",
-                    "name": "Lime Green Edition",
+                    "name": "The Lime Green Edition",
                     "flavour": "Curuba",
-                    "standfirst": "Die Red Bull Lime Green Edition mit dem exotisch-blumigen Geschmack von Curuba-Holunderblüte. ",
+                    "standfirst": "Die Red Bull Lime Green Edition mit dem exotisch-blumigen Geschmack von Curuba-Holunderblüte.",
                     "color": "#6cc24a",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/10/30/kwxsg7nz5imj4xfhx4ng/red-bull-lime-green-edition",
                     "alt_text": "Red Bull Lime Green Edition",
@@ -309,9 +309,9 @@
                 },
                 {
                     "id": "e3a50810-fdbc-40f3-a60f-a6e917586d49:de-AT",
-                    "name": "Pink Edition",
+                    "name": "The Pink Edition",
                     "flavour": "Waldbeere",
-                    "standfirst": "Die Red Bull Pink Edition mit dem fruchtigen Geschmack von Waldbeeren. ",
+                    "standfirst": "Die Red Bull Pink Edition mit dem fruchtigen Geschmack von Waldbeeren.",
                     "color": "#c72466",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/8/12/zivgkt2elxxwjzmikdfb/red-bull-pink-edition",
                     "alt_text": "Red Bull Pink Edition",
@@ -319,7 +319,7 @@
                 },
                 {
                     "id": "1ad9d76b-02ee-462b-a766-13ecb8ac24da:de-AT",
-                    "name": "White Edition",
+                    "name": "The White Edition",
                     "flavour": "Coconut",
                     "standfirst": "Mach dich bereit für ein außergewöhnliches Geschmackserlebnis. Die Red Bull White Edition - mit dem Geschmack exotischer Kokosnuss und fruchtiger Blaubeere.",
                     "color": "#0070b8",
@@ -329,7 +329,7 @@
                 },
                 {
                     "id": "87ed9394-b809-4156-9433-5402cb4fabbd:de-AT",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Blueberry",
                     "standfirst": "Der Klassiker unter den Red Bull Editions mit dem fruchtigen Geschmack von Heidelbeere.",
                     "color": "#001A72",
@@ -339,7 +339,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:de-AT",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Die Red Bull Yellow Edition. Lass dich vom exotischen Geschmack tropischer Früchte überraschen.",
                     "color": "#FFCD00",
@@ -349,7 +349,7 @@
                 },
                 {
                     "id": "9f5e826b-3589-4e15-8da7-86759325fc9b:de-AT",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Kaktusfrucht",
                     "standfirst": "Die Red Bull Green Edition mit dem exotischen Geschmack von Kaktusfrucht.",
                     "color": "#2ca44a",
@@ -359,7 +359,7 @@
                 },
                 {
                     "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:de-AT",
-                    "name": "Sea Blue Edition",
+                    "name": "The Sea Blue Edition",
                     "flavour": "Juneberry",
                     "standfirst": "Die Red Bull Sea Blue Edition mit dem außergewöhnlichen Geschmack von Juneberry.",
                     "color": "#0072CE",
@@ -369,9 +369,9 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:de-AT",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
-                    "standfirst": "Die Red Bull Apricot Edition ist die perfekte Mischung aus Marille und Erdbeere mit einem Hauch von Pfirsichgeschmack. ",
+                    "standfirst": "Die Red Bull Apricot Edition ist die perfekte Mischung aus Marille und Erdbeere mit einem Hauch von Pfirsichgeschmack.",
                     "color": "#f3911b",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/11/nu9ic2zsusksvzq23shx/red-bull-apricot-edition-image",
                     "alt_text": "Red Bull Apricot Edition - image",
@@ -405,7 +405,7 @@
                 },
                 {
                     "id": "7fb8538f-2111-4fa9-9c59-6297145e92bd:az-AZ",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "Apricot-Strawberry",
                     "standfirst": "Red Bull Summer Edition with the taste of apricot and strawberry.",
                     "color": "#f3911b",
@@ -415,9 +415,9 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:az-AZ",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
-                    "standfirst": "Red Bull Red Edition. Qarpız dadı ilə. ",
+                    "standfirst": "Red Bull Red Edition. Qarpız dadı ilə.",
                     "color": "#e03c31",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/2/25/eijrpoagghu5e23efwlm/red-edition",
                     "alt_text": "Red Bull Red Edition",
@@ -425,7 +425,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:az-AZ",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Red Bull Yellow Edition. Ekzotik tropik meyvələr dadı ilə.",
                     "color": "#FFCD00",
@@ -471,7 +471,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:nl-BE",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
                     "standfirst": "Vleugels voor jouw zomer! De Red Bull Summer Edition: de Energy Drink met de zomerse smaak van witte perzik, een vleugje citrusschil en bloemige tonen.",
                     "color": "#E24585",
@@ -481,9 +481,9 @@
                 },
                 {
                     "id": "252c2121-8871-4996-90dd-06d374834ead:nl-BE",
-                    "name": "Pink Edition Sugarfree",
+                    "name": "The Pink Edition Sugarfree",
                     "flavour": "Bosfruchten",
-                    "standfirst": "De Sugarfree Energy Drink met de smaak van bosvruchten en een verrassende kruidige toets van verbena. ",
+                    "standfirst": "De Sugarfree Energy Drink met de smaak van bosvruchten en een verrassende kruidige toets van verbena.",
                     "color": "#c72466",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/11/18/ruyunjbqeyd9k3mpyzxn/red-bull-pink-edition-image",
                     "alt_text": "Red Bull Pink Edition Image",
@@ -491,9 +491,9 @@
                 },
                 {
                     "id": "611996f5-8813-46c3-9b18-4c193d39d9d0:nl-BE",
-                    "name": "Lime Green Edition",
+                    "name": "The Lime Green Edition",
                     "flavour": "Curuba",
-                    "standfirst": "De Red Bull Lime Green Edition heeft de exotische smaak van  curuba, afgewerkt met een vleugje vlierbloesem. ",
+                    "standfirst": "De Red Bull Lime Green Edition heeft de exotische smaak van  curuba, afgewerkt met een vleugje vlierbloesem.",
                     "color": "#79B942",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/5/12/amtirclznrjkoaxmjjsz/red-bull-lime-green-edition",
                     "alt_text": "Red Bull Lime Green Edition",
@@ -501,7 +501,7 @@
                 },
                 {
                     "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:nl-BE",
-                    "name": "Sea Blue Edition",
+                    "name": "The Sea Blue Edition",
                     "flavour": "Juneberry",
                     "standfirst": "De Red Bull Sea Blue Edition met de verrukkelijke smaak van juneberry* *artificially flavoured",
                     "color": "#0085C8",
@@ -511,9 +511,9 @@
                 },
                 {
                     "id": "9f5e826b-3589-4e15-8da7-86759325fc9b:nl-BE",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Dragon Fruit",
-                    "standfirst": "The Red Bull Green Edition met de exotische smaak van cactusvrucht. ",
+                    "standfirst": "The Red Bull Green Edition met de exotische smaak van cactusvrucht.",
                     "color": "#2ca44a",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/11/tw4kwq5fabskpzhfsvwe/red-bull-green-edition-image",
                     "alt_text": "Red Bull Green Edition - image",
@@ -521,7 +521,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:nl-BE",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "De Red Edition van Red Bull bevat dezelfde kwalitatief hoogstaande ingrediënten als Red Bull Energy Drink en heeft een verfrissende smaak van watermeloen.",
                     "color": "#e03c31",
@@ -557,7 +557,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:bs-BA",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
                     "standfirst": "Kriiila za tvoje ljeto. The Red Bull Summer Edition Energy Drink  sa okusom bijele breskve, pojačanim dodirom kore citrusa i nježnim cvjetnim notama.",
                     "color": "#E24585",
@@ -567,7 +567,7 @@
                 },
                 {
                     "id": "365b9d1d-1fe3-41ea-86f1-c6f9967799a7:bs-BA",
-                    "name": "Spring Edition Sugarfree",
+                    "name": "The Spring Edition Sugarfree",
                     "flavour": "Woodruff & Pink Grapefruit ",
                     "standfirst": "Kriiila za vaše proljeće: Red Bull Spring Edition Energy Drink Sugarfree kombinira okuse ružičastog grejpa i mirisnog broća, s blagim cvjetnim notama.",
                     "color": "#7d62ce",
@@ -577,7 +577,7 @@
                 },
                 {
                     "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:bs-BA",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Juneberry",
                     "standfirst": "Red Bull Blue Edition s primamljivim ukusom bobičastog voća – juneberry.",
                     "color": "#0085C8",
@@ -587,7 +587,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:bs-BA",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition s osvježavajućim okusom lubenice.",
                     "color": "#e03c31",
@@ -597,7 +597,7 @@
                 },
                 {
                     "id": "9f5e826b-3589-4e15-8da7-86759325fc9b:bs-BA",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Dragon Fruit",
                     "standfirst": "Red Bull Green Edition sa okusom egzotičnog voća, pitaja.",
                     "color": "#2ca44a",
@@ -643,7 +643,7 @@
                 },
                 {
                     "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:pt-BR",
-                    "name": "Winter Edition",
+                    "name": "The Winter Edition",
                     "flavour": " Iced Vanilla Berry",
                     "standfirst": "Red Bull Winter Edition: Energia com o sabor de Blueberry e Baunilha.",
                     "color": "#53b2c2",
@@ -653,9 +653,9 @@
                 },
                 {
                     "id": "d1d1d618-44df-4237-a7b4-ba2801c1e041:pt-BR",
-                    "name": "Winter Edition Sugarfree",
+                    "name": "The Winter Edition Sugarfree",
                     "flavour": "Blueberry e Baunilha",
-                    "standfirst": "Red Bull Winter Edition Sugarfree: Energia sem açúcar com o sabor de Blueberry e Baunilha. ",
+                    "standfirst": "Red Bull Winter Edition Sugarfree: Energia sem açúcar com o sabor de Blueberry e Baunilha.",
                     "color": "#53b2c2",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/6/5/ehfcjnozb4niqevxp3nz/winter-edition-half-can",
                     "alt_text": "Winter Edition half can",
@@ -663,7 +663,7 @@
                 },
                 {
                     "id": "4dcee614-2234-4f64-bd01-f00c97351458:pt-BR",
-                    "name": "Pomelo Edition Sugarfree",
+                    "name": "The Pomelo Edition Sugarfree",
                     "flavour": "Pomelo",
                     "standfirst": "Red Bull Pomelo Edition Sugarfree tem o sabor de pomelo e sutis notas florais.",
                     "color": "#7d62ce",
@@ -673,7 +673,7 @@
                 },
                 {
                     "id": "252c2121-8871-4996-90dd-06d374834ead:pt-BR",
-                    "name": "Amora Edition Sugarfree",
+                    "name": "The Amora Edition Sugarfree",
                     "flavour": "Forest Fruits",
                     "standfirst": "The Amora Edition Sugarfree: O Energy Drink sem açúcar com o sabor de frutas vermelhas complementado por notas de verbena.",
                     "color": "#c72466",
@@ -683,7 +683,7 @@
                 },
                 {
                     "id": "2b3e7c7e-5b79-4e5f-8d41-88abc9c5d5dd:pt-BR",
-                    "name": "Cereja Edition",
+                    "name": "The Cereja Edition",
                     "flavour": "Juneberry",
                     "standfirst": "O Red Bull Cereja Edition com o extraordinário gosto de Cereja e Frutas Silvestres.",
                     "color": "#0072ce",
@@ -693,7 +693,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:pt-BR",
-                    "name": "Melancia Edition",
+                    "name": "The Melancia Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Experimente o novo e refrescante sabor de Melancia com o Red Bull Melancia Edition.",
                     "color": "#e03c31",
@@ -703,7 +703,7 @@
                 },
                 {
                     "id": "e2b2d3e1-eed4-4a3b-a87e-8a97bc96c246:pt-BR",
-                    "name": "Melão Edition",
+                    "name": "The Melão Edition",
                     "flavour": "Maracujá & Melão",
                     "standfirst": "O Red Bull Melão Edition apresenta o sabor de Maracujá & Melão.",
                     "color": "#6cc24a",
@@ -713,7 +713,7 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:pt-BR",
-                    "name": "Pêssego Edition",
+                    "name": "The Pêssego Edition",
                     "flavour": "Strawberry and apricot",
                     "standfirst": "O Red Bull Pêssego Edition apresenta a mistura perfeita do sabor de pêssego com morango, realçando o melhor de cada um.",
                     "color": "#f3911b",
@@ -723,7 +723,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:pt-BR",
-                    "name": "Tropical Edition",
+                    "name": "The Tropical Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Seja surpreendido pelo sabor das frutas tropicais do Red Bull Tropical Edition.",
                     "color": "#FFCD00",
@@ -769,7 +769,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:bg-BG",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "The Yellow Edition. Опитайте екзотичния вкус на тропически плодове.",
                     "color": "#FFCD00",
@@ -779,7 +779,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:bg-BG",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition със свежия вкус на диня.",
                     "color": "#e03c31",
@@ -789,7 +789,7 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:bg-BG",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
                     "standfirst": "Red Bull Apricot Edition предлага перфектната комбинация от кайсия и ягода с нотка на вкус на праскова.",
                     "color": "#f3911b",
@@ -835,7 +835,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:fr-CA",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
                     "standfirst": "Des aiiiles pour votre été : la boisson énergisante Red Bull Summer Edition au goût de pêche blanche avec une touche d'agrumes et des notes florales.",
                     "color": "#E24585",
@@ -845,7 +845,7 @@
                 },
                 {
                     "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:fr-CA",
-                    "name": "Sea Blue Edition",
+                    "name": "The Sea Blue Edition",
                     "flavour": "Juneberry",
                     "standfirst": "Le Red Bull Sea Blue Edition au goût extraordinaire de l’amélanche.",
                     "color": "#0072CE",
@@ -855,7 +855,7 @@
                 },
                 {
                     "id": "c55e5804-ce3c-4289-8d89-930b6d678501:fr-CA",
-                    "name": "Peach Edition",
+                    "name": "The Peach Edition",
                     "flavour": "Peach",
                     "standfirst": "Un goût frais de pêche blanche et de nectarine*. Le Red Bull Peach Edition.",
                     "color": "#81312F",
@@ -865,7 +865,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:fr-CA",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Le Red Bull Yellow Edition. Laissez-vous surprendre par le goût exotique des fruits tropicaux*.",
                     "color": "#FFCD00",
@@ -875,7 +875,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:fr-CA",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Le Red Bull Red Edition au goût rafraîchissant de melon d’eau*.",
                     "color": "#e03c31",
@@ -885,9 +885,9 @@
                 },
                 {
                     "id": "3396bcc8-7bd0-4e76-8b0e-48bee78c56dc:fr-CA",
-                    "name": "Red Edition - Sans Sucre",
+                    "name": "The Red Edition - Sans Sucre",
                     "flavour": "Watermelon",
-                    "standfirst": "Le nouveau Red Bull Red Edition sans sucre. Le goût rafraîchissant du melon d’eau*, maintenant sans sucre. Red Bull donne des aiiiles.  ",
+                    "standfirst": "Le nouveau Red Bull Red Edition sans sucre. Le goût rafraîchissant du melon d’eau*, maintenant sans sucre. Red Bull donne des aiiiles.",
                     "color": "#e03c31",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/12/btfkgdg4gbhtpfcgpjoo/red-bull-red-edition-sugarfree",
                     "alt_text": "Red Bull Red Edition - Sugarfree",
@@ -895,7 +895,7 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:fr-CA",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
                     "standfirst": "Le Red Bull Apricot Edition est le mariage parfait entre l’abricot et la fraise, avec une note de pêche.",
                     "color": "#f3911b",
@@ -905,7 +905,7 @@
                 },
                 {
                     "id": "5f608c0a-9aa5-453e-bad5-5d5a02a8d723:fr-CA",
-                    "name": "Apricot Edition - Sans Sucre ",
+                    "name": "The Apricot Edition - Sans Sucre ",
                     "flavour": "Sugarfree Apricot-Strawberry",
                     "standfirst": "Le nouveau Red Bull Apricot Edition sans sucre est le mariage parfait entre l’abricot et la fraise, le tout rehaussé d’une touche de pêche* – maintenant sans le sucre. Red Bull donne des aiiiles.",
                     "color": "#ff9425",
@@ -941,7 +941,7 @@
                 },
                 {
                     "id": "9f5e826b-3589-4e15-8da7-86759325fc9b:es-CAR",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Fruta del Dragón",
                     "standfirst": "La fruta del dragón se volverá tu nueva edición favorita con su dulce y exótico sabor.",
                     "color": "#2ca44a",
@@ -951,7 +951,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:es-CAR",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition con el fresco sabor de la sandía.",
                     "color": "#e03c31",
@@ -961,7 +961,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:es-CAR",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "La edición tropical de Red Bull. Déjate sorprender por el exótico sabor de las frutas tropicales.",
                     "color": "#FFCD00",
@@ -1007,7 +1007,7 @@
                 },
                 {
                     "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:es-CL",
-                    "name": "Winter Edition",
+                    "name": "The Winter Edition",
                     "flavour": " Iced Vanilla Berry",
                     "standfirst": "Red Bull Winter Edition: La bebida energética con un sabor excepcional de arándano, vainilla y notas refrescantes de eucalipto",
                     "color": "#53b2c2",
@@ -1017,7 +1017,7 @@
                 },
                 {
                     "id": "9f5e826b-3589-4e15-8da7-86759325fc9b:es-CL",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Fruta del Dragón",
                     "standfirst": "La fruta del dragón se volverá tu nueva edición favorita con su dulce y exótico sabor.",
                     "color": "#2ca44a",
@@ -1027,7 +1027,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:es-CL",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Red Bull Yellow Edition. Sorpréndete con el exótico sabor a frutas tropicales.",
                     "color": "#FFCD00",
@@ -1037,7 +1037,7 @@
                 },
                 {
                     "id": "87ed9394-b809-4156-9433-5402cb4fabbd:es-CL",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Blueberry",
                     "standfirst": "Red Bull Blue Edition. Una clásica, con el sabor frutoso del arándano.",
                     "color": "#001A72",
@@ -1047,7 +1047,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:es-CL",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition con el fresco sabor de la sandía.",
                     "color": "#e03c31",
@@ -1057,7 +1057,7 @@
                 },
                 {
                     "id": "f0502df1-3142-402a-9af8-1344c8bf794e:es-CL",
-                    "name": "Purple Edition",
+                    "name": "The Purple Edition",
                     "flavour": "Açai Berry",
                     "standfirst": "Experimenta el único y exótico sabor a Acaí.",
                     "color": "#702082",
@@ -1109,7 +1109,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:es-CO",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Red Bull Yellow Edition con sabor a frutas tropicales",
                     "color": "#FFCD00",
@@ -1119,7 +1119,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:es-CO",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition con el fresco sabor de la sandía.",
                     "color": "#e03c31",
@@ -1129,7 +1129,7 @@
                 },
                 {
                     "id": "add1ea51-ee5f-4c6c-a2d2-efd59791e8f8:es-CO",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "Curuba",
                     "standfirst": "Aaalas también con sabor a Curuba",
                     "color": "#6cc24a",
@@ -1157,7 +1157,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:hr-HR",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Kriiila bez šećera: Red Bull Sugarfree je Red Bull Energy Drink bez šećera.\"",
+                    "standfirst": "Kriiila bez šećera: Red Bull Sugarfree je Red Bull Energy Drink bez šećera.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/12/13/ll2cjjmmczoqpf7ituiv/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -1175,7 +1175,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:hr-HR",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
                     "standfirst": "Kriiila za tvoje ljeto: Red Bull Summer Edition Energy Drink s okusom bijele breskve, daškom kore citrusa i cvjetnim notama.",
                     "color": "#E24585",
@@ -1185,9 +1185,9 @@
                 },
                 {
                     "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:hr-HR",
-                    "name": "Sea Blue Edition",
+                    "name": "The Sea Blue Edition",
                     "flavour": "Juneberry",
-                    "standfirst": "Red Bull Sea Blue Edition s okusom voća merale. ",
+                    "standfirst": "Red Bull Sea Blue Edition s okusom voća merale.",
                     "color": "#0072CE",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/5/30/njkgk8zwh9gvfkeb8mps/red-bull-the-sea-blue-edition-image",
                     "alt_text": "Red Bull The Sea Blue Edition - Image",
@@ -1195,7 +1195,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:hr-HR",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Red Bull The Yellow Edition. Iznenadi se egzotičnim okusom tropskog voća.",
                     "color": "#FFCD00",
@@ -1205,7 +1205,7 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:hr-HR",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
                     "standfirst": "Iznenadi se savršenom kombinacijom okusa Marelice i Jagode.",
                     "color": "#f3911b",
@@ -1215,7 +1215,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:hr-HR",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition s osvježavajućim okusom lubenice.",
                     "color": "#e03c31",
@@ -1243,7 +1243,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:cs-CZ",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Křídla bez cukru. Red Bull Sugarfree je Red Bull  Energy Drink bez obsahu cukru.\"",
+                    "standfirst": "Křídla bez cukru. Red Bull Sugarfree je Red Bull  Energy Drink bez obsahu cukru.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/gkhxrgywhssovuqm0zzi/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -1261,7 +1261,7 @@
                 },
                 {
                     "id": "252c2121-8871-4996-90dd-06d374834ead:cs-CZ",
-                    "name": "Pink Edition Sugarfree",
+                    "name": "The Pink Edition Sugarfree",
                     "flavour": "Forest fruit",
                     "standfirst": "Red Bull Pink Edition Sugarfree ti dává křííídla s příchutí lesního ovoce a bez cukru.",
                     "color": "#c72466",
@@ -1271,7 +1271,7 @@
                 },
                 {
                     "id": "add1ea51-ee5f-4c6c-a2d2-efd59791e8f8:cs-CZ",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
                     "standfirst": "Křííídla pro tvé léto. Red Bull Summer Edition s příchutí bílé broskve, nádechem citrusové kůry a květinovými tóny. Zjisti víc!",
                     "color": "#E24585",
@@ -1281,7 +1281,7 @@
                 },
                 {
                     "id": "9f5e826b-3589-4e15-8da7-86759325fc9b:cs-CZ",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Curuba Elderflower",
                     "standfirst": "Red Bull Green Edition s příchutí exotické curuby, doplněná tóny bezového květu.",
                     "color": "#79B942",
@@ -1291,7 +1291,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:cs-CZ",
-                    "name": "Tropical Edition",
+                    "name": "The Tropical Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Red Bull Tropical Edition. Nechte se překvapit svěží chutí tropického ovoce.",
                     "color": "#FFCD00",
@@ -1301,7 +1301,7 @@
                 },
                 {
                     "id": "87ed9394-b809-4156-9433-5402cb4fabbd:cs-CZ",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Blueberry",
                     "standfirst": "Red Bull Blue Edition. Nestarnoucí klasika s ovocnou chutí borůvek.",
                     "color": "#001A72",
@@ -1311,7 +1311,7 @@
                 },
                 {
                     "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:cs-CZ",
-                    "name": "Sea Blue Edition",
+                    "name": "The Sea Blue Edition",
                     "flavour": "Juneberry",
                     "standfirst": "Red Bull Sea Blue edition s lákavou ovocnou chutí muchovníku.",
                     "color": "#0072CE",
@@ -1349,7 +1349,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:da-DK",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Vinger uden sukker: Red Bull Sugarfree  er Red Bull Energy Drink uden sukker.\"",
+                    "standfirst": "Vinger uden sukker: Red Bull Sugarfree  er Red Bull Energy Drink uden sukker.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/sgnwxpxjfccqeqpodelr/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -1357,7 +1357,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:da-DK",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
                     "standfirst": "Red Bull Summer Edition Energy Drink med den forfriskende smag af hvid fersken.",
                     "color": "#E24585",
@@ -1367,7 +1367,7 @@
                 },
                 {
                     "id": "e56d29e0-59fc-4751-9169-e9ff51b93b50:da-DK",
-                    "name": "Summer Edition Sugarfree",
+                    "name": "The Summer Edition Sugarfree",
                     "flavour": "White Peach",
                     "standfirst": "Red Bull Summer Edition Sugarfree med den forfriskende smag af hvid fersken.",
                     "color": "#E24585",
@@ -1377,7 +1377,7 @@
                 },
                 {
                     "id": "252c2121-8871-4996-90dd-06d374834ead:da-DK",
-                    "name": "Red Bull Pink Edition Sugarfree",
+                    "name": "The Red Bull Pink Edition Sugarfree",
                     "flavour": "Forest Fruits",
                     "standfirst": "Red Bull Pink Edition: En sukkerfri energidrik med smagen af hindbær og frugt, balanceret med noter af verbena.",
                     "color": "#EC86D0",
@@ -1387,7 +1387,7 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:da-DK",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
                     "standfirst": "Red Bull Apricot Edition smager af den perfekte blanding af abrikos og jordbær med et touch af fersken.",
                     "color": "#f3911b",
@@ -1397,7 +1397,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:da-DK",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition med den friske smag af vandmelon.",
                     "color": "#e03c31",
@@ -1407,7 +1407,7 @@
                 },
                 {
                     "id": "87ed9394-b809-4156-9433-5402cb4fabbd:da-DK",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Blåbærsmag",
                     "standfirst": "Red Bull Blue Edition med smagen af blåbærsmag.",
                     "color": "#001A72",
@@ -1417,7 +1417,7 @@
                 },
                 {
                     "id": "f0502df1-3142-402a-9af8-1344c8bf794e:da-DK",
-                    "name": "Purple Edition",
+                    "name": "The Purple Edition",
                     "flavour": "Skovbærsmag",
                     "standfirst": "Red Bull Purple Edition med smagen af skovbærsmag.",
                     "color": "#702082",
@@ -1453,7 +1453,7 @@
                 },
                 {
                     "id": "2b3e7c7e-5b79-4e5f-8d41-88abc9c5d5dd:ar-EG",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "Juneberry",
                     "standfirst": "The Red Bull Summer Edition with the extraordinary taste of Cherry and Wild berries.",
                     "color": "#0072ce",
@@ -1511,7 +1511,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:et-EE",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Ilma suhkruta tiivad: Suhkruvaba Red Bull on Red  Bulli energiajook, milles pole suhkruid.\"",
+                    "standfirst": "Ilma suhkruta tiivad: Suhkruvaba Red Bull on Red  Bulli energiajook, milles pole suhkruid.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -1519,7 +1519,7 @@
                 },
                 {
                     "id": "add1ea51-ee5f-4c6c-a2d2-efd59791e8f8:et-EE",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "Curuba",
                     "standfirst": "Red Bull Summer Edition eksootilise kuruuba ja leedriõie maitsega",
                     "color": "#E24585",
@@ -1529,7 +1529,7 @@
                 },
                 {
                     "id": "dad80e1f-c37e-4b2b-bea7-d080dc0f439f:et-EE",
-                    "name": "Spring Edition Sugarfree",
+                    "name": "The Spring Edition Sugarfree",
                     "flavour": "Woodruff &Pink Grapefruit",
                     "standfirst": "Red Bull Spring Edition Sugarfree: energiajook uue särtsaka maitsega ühendades roosa greibi ja õrna metsalille noodid.",
                     "color": "#7d62ce",
@@ -1539,7 +1539,7 @@
                 },
                 {
                     "id": "41e97cb8-fb1f-41a3-a380-be2a75123e1a:et-EE",
-                    "name": "Ice Edition",
+                    "name": "The Ice Edition",
                     "flavour": "Iced Gummy Bear",
                     "standfirst": "Red Bull Ice Edition: Energiajook mustika, vanilli ja jäiselt värskete eukalüpti nootidega.",
                     "color": "#53b2c2",
@@ -1549,7 +1549,7 @@
                 },
                 {
                     "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:et-EE",
-                    "name": "Sea Blue Edition",
+                    "name": "The Sea Blue Edition",
                     "flavour": "Juneberry",
                     "standfirst": "Red Bull Sea Blue Edition põneva toompihlaka maitsega.",
                     "color": "#0072CE",
@@ -1559,7 +1559,7 @@
                 },
                 {
                     "id": "7fb8538f-2111-4fa9-9c59-6297145e92bd:et-EE",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Apricot-Strawberry",
                     "standfirst": "Bull Apricot Edition pakub täiuslikku segu aprikoosist ja maasikast koos virsiku maitsenootidega.",
                     "color": "#ff9425",
@@ -1569,7 +1569,7 @@
                 },
                 {
                     "id": "1ad9d76b-02ee-462b-a766-13ecb8ac24da:et-EE",
-                    "name": "White Edition",
+                    "name": "The White Edition",
                     "flavour": "Coconut",
                     "standfirst": "Kookospähkli troopiline maitse kombineeritud mustikate maitse ja Red Bulli tiibadega.",
                     "color": "#0070b8",
@@ -1579,7 +1579,7 @@
                 },
                 {
                     "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:et-EE",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Dragon fruit",
                     "standfirst": "Red Bull Green Edition eksootilise kaktusevilja maitsega.",
                     "color": "#00c65e",
@@ -1589,7 +1589,7 @@
                 },
                 {
                     "id": "c55e5804-ce3c-4289-8d89-930b6d678501:et-EE",
-                    "name": "Peach Edition",
+                    "name": "The Peach Edition",
                     "flavour": "Peach",
                     "standfirst": "Red Bull Peach Edition: Energiajook värske virsiku ja nektariini maitsega.",
                     "color": "#81312F",
@@ -1599,7 +1599,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:et-EE",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Red Bull Yellow Edition. Üllatu troopiliste puuviljade eksootilisest maitsest.",
                     "color": "#FFCD00",
@@ -1609,7 +1609,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:et-EE",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition värske arbuusi maitsega.",
                     "color": "#e03c31",
@@ -1655,7 +1655,7 @@
                 },
                 {
                     "id": "eb9c22db-6c3d-4a68-b4e3-c915c59b1414:fi-FI",
-                    "name": "Lilac Edition Sugarfree",
+                    "name": "The Lilac Edition Sugarfree",
                     "flavour": "Wildflower-and-Pink Grapefruit",
                     "standfirst": "Raikas verigreipin- ja tuoksumataranmakuinen energiajuoma",
                     "color": "#6952AD",
@@ -1665,9 +1665,9 @@
                 },
                 {
                     "id": "e3a50810-fdbc-40f3-a60f-a6e917586d49:fi-FI",
-                    "name": "Pink Edition",
+                    "name": "The Pink Edition",
                     "flavour": "Waldbeere",
-                    "standfirst": "Red Bull antaa siiivet. Myös sokerittomana. ",
+                    "standfirst": "Red Bull antaa siiivet. Myös sokerittomana.",
                     "color": "#c72466",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/8/23/hxhfs21c9wetxxvlmces/red-bull-pink-edition",
                     "alt_text": "Red Bull Pink Edition",
@@ -1675,7 +1675,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:fi-FI",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "Valkoisen persikanmakuisena",
                     "standfirst": "Antaa kesään siiivet. Red Bull Summer Edition valkoisen persikan makuisena.",
                     "color": "#E24585",
@@ -1685,7 +1685,7 @@
                 },
                 {
                     "id": "f0502df1-3142-402a-9af8-1344c8bf794e:fi-FI",
-                    "name": "Purple Edition",
+                    "name": "The Purple Edition",
                     "flavour": "Açai Berry",
                     "standfirst": "Koe metsämarjan upea maku.",
                     "color": "#702082",
@@ -1695,7 +1695,7 @@
                 },
                 {
                     "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:fi-FI",
-                    "name": "Lime Green Edition",
+                    "name": "The Lime Green Edition",
                     "flavour": "Dragon fruit",
                     "standfirst": "Red Bull Lime Green Edition eksoottisen curuban makuisena.",
                     "color": "#79B942",
@@ -1705,7 +1705,7 @@
                 },
                 {
                     "id": "87ed9394-b809-4156-9433-5402cb4fabbd:fi-FI",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Blueberry",
                     "standfirst": "Klassikko. Maukkaan mustikan makuinen energiajuoma – Red Bull Blue Edition.",
                     "color": "#001A72",
@@ -1715,7 +1715,7 @@
                 },
                 {
                     "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:fi-FI",
-                    "name": "Sea Blue Edition",
+                    "name": "The Sea Blue Edition",
                     "flavour": "Juneberry",
                     "standfirst": "Red Bull Sea Blue Edition ainutlaatuisen Tuomipihlajanmakuisena.",
                     "color": "#0072CE",
@@ -1725,7 +1725,7 @@
                 },
                 {
                     "id": "c55e5804-ce3c-4289-8d89-930b6d678501:fi-FI",
-                    "name": "Peach Edition",
+                    "name": "The Peach Edition",
                     "flavour": "Peach",
                     "standfirst": "Raikkaan persikanmaukuinen Red Bull Peach Edition",
                     "color": "#81312F",
@@ -1771,7 +1771,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:fr-FR",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
                     "standfirst": "Red Bull Summer Edition : La boisson énergisante au goût extraordinaire de pêche blanche, sublimée par un zeste d’agrumes et de subtiles notes florales.",
                     "color": "#E24585",
@@ -1781,7 +1781,7 @@
                 },
                 {
                     "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:fr-FR",
-                    "name": "Sea Blue Edition",
+                    "name": "The Sea Blue Edition",
                     "flavour": "Juneberry",
                     "standfirst": "Red Bull Sea Blue Edition au goût irrésistible de Juneberry.",
                     "color": "#0072CE",
@@ -1791,7 +1791,7 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:fr-FR",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
                     "standfirst": "Red Bull Apricot Edition c'est l'accord parfait de l'abricot et de la fraise avec une légère touche de pêche.",
                     "color": "#f3911b",
@@ -1801,7 +1801,7 @@
                 },
                 {
                     "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:fr-FR",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Dragon fruit",
                     "standfirst": "Le Red Bull Green Edition au goût exotique de fruit du dragon",
                     "color": "#00c65e",
@@ -1811,7 +1811,7 @@
                 },
                 {
                     "id": "1ad9d76b-02ee-462b-a766-13ecb8ac24da:fr-FR",
-                    "name": "White Edition",
+                    "name": "The White Edition",
                     "flavour": "Coconut",
                     "standfirst": "Red Bull White Edition mixant le goût exotique de la noix de coco et le goût fruité de l'açaï.",
                     "color": "#0070b8",
@@ -1821,7 +1821,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:fr-FR",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition au goût frais de pastèque.",
                     "color": "#e03c31",
@@ -1831,7 +1831,7 @@
                 },
                 {
                     "id": "87ed9394-b809-4156-9433-5402cb4fabbd:fr-FR",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Blueberry",
                     "standfirst": "Red Bull Blue Edition. Un classique au goût fruité de myrtille.",
                     "color": "#001A72",
@@ -1877,9 +1877,9 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:de-DE",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
-                    "standfirst": "Die Red Bull Summer Edition White Peach bietet einen neuen Geschmack von weißem Pfirsich, abgerundet mit einem Hauch von Zitrusschale und blumigen Noten – köstlich und aromatisch. ",
+                    "standfirst": "Die Red Bull Summer Edition White Peach bietet einen neuen Geschmack von weißem Pfirsich, abgerundet mit einem Hauch von Zitrusschale und blumigen Noten – köstlich und aromatisch.",
                     "color": "#E24585",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/3/25/czjgeblsy0doquvuxstn/red-bull-summer-edition",
                     "alt_text": "Red Bull Summer Edition",
@@ -1887,9 +1887,9 @@
                 },
                 {
                     "id": "e56d29e0-59fc-4751-9169-e9ff51b93b50:de-DE",
-                    "name": "Summer Edition Sugarfree",
+                    "name": "The Summer Edition Sugarfree",
                     "flavour": "White Peach",
-                    "standfirst": "Die Red Bull Summer Edition White Peach bietet einen neuen Geschmack von weißem Pfirsich, abgerundet mit einem Hauch von Zitrusschale und blumigen Noten – köstlich und aromatisch. ",
+                    "standfirst": "Die Red Bull Summer Edition White Peach bietet einen neuen Geschmack von weißem Pfirsich, abgerundet mit einem Hauch von Zitrusschale und blumigen Noten – köstlich und aromatisch.",
                     "color": "#E24585",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/3/25/y6hypupaofu8ydhtyolq/red-bull-summer-edition-sugarfree",
                     "alt_text": "Red Bull Summer Edition Sugarfree",
@@ -1897,9 +1897,9 @@
                 },
                 {
                     "id": "eb9c22db-6c3d-4a68-b4e3-c915c59b1414:de-DE",
-                    "name": "Lilac Edition Sugarfree",
+                    "name": "The Lilac Edition Sugarfree",
                     "flavour": "Wildflower-and-Pink Grapefruit",
-                    "standfirst": "Die Red Bull Lilac Edition Sugarfree mit dem Geschmack von Waldmeister und Pink Grapefruit. ",
+                    "standfirst": "Die Red Bull Lilac Edition Sugarfree mit dem Geschmack von Waldmeister und Pink Grapefruit.",
                     "color": "#6952AD",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/5/8/gyf3aybpyp3vqqwhgxyb/lilac-edition-sugarfree-wildflower-and-pink-grapefruit",
                     "alt_text": "Lilac-Edition-Sugarfree Wildflower-and-Pink Grapefruit",
@@ -1907,7 +1907,7 @@
                 },
                 {
                     "id": "1ad9d76b-02ee-462b-a766-13ecb8ac24da:de-DE",
-                    "name": "White Edition",
+                    "name": "The White Edition",
                     "flavour": "Coconut",
                     "standfirst": "Die Red Bull White Edition - mit dem Geschmack exotischer Kokosnuss und fruchtiger Blaubeere.",
                     "color": "#0070b8",
@@ -1917,7 +1917,7 @@
                 },
                 {
                     "id": "87ed9394-b809-4156-9433-5402cb4fabbd:de-DE",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Blueberry",
                     "standfirst": "Der Klassiker unter den Red Bull Editions mit dem fruchtigen Geschmack von Heidelbeere.",
                     "color": "#001A72",
@@ -1927,7 +1927,7 @@
                 },
                 {
                     "id": "f0502df1-3142-402a-9af8-1344c8bf794e:de-DE",
-                    "name": "Purple Edition",
+                    "name": "The Purple Edition",
                     "flavour": "Açai Berry",
                     "standfirst": "Erlebe den einzigartigen Geschmack der exotischen Açai Beere. Die Red Bull Purple Edition.",
                     "color": "#702082",
@@ -1937,7 +1937,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:de-DE",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Die Red Bull Yellow Edition. Lass dich vom exotischen Geschmack tropischer Früchte überraschen.",
                     "color": "#FFCD00",
@@ -1947,7 +1947,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:de-DE",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Die Red Bull Red Edition mit dem erfrischenden und fruchtigen Geschmack der Wassermelone.",
                     "color": "#e03c31",
@@ -1957,9 +1957,9 @@
                 },
                 {
                     "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:de-DE",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Dragon fruit",
-                    "standfirst": "Die Red Bull Green Edition mit dem exotischen Geschmack von Kaktusfrucht. ",
+                    "standfirst": "Die Red Bull Green Edition mit dem exotischen Geschmack von Kaktusfrucht.",
                     "color": "#00c65e",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/13/n8hnfirgt7um3dtknzv3/red-bull-green-edition-image",
                     "alt_text": "Red Bull Green Edition - image",
@@ -1967,9 +1967,9 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:de-DE",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
-                    "standfirst": "Die Red Bull Apricot Edition mit dem fruchtigen Geschmack von Aprikose und Erdbeere. ",
+                    "standfirst": "Die Red Bull Apricot Edition mit dem fruchtigen Geschmack von Aprikose und Erdbeere.",
                     "color": "#f3911b",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/13/fc58hkniwtff9ykyynil/red-bull-apricot-edition-image",
                     "alt_text": "Red Bull Apricot Edition - image",
@@ -1977,7 +1977,7 @@
                 },
                 {
                     "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:de-DE",
-                    "name": "Sea Blue Edition",
+                    "name": "The Sea Blue Edition",
                     "flavour": "Juneberry",
                     "standfirst": "Die Red Bull Sea Blue Edition mit dem einzigartigen Geschmack von Juneberry.",
                     "color": "#0072CE",
@@ -1987,7 +1987,7 @@
                 },
                 {
                     "id": "b72f0639-7324-4c1b-9b22-9058ff040feb:de-DE",
-                    "name": "Pink Edition ",
+                    "name": "The Pink Edition ",
                     "flavour": "Waldbeere",
                     "standfirst": "Die Red Bull Spring Edition mit dem fruchtigen Geschmack von Waldbeeren. Bereit für den Frühling? Red Bull verleiht Flüüügel – auch ohne Zucker.",
                     "color": "#EC86D0",
@@ -2015,7 +2015,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:el-GR",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Φτερά χωρίς ζάχαρη: Το Red Bull Sugarfree είναι  το Red Bull Energy Drink χωρίς σάκχαρα.\"",
+                    "standfirst": "Φτερά χωρίς ζάχαρη: Το Red Bull Sugarfree είναι  το Red Bull Energy Drink χωρίς σάκχαρα.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/17/vqvioin3gzkx4nnyxuqa/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -2033,7 +2033,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:el-GR",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
                     "standfirst": "Το Red Bull Summer Edition προσφέρει γεύση λευκό ροδάκινο.",
                     "color": "#E24585",
@@ -2043,7 +2043,7 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:el-GR",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
                     "standfirst": "Red Bull Apricot Edition. Απόλαυσε την απίθανη γεύση βερίκοκο και φράουλα.",
                     "color": "#f3911b",
@@ -2053,7 +2053,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:el-GR",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition. Απόλαυσε την δροσερή γεύση καρπούζι.",
                     "color": "#e03c31",
@@ -2063,7 +2063,7 @@
                 },
                 {
                     "id": "1ad9d76b-02ee-462b-a766-13ecb8ac24da:el-GR",
-                    "name": "White Edition",
+                    "name": "The White Edition",
                     "flavour": "Coconut",
                     "standfirst": "Το Red Bull White Edition, με γεύση καρύδας και berries.",
                     "color": "#0070b8",
@@ -2073,7 +2073,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:el-GR",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Red Bull Yellow Edition. Απόλαυσε την εξωτική γεύση των τροπικών φρούτων.",
                     "color": "#FFCD00",
@@ -2109,7 +2109,7 @@
                 },
                 {
                     "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:zh-HK",
-                    "name": "Green Edition 仲夏熱情果味",
+                    "name": "The Green Edition 仲夏熱情果味",
                     "flavour": "Exotic Passion Fruit",
                     "standfirst": "清新酸甜口味加上淡淡花香搭配清爽氣泡，組成激爽清涼快感",
                     "color": "#79B942",
@@ -2119,7 +2119,7 @@
                 },
                 {
                     "id": "f0502df1-3142-402a-9af8-1344c8bf794e:zh-HK",
-                    "name": "Purple Edition   能量飲品",
+                    "name": "The Purple Edition   能量飲品",
                     "flavour": "Açai Berry",
                     "standfirst": "Red Bull Purple Edition 瞬間爆發巨峰提子的獨特誘人味道， 酸甜滋味直衝味蕾",
                     "color": "#702082",
@@ -2165,7 +2165,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:hu-HU",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
                     "standfirst": "Szááárnyakat a nyaradhoz!! Itt a Red Bull Summer Edition energiaital, fehér barack ízzel, egy kis citrushéj csavarral és virágos lecsengéssel.",
                     "color": "#E24585",
@@ -2175,7 +2175,7 @@
                 },
                 {
                     "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:hu-HU",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Juneberry",
                     "standfirst": "Red Bull Blue Edition a fanyarka csábító gyümölcsös ízével.",
                     "color": "#0072CE",
@@ -2185,9 +2185,9 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:hu-HU",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
-                    "standfirst": "A Red Bull Apricot Edition tökéletes kombinációt alkot a sárgabarack és az eper ízjegyeinek keveredésével, valamint egy csipetnyi őszibarackkal ízzel.  ",
+                    "standfirst": "A Red Bull Apricot Edition tökéletes kombinációt alkot a sárgabarack és az eper ízjegyeinek keveredésével, valamint egy csipetnyi őszibarackkal ízzel.",
                     "color": "#f3911b",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/2/20/acpjmlskbmwyqbloxy6y/the-apricot-edition-image",
                     "alt_text": "The Apricot Edition image",
@@ -2195,7 +2195,7 @@
                 },
                 {
                     "id": "add1ea51-ee5f-4c6c-a2d2-efd59791e8f8:hu-HU",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "Curuba",
                     "standfirst": "Red Bull Summer Edition a kuruba egzotikus ízével és a bodzavirág frssítő jegyeivel kiegészítve",
                     "color": "#6cc24a",
@@ -2205,7 +2205,7 @@
                 },
                 {
                     "id": "1ad9d76b-02ee-462b-a766-13ecb8ac24da:hu-HU",
-                    "name": "White Edition",
+                    "name": "The White Edition",
                     "flavour": "Coconut",
                     "standfirst": "A Red Bull White Edition az egzotikus kókusz és a zamatos áfonya ízében.",
                     "color": "#0070b8",
@@ -2233,7 +2233,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:en-IN",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.\"",
+                    "standfirst": "Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/xxjnj0gedzaeglcj550a/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -2241,7 +2241,7 @@
                 },
                 {
                     "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:en-IN",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Curuba and Elderflower",
                     "standfirst": "The Red Bull Green Edition with the exotic taste of Curuba and Elderflower.",
                     "color": "#78b941",
@@ -2251,7 +2251,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:en-IN",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "The Red Bull Yellow Edition. Experience the exotic taste of tropical fruits.",
                     "color": "#FFCD00",
@@ -2261,7 +2261,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:en-IN",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "The Red Bull Red Edition with the taste of watermelon.",
                     "color": "#e03c31",
@@ -2305,7 +2305,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:en-INT",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.\"",
+                    "standfirst": "Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -2351,7 +2351,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:en-IE",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.\"",
+                    "standfirst": "Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -2359,7 +2359,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:en-IE",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
                     "standfirst": "Wiiings for your summer: The Red Bull Summer Edition Energy Drink with the taste of white peach, a touch of citrus peel and floral notes.",
                     "color": "#E24585",
@@ -2369,7 +2369,7 @@
                 },
                 {
                     "id": "f78cf50c-38e3-423a-ba25-045cbfb7eb50:en-IE",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Curuba Elderflower",
                     "standfirst": "The Red Bull Green Edition with the exotic taste of Curuba rounded off with Elderflower notes.",
                     "color": "#6cc24a",
@@ -2379,9 +2379,9 @@
                 },
                 {
                     "id": "252c2121-8871-4996-90dd-06d374834ead:en-IE",
-                    "name": "Pink Edition Sugarfree",
+                    "name": "The Pink Edition Sugarfree",
                     "flavour": "Forest Fruits",
-                    "standfirst": "The Red Bull Pink Edition: The Sugarfree Energy Drink with the taste of raspberry and other fruits complemented by exciting herbal notes of verbena. ",
+                    "standfirst": "The Red Bull Pink Edition: The Sugarfree Energy Drink with the taste of raspberry and other fruits complemented by exciting herbal notes of verbena.",
                     "color": "#c72466",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/9/19/gnk45x1aukijs0vuev1k/red-bull-pink-edition-image",
                     "alt_text": "Red Bull Pink Edition Image",
@@ -2389,7 +2389,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:en-IE",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "The Red Bull Red Edition with the fresh taste of watermelon.",
                     "color": "#e03c31",
@@ -2399,7 +2399,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:en-IE",
-                    "name": "Tropical Edition",
+                    "name": "The Tropical Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "The Tropical Edition. Experience the exotic taste of tropical fruits.",
                     "color": "#FFCD00",
@@ -2409,7 +2409,7 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:en-IE",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
                     "standfirst": "The Red Bull Apricot Edition offers the perfect blend of apricot and strawberry with a touch of peach taste.",
                     "color": "#f3911b",
@@ -2419,7 +2419,7 @@
                 },
                 {
                     "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:en-IE",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Juneberry",
                     "standfirst": "The Red Bull Sea Blue Edition with the extraordinary taste of Juneberry* *artificially flavoured",
                     "color": "#0072CE",
@@ -2447,7 +2447,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:it-IT",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Ali senza zuccheri: Red Bull Sugarfree è Red Bull Energy Drink senza zuccheri.\"",
+                    "standfirst": "Ali senza zuccheri: Red Bull Sugarfree è Red Bull Energy Drink senza zuccheri.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -2465,7 +2465,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:it-IT",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
                     "standfirst": "La Red Bull Summer Edition offre il gusto pesca con un tocco agrumato e note floreali.",
                     "color": "#d30e72",
@@ -2475,9 +2475,9 @@
                 },
                 {
                     "id": "252c2121-8871-4996-90dd-06d374834ead:it-IT",
-                    "name": "Pink Edition Sugarfree",
+                    "name": "The Pink Edition Sugarfree",
                     "flavour": "Frutti die Bosco",
-                    "standfirst": "Red Bull Pink Edition Sugarfree: Sugarfree Energy Drink  al gusto frutti di bosco e note di verbena. ",
+                    "standfirst": "Red Bull Pink Edition Sugarfree: Sugarfree Energy Drink  al gusto frutti di bosco e note di verbena.",
                     "color": "#c72466",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/20/yfkkafoaotfrgjz6yweb/red-bull-pink-edition-image",
                     "alt_text": "Red Bull Pink Edition Image",
@@ -2485,9 +2485,9 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:it-IT",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
-                    "standfirst": "Red Bull Apricot Edition offre il perfetto mix tra albicocca e fragola con una nota di pesca. ",
+                    "standfirst": "Red Bull Apricot Edition offre il perfetto mix tra albicocca e fragola con una nota di pesca.",
                     "color": "#f3911b",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/13/ampmdvbrq7ozmf8i8lic/red-bull-apricot-edition-image",
                     "alt_text": "Red Bull Apricot Edition - image",
@@ -2495,7 +2495,7 @@
                 },
                 {
                     "id": "7b350335-d4f3-419d-9a00-ad1ef9bfe111:it-IT",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Juneberry",
                     "standfirst": "La Red Bull Blue Edition offre il gusto del Juneberry.",
                     "color": "#008ACB",
@@ -2505,7 +2505,7 @@
                 },
                 {
                     "id": "1ad9d76b-02ee-462b-a766-13ecb8ac24da:it-IT",
-                    "name": "White Edition",
+                    "name": "The White Edition",
                     "flavour": "Coconut",
                     "standfirst": "Preparati per un'esperienza di gusto straordinaria. Red Bull White Edition al gusto esotico di cocco e fruttato dell'açaÌ.",
                     "color": "#0070b8",
@@ -2515,7 +2515,7 @@
                 },
                 {
                     "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:it-IT",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Dragon fruit",
                     "standfirst": "Red Bull Green Edition con il gusto esotico del dragon fruit. Preparati all'estate.",
                     "color": "#00c65e",
@@ -2525,7 +2525,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:it-IT",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition. Lasciati sorprendere dal gusto fresco dell'anguria.",
                     "color": "#e03c31",
@@ -2609,7 +2609,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:ru-KZ",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Крылья без сахара: Red Bull Sugarfree - это тот  же энергетический напиток Red Bull, но без сахара.\"",
+                    "standfirst": "Крылья без сахара: Red Bull Sugarfree - это тот  же энергетический напиток Red Bull, но без сахара.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/auawecgf2rxtjgrqrwlj/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -2617,7 +2617,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:ru-KZ",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
                     "standfirst": "Летняя версия Red Bull Summer Edition предлагает вкус белого персика с лёгкими цитрусовыми нотками и оттенками цветочного аромата.",
                     "color": "#E24585",
@@ -2627,7 +2627,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:ru-KZ",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Red Bull Yellow Edition. Восхититесь экзотическим вкусом тропических фруктов.",
                     "color": "#FFCD00",
@@ -2637,7 +2637,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:ru-KZ",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition со вкусом арбуза.",
                     "color": "#e03c31",
@@ -2665,7 +2665,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:en-KE",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.\"",
+                    "standfirst": "Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -2673,7 +2673,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:en-KE",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "The RedBull Red Edition with the taste of watermelon.*",
                     "color": "#e03c31",
@@ -2701,7 +2701,7 @@
                     "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:ko-KR",
                     "name": "그린 에디션",
                     "flavour": "열대과일향",
-                    "standfirst": "레드불 그린 에디션은 상큼한 열대과일향과 달콤한 꽃향이 어우러진 새로운 에디션입니다. ",
+                    "standfirst": "레드불 그린 에디션은 상큼한 열대과일향과 달콤한 꽃향이 어우러진 새로운 에디션입니다.",
                     "color": "#79B942",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/5/12/bnvlk9mb5xizcjpxziwc/red-bull-green-edition",
                     "alt_text": "Red Bull Green Edition",
@@ -2747,7 +2747,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:lv-LV",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Spārni bez cukura. Red Bull Sugarfree ir Red Bull  Enerģijas dzēriens bez cukura.\"",
+                    "standfirst": "Spārni bez cukura. Red Bull Sugarfree ir Red Bull  Enerģijas dzēriens bez cukura.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/i7optopapwnvyajw4euw/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -2755,7 +2755,7 @@
                 },
                 {
                     "id": "dad80e1f-c37e-4b2b-bea7-d080dc0f439f:lv-LV",
-                    "name": "Spring Edition Sugarfree",
+                    "name": "The Spring Edition Sugarfree",
                     "flavour": "Wildflower & Pink Grapefruit",
                     "standfirst": "Spāāārni Tavam pavasarim: Red Bull Spring Edition Sugarfree apvieno rozā greipfrūta un savvaļas ziedu garšas.",
                     "color": "#7d62ce",
@@ -2765,7 +2765,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:lv-LV",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition ar svaigo arbūza garšu.",
                     "color": "#e03c31",
@@ -2775,7 +2775,7 @@
                 },
                 {
                     "id": "87ed9394-b809-4156-9433-5402cb4fabbd:lv-LV",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Blueberry",
                     "standfirst": "Red Bull Blue Edition dzēriens ar burvīgo mellenes garšu.",
                     "color": "#001A72",
@@ -2785,7 +2785,7 @@
                 },
                 {
                     "id": "7fb8538f-2111-4fa9-9c59-6297145e92bd:lv-LV",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Apricot-Strawberry",
                     "standfirst": "Red Bull Apricot edition piedāvā lielisku aprikožu un zemeņu savienojumu.",
                     "color": "#ff9425",
@@ -2795,7 +2795,7 @@
                 },
                 {
                     "id": "9f5e826b-3589-4e15-8da7-86759325fc9b:lv-LV",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Dragon Fruit",
                     "standfirst": "Red Bull Green edition ar eksotisko kaktua ogas garšu.",
                     "color": "#2ca44a",
@@ -2831,7 +2831,7 @@
                 },
                 {
                     "id": "add1ea51-ee5f-4c6c-a2d2-efd59791e8f8:lt-LT",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "Forest Fruits",
                     "standfirst": "Šis energinis gėrimas pasižymi gaiviu miško uogų skoniu, praturtintu subtiliomis žolelių natomis.",
                     "color": "#c72466",
@@ -2841,7 +2841,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:lt-LT",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Red Bull YELLOW EDITION. Leisk egzotiškų tropinių vaisių skoniui tave nustebinti!",
                     "color": "#FFCD00",
@@ -2851,7 +2851,7 @@
                 },
                 {
                     "id": "1ad9d76b-02ee-462b-a766-13ecb8ac24da:lt-LT",
-                    "name": "White Edition",
+                    "name": "The White Edition",
                     "flavour": "Coconut",
                     "standfirst": "Pasiruošk išskirtinei skonių patirčiai! Tai egzotiškų kokosų ir turtingo mėlynių skonio „Red Bull White Edition“.",
                     "color": "#0070b8",
@@ -2861,7 +2861,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:lt-LT",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Gaivaus arbūzų skonio Red Bull RED EDITION. Šiltus kraštus menanti rožinė gaiva ir laiko patikrinta energija.",
                     "color": "#e03c31",
@@ -2871,7 +2871,7 @@
                 },
                 {
                     "id": "87ed9394-b809-4156-9433-5402cb4fabbd:lt-LT",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Blueberry",
                     "standfirst": "Red Bull BLUE EDITION. Klasika su maloniu mėlynių skoniu.",
                     "color": "#001A72",
@@ -2881,7 +2881,7 @@
                 },
                 {
                     "id": "7fb8538f-2111-4fa9-9c59-6297145e92bd:lt-LT",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Apricot-Strawberry",
                     "standfirst": "Red Bull APRICOT EDITION gundo tobula abrikosų ir braškių derme, kuriai pilnatvės suteikia persikų prieskonis.",
                     "color": "#ff9425",
@@ -2909,7 +2909,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:en-MY",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.\"",
+                    "standfirst": "Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -2943,7 +2943,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:es-MX",
-                    "name": "Tropical Edition",
+                    "name": "The Tropical Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Red Bull Tropical Edition. Déjate sorprender por el exótico sabor de las frutas tropicales.",
                     "color": "#FFCD00",
@@ -2953,7 +2953,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:es-MX",
-                    "name": "Sandia Edition",
+                    "name": "The Sandia Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Sandía Edition con el fresco sabor de la sandía.",
                     "color": "#e03c31",
@@ -2963,7 +2963,7 @@
                 },
                 {
                     "id": "add1ea51-ee5f-4c6c-a2d2-efd59791e8f8:es-INT",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "Curuba",
                     "standfirst": "Nuevo Red Bull Summer Edition con el sabor exótico de la curuba complementado con notas de flor saúco.",
                     "color": "#6cc24a",
@@ -2991,7 +2991,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:en-MEA",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.\"",
+                    "standfirst": "Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -2999,7 +2999,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:en-MEA",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "The Yellow Edition. Experience the exotic taste of tropical fruits.",
                     "color": "#FFCD00",
@@ -3009,7 +3009,7 @@
                 },
                 {
                     "id": "87ed9394-b809-4156-9433-5402cb4fabbd:en-MEA",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Blueberry",
                     "standfirst": "The Red Bull Blue Edition. A classic, with the fruity taste of blueberry.",
                     "color": "#001A72",
@@ -3019,7 +3019,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:en-MEA",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "The Red Bull Red Edition with the fresh taste of watermelon.",
                     "color": "#e03c31",
@@ -3029,7 +3029,7 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:en-MEA",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
                     "standfirst": "The Red Bull Summer Edition with the delightful taste of apricot and strawberry",
                     "color": "#f3911b",
@@ -3057,7 +3057,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:nl-NL",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Vleugels zonder suiker. Red Bull Sugarfree is een  Red Bull Energy Drink zonder suiker.\"",
+                    "standfirst": "Vleugels zonder suiker. Red Bull Sugarfree is een  Red Bull Energy Drink zonder suiker.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/qo6ioe2m9vwtooljmuwp/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -3075,7 +3075,7 @@
                 },
                 {
                     "id": "add1ea51-ee5f-4c6c-a2d2-efd59791e8f8:nl-NL",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
                     "standfirst": "Vleugels voor jouw zomer: De Red Bull Summer Edition Energy Drink met de smaak van witte perzik een vleugje citrus en bloemige aroma's.",
                     "color": "#E24585",
@@ -3085,7 +3085,7 @@
                 },
                 {
                     "id": "252c2121-8871-4996-90dd-06d374834ead:nl-NL",
-                    "name": "Pink Edition Sugarfree",
+                    "name": "The Pink Edition Sugarfree",
                     "flavour": "Waldbeere",
                     "standfirst": "De Pink Edition Sugarfree geeft je vleugels met de smaak van framboos en spannende kruidige tonen van verbena.",
                     "color": "#c72466",
@@ -3095,7 +3095,7 @@
                 },
                 {
                     "id": "aff2b148-bf62-4b22-a93f-a7281bf169ce:nl-NL",
-                    "name": "Lime Green Edition Sugarfree",
+                    "name": "The Lime Green Edition Sugarfree",
                     "flavour": "Curuba-Elderflower",
                     "standfirst": "De Red Bull Green Edition Sugarfree geeft je vleugels met de smaak van curuba en vlierbloesem.",
                     "color": "#6cc24a",
@@ -3105,7 +3105,7 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:nl-NL",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
                     "standfirst": "Ontdek de Red Bull Apricot Edition met de fruitige smaak van abrikoos-aardbei",
                     "color": "#f3911b",
@@ -3115,7 +3115,7 @@
                 },
                 {
                     "id": "87ed9394-b809-4156-9433-5402cb4fabbd:nl-NL",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Blueberry",
                     "standfirst": "De fruitige smaak van bosbes gecombineerd met de vleugels van Red Bull maakt de Blue Edition zo speciaal.",
                     "color": "#001A72",
@@ -3125,7 +3125,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:nl-NL",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "De Red Edition met de frisse smaak van watermeloen.",
                     "color": "#e03c31",
@@ -3135,7 +3135,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:nl-NL",
-                    "name": "Tropical Edition",
+                    "name": "The Tropical Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Laat je verrassen door de exotische smaak van tropisch fruit.",
                     "color": "#FFCD00",
@@ -3163,7 +3163,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:en-NZ",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.\"",
+                    "standfirst": "Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/s5kmasklctz5s2rjsqpo/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -3181,7 +3181,7 @@
                 },
                 {
                     "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:en-NZ",
-                    "name": "Winter Edition",
+                    "name": "The Winter Edition",
                     "flavour": " Iced Vanilla Berry",
                     "standfirst": "The Red Bull Winter Ediation: The Energy Drink with the exceptional taste of blueberry, vanilla, and icy-fresh notes of eucalyptus.",
                     "color": "#53b2c2",
@@ -3191,9 +3191,9 @@
                 },
                 {
                     "id": "252c2121-8871-4996-90dd-06d374834ead:en-NZ",
-                    "name": "Berry Edition Sugarfree",
+                    "name": "The Berry Edition Sugarfree",
                     "flavour": "Forest Fruits",
-                    "standfirst": "The Sugarfree Energy Drink with the taste of forest fruits complemented by exciting herbal notes of verbena. ",
+                    "standfirst": "The Sugarfree Energy Drink with the taste of forest fruits complemented by exciting herbal notes of verbena.",
                     "color": "#c72466",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/9/hturwvswhdbq2w3waa96/red-bull-pink-edition-image",
                     "alt_text": "Red Bull Pink Edition Image",
@@ -3201,9 +3201,9 @@
                 },
                 {
                     "id": "a1253be0-075a-48bf-a4e7-60a9f2da0545:en-NZ",
-                    "name": "Coconut Edition Sugarfree",
+                    "name": "The Coconut Edition Sugarfree",
                     "flavour": "Coconut",
-                    "standfirst": "Get ready for an extraordinary taste experience. The Red Bull White Edition with the taste of exotic coconut and fruity blueberry. ",
+                    "standfirst": "Get ready for an extraordinary taste experience. The Red Bull White Edition with the taste of exotic coconut and fruity blueberry.",
                     "color": "#0070b8",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/9/20/ibchxdh6jo6dmhvucnev/coconut-edition-sugarfree-half-can",
                     "alt_text": "Coconut Edition Sugarfree half can",
@@ -3211,7 +3211,7 @@
                 },
                 {
                     "id": "9f5e826b-3589-4e15-8da7-86759325fc9b:en-NZ",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Dragon Fruit",
                     "standfirst": "The Red Bull Green Edition with the exotic taste of dragon fruit.",
                     "color": "#2ca44a",
@@ -3221,7 +3221,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:en-NZ",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "The Red Bull Red Edition with the fresh taste of watermelon.",
                     "color": "#e03c31",
@@ -3265,7 +3265,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:mk-MK",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars. \"",
+                    "standfirst": "Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/rdygf9vw7ykwea2t5emw/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -3273,7 +3273,7 @@
                 },
                 {
                     "id": "add1ea51-ee5f-4c6c-a2d2-efd59791e8f8:mk-MK",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "Curuba",
                     "standfirst": "Сѐ е подготвено за лето? Затоа што како што знаеш: Red Bull ти дава крииилја.",
                     "color": "#6cc24a",
@@ -3283,7 +3283,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:mk-MK",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition со свеж вкус на лубеница.",
                     "color": "#e03c31",
@@ -3293,7 +3293,7 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:mk-MK",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
                     "standfirst": "Red Bull Apricot Edition со пријатниот вкус на кајсија и јагода",
                     "color": "#f3911b",
@@ -3321,7 +3321,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:no-NO",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Viiinger uten sukker: Red Bull sukkerfri er  Red Bul Energy Drink uten sukker.\"",
+                    "standfirst": "Viiinger uten sukker: Red Bull sukkerfri er  Red Bul Energy Drink uten sukker.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -3339,7 +3339,7 @@
                 },
                 {
                     "id": "e56d29e0-59fc-4751-9169-e9ff51b93b50:no-NO",
-                    "name": "Summer Edition Sugarfree",
+                    "name": "The Summer Edition Sugarfree",
                     "flavour": "White Peach",
                     "standfirst": "Gir din sommer viiinger: Nye Red Bull Summer Edition Sugarfree har den friske smaken av hvit fersken, et hint sitrusskall og blomsternoter - helt uten sukker.",
                     "color": "#E24585",
@@ -3349,7 +3349,7 @@
                 },
                 {
                     "id": "252c2121-8871-4996-90dd-06d374834ead:no-NO",
-                    "name": "Pink Edition Sugarfree",
+                    "name": "The Pink Edition Sugarfree",
                     "flavour": "Bringebær",
                     "standfirst": "Sukkerfri energidrikk med smak av bringebær.",
                     "color": "#c72466",
@@ -3359,7 +3359,7 @@
                 },
                 {
                     "id": "365b9d1d-1fe3-41ea-86f1-c6f9967799a7:no-NO",
-                    "name": "Spring Edition",
+                    "name": "The Spring Edition",
                     "flavour": "Myske og grapefrukt",
                     "standfirst": "Energidrikk med nydelig smak av rosa grapefrukt, toppet med subtile blomsternoter.",
                     "color": "#7d62ce",
@@ -3369,7 +3369,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:no-NO",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Red Bull Yellow Edition. La deg overraske av den eksotiske smaken av tropiske frukter.",
                     "color": "#FFCD00",
@@ -3379,7 +3379,7 @@
                 },
                 {
                     "id": "c55e5804-ce3c-4289-8d89-930b6d678501:no-NO",
-                    "name": "Peach Edition",
+                    "name": "The Peach Edition",
                     "flavour": "Peach",
                     "standfirst": "En frisk smak av fersken. Red Bull Peach Edition.",
                     "color": "#81312F",
@@ -3389,7 +3389,7 @@
                 },
                 {
                     "id": "87ed9394-b809-4156-9433-5402cb4fabbd:no-NO",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Blueberry",
                     "standfirst": "En klassiker, med smak av blåbær. Red Bull Blue Edition.",
                     "color": "#001A72",
@@ -3399,7 +3399,7 @@
                 },
                 {
                     "id": "f0502df1-3142-402a-9af8-1344c8bf794e:no-NO",
-                    "name": "Purple Edition",
+                    "name": "The Purple Edition",
                     "flavour": "Açai Berry",
                     "standfirst": "Opplev den norske smaken av skogsbær med den nye Red Bull Purple Edition.",
                     "color": "#702082",
@@ -3409,7 +3409,7 @@
                 },
                 {
                     "id": "5f608c0a-9aa5-453e-bad5-5d5a02a8d723:no-NO",
-                    "name": "Apricot Edition - Sugarfree",
+                    "name": "The Apricot Edition - Sugarfree",
                     "flavour": "Sugarfree Apricot-Strawberry",
                     "standfirst": "Red Bull Apricot Edition gir deg den perfekte blandingen av aprikos og jordbær. Nå helt uten sukker.",
                     "color": "#ff9425",
@@ -3437,7 +3437,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:en-PK",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.\"",
+                    "standfirst": "Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -3471,7 +3471,7 @@
                 },
                 {
                     "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:es-PE",
-                    "name": "Winter Edition",
+                    "name": "The Winter Edition",
                     "flavour": "Curuba Elderflower",
                     "standfirst": "Prepárate para una experiencia de sabor extraordinaria. La Edición Winter de Red Bull con sabor a tumbo.",
                     "color": "#6cc24a",
@@ -3481,7 +3481,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:es-PE",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition con el fresco sabor de la sandía.",
                     "color": "#e03c31",
@@ -3491,7 +3491,7 @@
                 },
                 {
                     "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:es-PE",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Dragon fruit",
                     "standfirst": "Red Bull Green Edition con sabor a Fruta del Dragón",
                     "color": "#00c65e",
@@ -3501,7 +3501,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:es-PE",
-                    "name": "Tropical Edition",
+                    "name": "The Tropical Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Sorpréndete con el sabor de frutas tropicales en el Red Bull Tropical Edition.",
                     "color": "#FFCD00",
@@ -3573,7 +3573,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:pl-PL",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
                     "standfirst": "Skrzyyydła na Twoje lato: Red Bull Summer Edition  o smaku białej brzoskwini z nutą skórki cytrusowej i kwiatowymi akcentami.",
                     "color": "#E24585",
@@ -3583,7 +3583,7 @@
                 },
                 {
                     "id": "e56d29e0-59fc-4751-9169-e9ff51b93b50:pl-PL",
-                    "name": "Summer Edition Sugarfree",
+                    "name": "The Summer Edition Sugarfree",
                     "flavour": "White Peach",
                     "standfirst": "Skrzyyydła na Twoje lato: Red Bull Summer Edition Sugarfree oferuje smak białej brzoskwini z nutą skórki cytrusowej i kwiatowymi akcentami - bez dodatku cukru.",
                     "color": "#E24585",
@@ -3593,7 +3593,7 @@
                 },
                 {
                     "id": "41e97cb8-fb1f-41a3-a380-be2a75123e1a:pl-PL",
-                    "name": "Ice Edition",
+                    "name": "The Ice Edition",
                     "flavour": "Iced Gummy Bear",
                     "standfirst": "Red Bull Ice Edition: Napój energetyczny o wyjątkowym smaku jagody, wanilii i lodowej nuty eukaliptusa.",
                     "color": "#53b2c2",
@@ -3603,7 +3603,7 @@
                 },
                 {
                     "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:pl-PL",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Dragon fruit",
                     "standfirst": "Red Bull Green Edition o egzotycznym smaku owocu kaktusa.",
                     "color": "#00c65e",
@@ -3613,7 +3613,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:pl-PL",
-                    "name": "Tropical Edition",
+                    "name": "The Tropical Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Red Bull Tropical Edition. Daj się zaskoczyć egzotycznym smakiem owoców tropikalnych.",
                     "color": "#FFCD00",
@@ -3623,7 +3623,7 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:pl-PL",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
                     "standfirst": "Red Bull Apricot Edition to idealne połączenie moreli i truskawki z odrobiną brzoskwini.",
                     "color": "#f3911b",
@@ -3633,9 +3633,9 @@
                 },
                 {
                     "id": "9c27f2d5-12cd-4185-af07-39c6a41edd74:pl-PL",
-                    "name": "Purple Edition Sugarfree",
+                    "name": "The Purple Edition Sugarfree",
                     "flavour": "Açai Berry",
-                    "standfirst": "Red Bull Purple Edition, bez cukru, o wyjątkowym smaku egzotycznej Jagody Acai. ",
+                    "standfirst": "Red Bull Purple Edition, bez cukru, o wyjątkowym smaku egzotycznej Jagody Acai.",
                     "color": "#702082",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/14/fzza8c4dmvae179csjkj/red-bull-purple-edition-sugarfree-image",
                     "alt_text": "Red Bull Purple Edition Sugarfree - image",
@@ -3661,7 +3661,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:pt-PT",
                     "name": "SugarFree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Asas sem açúcar: Red Bull Sugar Free  é Red Bull Energy Drink sem açúcar.\"",
+                    "standfirst": "Asas sem açúcar: Red Bull Sugar Free  é Red Bull Energy Drink sem açúcar.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/4/30/ynx1rqxwjtojtzhcgaig/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -3679,7 +3679,7 @@
                 },
                 {
                     "id": "add1ea51-ee5f-4c6c-a2d2-efd59791e8f8:pt-PT",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "Maracuja-banana",
                     "standfirst": "Aaasas para o teu verão: Red Bull Summer Edition com sabor a pêssego, um toque de casca de citrinos e notas florais.",
                     "color": "#E24585",
@@ -3689,7 +3689,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:pt-PT",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Red Bull Yellow Edition. Prepara-te para ser surpreendido pelo sabor exótico de frutos tropicais.",
                     "color": "#FFCD00",
@@ -3699,7 +3699,7 @@
                 },
                 {
                     "id": "9c27f2d5-12cd-4185-af07-39c6a41edd74:pt-PT",
-                    "name": "Purple Edition Sugarfree",
+                    "name": "The Purple Edition Sugarfree",
                     "flavour": "Açai Berry",
                     "standfirst": "Experiencia o sabor exótico único do Açaí. Red Bull Açaí Edition Sem açúcar.",
                     "color": "#702082",
@@ -3709,7 +3709,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:pt-PT",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition com sabor a melancia.",
                     "color": "#e03c31",
@@ -3719,7 +3719,7 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:pt-PT",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
                     "standfirst": "Red Bull Apricot oferece a fusão perfeita entre os sabores de alperce e morango com notas de pêssego.",
                     "color": "#f3911b",
@@ -3747,7 +3747,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:ro-RO",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Aaaripi fără zahăr: Red Bull Sugarfree este  Red Bull Energy Drink, dar fără zahăr.\"",
+                    "standfirst": "Aaaripi fără zahăr: Red Bull Sugarfree este  Red Bull Energy Drink, dar fără zahăr.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/9/18/q1otsvfgjcr3xogyzb3j/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -3841,7 +3841,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:sr-RS",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "Breskva",
                     "standfirst": "Kriiila za tvoje leto: Red Bull Summer Edition Energy Drink sa ukusom breskve, blagim tonovima citrusne kore i cvetnim notama.",
                     "color": "#E24585",
@@ -3851,7 +3851,7 @@
                 },
                 {
                     "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:sr-RS",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Curuba",
                     "standfirst": "Red Bull Green Edition sa egzotičnim ukusom Kurube i notama Zove.",
                     "color": "#79b942",
@@ -3861,7 +3861,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:sr-RS",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition sa ukusom lubenice.",
                     "color": "#e03c31",
@@ -3877,7 +3877,7 @@
             "editions": [
                 {
                     "id": "8282d2ca-23af-445d-9d42-5bd621677a78:en-SG",
-                    "name": "Peach Edition Sugarfree",
+                    "name": "The Peach Edition Sugarfree",
                     "flavour": "White Peach",
                     "standfirst": "The Red Bull Peach Edition Sugarfree Energy Drink offers the taste of white peach, a touch of citrus peel and floral notes – all with no sugar.",
                     "color": "#E24585",
@@ -3899,7 +3899,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:en-SG",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.\"",
+                    "standfirst": "Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/bi3ulrancqfi3qtiwz5b/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -3925,7 +3925,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:sk-SK",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Krídla bez cukru: Red Bull Sugarfree je Red Bull  Energy Drink úplne bez cukru.\"",
+                    "standfirst": "Krídla bez cukru: Red Bull Sugarfree je Red Bull  Energy Drink úplne bez cukru.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/sycuewnwhbselpwzvlqs/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -3943,7 +3943,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:sk-SK",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "Biela broskyňa",
                     "standfirst": "Red Bull Summer Edition kombinuje chuť bielej broskyne s nádychom citrusovej kôry a kvetinových tónov.",
                     "color": "#E24585",
@@ -3953,7 +3953,7 @@
                 },
                 {
                     "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:sk-SK",
-                    "name": "Winter Edition",
+                    "name": "The Winter Edition",
                     "flavour": "Ľadová vanilka-Čučoriedky",
                     "standfirst": "Red Bull Winter Edition s výnimočnou príchuťou čučoriedok, vanilky a ľadovo sviežich tónov eukalyptu.",
                     "color": "#53b2c2",
@@ -3963,7 +3963,7 @@
                 },
                 {
                     "id": "252c2121-8871-4996-90dd-06d374834ead:sk-SK",
-                    "name": "Pink Edition Sugarfree",
+                    "name": "The Pink Edition Sugarfree",
                     "flavour": "Forest Fruits",
                     "standfirst": "Red Bull Pink Edition: Energetický nápoj bez cukru s príchuťou malín a ďalšieho ovocia doplnená o vzrušujúce bylinkové tóny verbeny.",
                     "color": "#c72466",
@@ -3973,7 +3973,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:sk-SK",
-                    "name": "Tropical Edition",
+                    "name": "The Tropical Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Red Bull Tropical Edition. Nechajte sa prekvapiť sviežou chuťou tropického ovocia.",
                     "color": "#FFCD00",
@@ -3983,7 +3983,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:sk-SK",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Priprav sa na výnimočný chuťový zážitok. Red Bull Red Edition s príchuťou vodného melónu je späť.",
                     "color": "#e03c31",
@@ -3993,9 +3993,9 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:sk-SK",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
-                    "standfirst": "Red Bull Apricot Edition ponúka perfektné splynutie marhule a jahody s jemným náznakom broskyne. ",
+                    "standfirst": "Red Bull Apricot Edition ponúka perfektné splynutie marhule a jahody s jemným náznakom broskyne.",
                     "color": "#f3911b",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/17/cg71irc4dcpmjlmtblna/red-bull-apricot-edition-image",
                     "alt_text": "Red Bull Apricot Edition - image",
@@ -4003,7 +4003,7 @@
                 },
                 {
                     "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:sk-SK",
-                    "name": "Sea Blue Edition",
+                    "name": "The Sea Blue Edition",
                     "flavour": "Juneberry",
                     "standfirst": "Red Bull Sea Blue Edition s jedinečnou príchuťou plodov Juneberry.",
                     "color": "#0072CE",
@@ -4013,7 +4013,7 @@
                 },
                 {
                     "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:sk-SK",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Dragon fruit",
                     "standfirst": "Red Bull Green Edition s exotickou príchuťou ovocia kaktusu.",
                     "color": "#00c65e",
@@ -4041,7 +4041,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:sl-SI",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Krila brez sladkorja: Red Bull Sugarfree je  Red Bull Energy Drink brez sladkorjev.\"",
+                    "standfirst": "Krila brez sladkorja: Red Bull Sugarfree je  Red Bull Energy Drink brez sladkorjev.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/vumrbqonijhcrj9o7hz3/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -4059,7 +4059,7 @@
                 },
                 {
                     "id": "365b9d1d-1fe3-41ea-86f1-c6f9967799a7:sl-SI",
-                    "name": "Spring Edition",
+                    "name": "The Spring Edition",
                     "flavour": "gozdni sadeži",
                     "standfirst": "Red Bull Spring Edition: energijska pijača z okusom gozdnih sadežev, ki jo dopolnjujejo vznemirljive zeliščne note verbene.",
                     "color": "#c72466",
@@ -4069,7 +4069,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:sl-SI",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Red Bull Yellow Edition. Naj te preseneti eksotični okus tropskega sadja.",
                     "color": "#FFCD00",
@@ -4079,7 +4079,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:sl-SI",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition s svežim okusom lubenice.",
                     "color": "#e03c31",
@@ -4089,7 +4089,7 @@
                 },
                 {
                     "id": "87ed9394-b809-4156-9433-5402cb4fabbd:sl-SI",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Blueberry",
                     "standfirst": "Red Bull Blue Edition. Klasika, s sočnim okusom borovnice.",
                     "color": "#001A72",
@@ -4099,9 +4099,9 @@
                 },
                 {
                     "id": "7fb8538f-2111-4fa9-9c59-6297145e92bd:sl-SI",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Apricot-Strawberry",
-                    "standfirst": "Bull Apricot Edition ponuja idealno mešaniko marelice in jagode spriokusom breskve. ",
+                    "standfirst": "Bull Apricot Edition ponuja idealno mešaniko marelice in jagode spriokusom breskve.",
                     "color": "#ff9425",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/3/1/tipvewej6twdkowaqscr/apricot-edition-image",
                     "alt_text": "Apricot Edition - image",
@@ -4127,7 +4127,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:en-ZA",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.\"",
+                    "standfirst": "Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/vumrbqonijhcrj9o7hz3/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -4135,7 +4135,7 @@
                 },
                 {
                     "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:en-ZA",
-                    "name": "Winter Edition",
+                    "name": "The Winter Edition",
                     "flavour": " Iced Vanilla Berry",
                     "standfirst": "The Red Bull Winter Ediation: The Energy Drink with the exceptional taste of blueberry, vanilla, and icy-fresh notes of eucalyptus.",
                     "color": "#53b2c2",
@@ -4145,7 +4145,7 @@
                 },
                 {
                     "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:en-ZA",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Juneberry",
                     "standfirst": "The Red Bull Sea Blue Edition with the extraordinary taste of Juneberry* *artificially flavoured",
                     "color": "#0072CE",
@@ -4155,7 +4155,7 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:en-ZA",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
                     "standfirst": "The Red Bull Apricot Edition offers the perfect blend of apricot and strawberry with a touch of peach taste.",
                     "color": "#f3911b",
@@ -4165,7 +4165,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:en-ZA",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "The Red Bull Red Edition with the fresh taste of watermelon.",
                     "color": "#e03c31",
@@ -4211,7 +4211,7 @@
                 },
                 {
                     "id": "5380482f-630c-48b1-b366-38b78582b57b:es-ES",
-                    "name": "Ice Edition Sugarfree",
+                    "name": "The Ice Edition Sugarfree",
                     "flavour": "Iced Vanilla Berry",
                     "standfirst": "Iced Vanilla Berry Energy Drink.",
                     "color": "#53b2c2",
@@ -4221,7 +4221,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:es-ES",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
                     "standfirst": "Red Bull Summer Edition tiene un sabor a melocotón blanco con un toque cítrico y notas florales.",
                     "color": "#E24585",
@@ -4231,7 +4231,7 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:es-ES",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
                     "standfirst": "Red Bull Apricot Edition presenta la combinación perfecta de albaricoque y fresa con un toque de melocotón.",
                     "color": "#f3911b",
@@ -4241,7 +4241,7 @@
                 },
                 {
                     "id": "611996f5-8813-46c3-9b18-4c193d39d9d0:es-ES",
-                    "name": "Lime Green Edition",
+                    "name": "The Lime Green Edition",
                     "flavour": "Curuba",
                     "standfirst": "Nuevo Red Bull Lime Green Edition con el sabor exótico de la curuba complementado con notas de flor saúco.",
                     "color": "#6cc24a",
@@ -4251,7 +4251,7 @@
                 },
                 {
                     "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:es-ES",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Juneberry",
                     "standfirst": "Red Bull Blue Edition con el extraordinario sabor a baya de junio.",
                     "color": "#0072CE",
@@ -4261,7 +4261,7 @@
                 },
                 {
                     "id": "1ad9d76b-02ee-462b-a766-13ecb8ac24da:es-ES",
-                    "name": "Coconut Edition",
+                    "name": "The Coconut Edition",
                     "flavour": "Coconut",
                     "standfirst": "Prepárate para una experiencia de sabor extraordinaria. Red Bull Coconut Edition con sabor exótico a coco y arándanos.",
                     "color": "#0070b8",
@@ -4271,7 +4271,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:es-ES",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Red Bull Red Edition con el sabor fresco de la Sandía.",
                     "color": "#e03c31",
@@ -4299,7 +4299,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:en-SE",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.\"",
+                    "standfirst": "Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/uq0i9bmflb5osciizovk/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -4317,7 +4317,7 @@
                 },
                 {
                     "id": "e56d29e0-59fc-4751-9169-e9ff51b93b50:en-SE",
-                    "name": "Summer Edition Sugarfree",
+                    "name": "The Summer Edition Sugarfree",
                     "flavour": "White Peach",
                     "standfirst": "Viiingar till din sommar: The Red Bull Summer Edition Sugarfree Energy Drink med smak av vit persika, en touch av citrus som toppas med blommiga noter - helt utan socker.",
                     "color": "#E24585",
@@ -4327,7 +4327,7 @@
                 },
                 {
                     "id": "252c2121-8871-4996-90dd-06d374834ead:en-SE",
-                    "name": "Pink Edition Sugarfree",
+                    "name": "The Pink Edition Sugarfree",
                     "flavour": "Forest Fruits",
                     "standfirst": "The Energy Drink with the taste of raspberry and other fruits complemented by exciting herbal notes of verbena.",
                     "color": "#c72466",
@@ -4337,7 +4337,7 @@
                 },
                 {
                     "id": "77e43776-f55c-4250-a143-f126e7b543ed:en-SE",
-                    "name": "Lilac Edition",
+                    "name": "The Lilac Edition",
                     "flavour": "Grapefruit-Woodruff",
                     "standfirst": "The Red Lilac Edition with the taste of pink grapefruit, herbal woodruff, and floral notes.",
                     "color": "#7d62ce",
@@ -4347,7 +4347,7 @@
                 },
                 {
                     "id": "f0502df1-3142-402a-9af8-1344c8bf794e:en-SE",
-                    "name": "Purple Edition",
+                    "name": "The Purple Edition",
                     "flavour": "Açai Berry",
                     "standfirst": "Experience the unique taste of exotic Açai Berry. The Red Bull Purple Edition",
                     "color": "#702082",
@@ -4357,7 +4357,7 @@
                 },
                 {
                     "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:en-SE",
-                    "name": "Sea Blue Edition",
+                    "name": "The Sea Blue Edition",
                     "flavour": "Juneberry",
                     "standfirst": "The Red Bull Juneberry Edition with the enticing berry taste of Juneberry. Red Bull The Sea Blue Edition gives you wiiings with the enticing berry taste.",
                     "color": "#0072CE",
@@ -4367,7 +4367,7 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:en-SE",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
                     "standfirst": "The Red Bull Apricot Edition offers the perfect blend of apricot and strawberry with a touch of peach taste.",
                     "color": "#f3911b",
@@ -4377,7 +4377,7 @@
                 },
                 {
                     "id": "1ad9d76b-02ee-462b-a766-13ecb8ac24da:en-SE",
-                    "name": "White Edition",
+                    "name": "The White Edition",
                     "flavour": "Coconut",
                     "standfirst": "Get ready for an extraordinary taste experience. The Red Bull White Edition with the taste of exotic coconut and fruity blueberry.",
                     "color": "#0070b8",
@@ -4387,7 +4387,7 @@
                 },
                 {
                     "id": "c55e5804-ce3c-4289-8d89-930b6d678501:en-SE",
-                    "name": "Peach Edition",
+                    "name": "The Peach Edition",
                     "flavour": "Peach",
                     "standfirst": "Red Bull Peach Edition. A fresh white peach and nectarine taste.",
                     "color": "#81312F",
@@ -4397,7 +4397,7 @@
                 },
                 {
                     "id": "87ed9394-b809-4156-9433-5402cb4fabbd:en-SE",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Blueberry",
                     "standfirst": "The Red Bull Blue Edition. A classic, with the fruity taste of blueberry.",
                     "color": "#001A72",
@@ -4443,7 +4443,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:fr-CH",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "Pêche blanche",
                     "standfirst": "La Red Bull Summer Edition au goût pêche blanche, avec un zeste de citron et de notes florales délicates.",
                     "color": "#E24585",
@@ -4453,7 +4453,7 @@
                 },
                 {
                     "id": "41e97cb8-fb1f-41a3-a380-be2a75123e1a:fr-CH",
-                    "name": "Ice Edition",
+                    "name": "The Ice Edition",
                     "flavour": "Iced Gummy Bear",
                     "standfirst": "La Red Bull Ice Edition : l'Energy Drink au goût exceptionnel de myrtille, vanille et à la note glacée et fraîche d'eucalyptus.",
                     "color": "#53b2c2",
@@ -4463,7 +4463,7 @@
                 },
                 {
                     "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:fr-CH",
-                    "name": "Sea Blue Edition",
+                    "name": "The Sea Blue Edition",
                     "flavour": "Juneberry",
                     "standfirst": "La Red Bull Sea Blue Edition au goût extraordinaire de juneberry.",
                     "color": "#0072CE",
@@ -4473,7 +4473,7 @@
                 },
                 {
                     "id": "252c2121-8871-4996-90dd-06d374834ead:fr-CH",
-                    "name": "Pink Edition Sugarfree",
+                    "name": "The Pink Edition Sugarfree",
                     "flavour": "Baies des Bois",
                     "standfirst": "La Red Bull Pink Edition au goût fruité de baies des bois.",
                     "color": "#c72466",
@@ -4483,7 +4483,7 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:fr-CH",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
                     "standfirst": "La Red Bull Apricot Edition au goût fruité et sucré de l’abricot et de la fraise.",
                     "color": "#f3911b",
@@ -4493,7 +4493,7 @@
                 },
                 {
                     "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:fr-CH",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Dragon fruit",
                     "standfirst": "Le Red Bull Green Edition au goût exotique de fruit du dragon.",
                     "color": "#00c65e",
@@ -4503,7 +4503,7 @@
                 },
                 {
                     "id": "1ad9d76b-02ee-462b-a766-13ecb8ac24da:fr-CH",
-                    "name": "White Edition",
+                    "name": "The White Edition",
                     "flavour": "Coconut",
                     "standfirst": "La Red Bull White Edition au goût de coco-myrtille.",
                     "color": "#0070b8",
@@ -4513,7 +4513,7 @@
                 },
                 {
                     "id": "87ed9394-b809-4156-9433-5402cb4fabbd:fr-CH",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Blueberry",
                     "standfirst": "La Red Bull Blue Edition au goût de myrtille.",
                     "color": "#001A72",
@@ -4541,7 +4541,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:zh-TW",
                     "name": "無糖能量飲料",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"無糖翅膀: Red Bull 無糖能量飲料是 Red Bull 能量飲料的無糖版本。\"",
+                    "standfirst": "無糖翅膀: Red Bull 無糖能量飲料是 Red Bull 能量飲料的無糖版本。",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -4549,7 +4549,7 @@
                 },
                 {
                     "id": "add1ea51-ee5f-4c6c-a2d2-efd59791e8f8:zh-TW",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "Juneberry Flavour",
                     "standfirst": "準備好開啟屬於你的夏天了嗎？你知道的，Red Bull 給你一對翅膀",
                     "color": "#0085c8",
@@ -4559,9 +4559,9 @@
                 },
                 {
                     "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:zh-TW",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Dragon fruit",
-                    "standfirst": " 給你一對火龍果風味的翅膀.",
+                    "standfirst": "給你一對火龍果風味的翅膀.",
                     "color": "#00c65e",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/7/3/f8xh0t1cpyy19cfchokq/red-bull-green-edition-image",
                     "alt_text": "Red Bull Green Edition - image",
@@ -4569,7 +4569,7 @@
                 },
                 {
                     "id": "f0502df1-3142-402a-9af8-1344c8bf794e:zh-TW",
-                    "name": "Purple Edition",
+                    "name": "The Purple Edition",
                     "flavour": "Açai Berry",
                     "standfirst": "Red Bull Purple Edition 巨峰葡萄風味能量飲料",
                     "color": "#702082",
@@ -4579,7 +4579,7 @@
                 },
                 {
                     "id": "252c2121-8871-4996-90dd-06d374834ead:zh-TW",
-                    "name": "Pink Edition Sugarfree",
+                    "name": "The Pink Edition Sugarfree",
                     "flavour": "Forest Fruits",
                     "standfirst": "Red Bull Pink Edition 野莓風味無糖能量飲料",
                     "color": "#c72466",
@@ -4615,7 +4615,7 @@
                 },
                 {
                     "id": "252c2121-8871-4996-90dd-06d374834ead:tr-TR",
-                    "name": "Pink Edition Sugarfree",
+                    "name": "The Pink Edition Sugarfree",
                     "flavour": "Forest Fruits",
                     "standfirst": "Pink Edition Sugarfree ahududu lezzeti sunar.",
                     "color": "#c72466",
@@ -4625,7 +4625,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:tr-TR",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Red Bull Yellow Edition. Tropikal Meyvelerin egzotik tadını deneyimle",
                     "color": "#FFCD00",
@@ -4635,7 +4635,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:tr-TR",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "Karpuz lezzeti ile Red Bull Red Edition",
                     "color": "#e03c31",
@@ -4645,7 +4645,7 @@
                 },
                 {
                     "id": "1ad9d76b-02ee-462b-a766-13ecb8ac24da:tr-TR",
-                    "name": "White Edition",
+                    "name": "The White Edition",
                     "flavour": "Coconut",
                     "standfirst": "Sıra dışı lezzet deneyimine hazırlan. Red Bull White Edition hindistan cevizi ve açai lezzeti",
                     "color": "#0070b8",
@@ -4655,7 +4655,7 @@
                 },
                 {
                     "id": "87ed9394-b809-4156-9433-5402cb4fabbd:tr-TR",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Blueberry",
                     "standfirst": "Yabanmersini lezzeti ile Red Bull Blue Edition",
                     "color": "#001A72",
@@ -4665,7 +4665,7 @@
                 },
                 {
                     "id": "c55e5804-ce3c-4289-8d89-930b6d678501:tr-TR",
-                    "name": "Peach Edition",
+                    "name": "The Peach Edition",
                     "flavour": "Peach",
                     "standfirst": "Şeftali lezzetiyle Red Bull Peach Edition",
                     "color": "#81312F",
@@ -4701,7 +4701,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:uk-UA",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "Red Bull Yellow Edition. Здивує екзотичним смаком тропічних фруктів.",
                     "color": "#FFCD00",
@@ -4711,9 +4711,9 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:uk-UA",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
-                    "standfirst": "The Red Bull Red Edition з освіжаючим смаком кавуна. ",
+                    "standfirst": "The Red Bull Red Edition з освіжаючим смаком кавуна.",
                     "color": "#e03c31",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/17/fziaoakmjjrhlkntfp36/red-bull-red-edition-image",
                     "alt_text": "Red Bull Red Edition - Image",
@@ -4739,7 +4739,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:en-GB",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.\"",
+                    "standfirst": "Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -4757,7 +4757,7 @@
                 },
                 {
                     "id": "add1ea51-ee5f-4c6c-a2d2-efd59791e8f8:en-GB",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
                     "standfirst": "The Red Bull Summer Edition Energy Drink offers the taste of white peach with a touch of citrus peel and floral notes.",
                     "color": "#E24585",
@@ -4767,7 +4767,7 @@
                 },
                 {
                     "id": "eb9c22db-6c3d-4a68-b4e3-c915c59b1414:en-GB",
-                    "name": "Lilac Edition Sugarfree",
+                    "name": "The Lilac Edition Sugarfree",
                     "flavour": "Grapefruit & Blossom",
                     "standfirst": "The Red Bull Lilac Edition Energy Drink Sugarfree blends the tastes of pink grapefruit and herbal woodruff, topped with subtle floral notes.",
                     "color": "#6952AD",
@@ -4777,7 +4777,7 @@
                 },
                 {
                     "id": "41e97cb8-fb1f-41a3-a380-be2a75123e1a:en-GB",
-                    "name": "Ice Edition",
+                    "name": "The Ice Edition",
                     "flavour": "Iced Gummy Bear",
                     "standfirst": "The Red Bull Ice Edition: The Energy Drink with the exceptional taste of blueberry, vanilla, and icy-fresh notes of eucalyptus.",
                     "color": "#53b2c2",
@@ -4787,7 +4787,7 @@
                 },
                 {
                     "id": "b72f0639-7324-4c1b-9b22-9058ff040feb:en-GB",
-                    "name": "Pink Edition Sugarfree",
+                    "name": "The Pink Edition Sugarfree",
                     "flavour": "Forest Fruits",
                     "standfirst": "The Red Bull Pink Edition Sugarfree: The Energy Drink with the taste of raspberry and other fruits complemented by exciting herbal notes of verbena.",
                     "color": "#EC86D0",
@@ -4797,7 +4797,7 @@
                 },
                 {
                     "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:en-GB",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Juneberry",
                     "standfirst": "The Red Bull Blue Edition Energy Drink with the enticing berry taste of Juneberry.",
                     "color": "#0072CE",
@@ -4807,7 +4807,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:en-GB",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "The Red Bull Red Edition with the fresh taste of watermelon.",
                     "color": "#e03c31",
@@ -4817,7 +4817,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:en-GB",
-                    "name": "Tropical Edition",
+                    "name": "The Tropical Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "The Tropical Edition. Experience the exotic taste of tropical fruits.",
                     "color": "#FFCD00",
@@ -4827,7 +4827,7 @@
                 },
                 {
                     "id": "1ad9d76b-02ee-462b-a766-13ecb8ac24da:en-GB",
-                    "name": "Coconut Edition",
+                    "name": "The Coconut Edition",
                     "flavour": "Coconut",
                     "standfirst": "The Red Bull White Edition Energy Drink with the taste of exotic coconut and fruity blueberry.",
                     "color": "#0070b8",
@@ -4837,7 +4837,7 @@
                 },
                 {
                     "id": "9f5e826b-3589-4e15-8da7-86759325fc9b:en-GB",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Dragon Fruit",
                     "standfirst": "The Red Bull Green Edition Energy Drink with the exotic taste of Dragon Fruit.",
                     "color": "#6cc24a",
@@ -4847,7 +4847,7 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:en-GB",
-                    "name": "Apricot Edition",
+                    "name": "The Apricot Edition",
                     "flavour": "Strawberry and apricot",
                     "standfirst": "The Red Bull Apricot Edition offers the perfect blend of apricot and strawberry bringing out the best of each other.",
                     "color": "#f3911b",
@@ -4857,7 +4857,7 @@
                 },
                 {
                     "id": "2da8ab01-52c2-4543-96d0-2a9757917c67:en-GB",
-                    "name": "Ruby Edition",
+                    "name": "The Ruby Edition",
                     "flavour": "Pear Cinnamon",
                     "standfirst": "Red Bull Ruby Edition with the taste of Spiced Pear.",
                     "color": "#B50045",
@@ -4885,7 +4885,7 @@
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:en-US",
                     "name": "Sugarfree",
                     "flavour": "Sugarfree",
-                    "standfirst": "\"Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.\"",
+                    "standfirst": "Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.",
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/a7yynvdpmiehgytcx9pr/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
@@ -4903,7 +4903,7 @@
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:en-US",
-                    "name": "Summer Edition",
+                    "name": "The Summer Edition",
                     "flavour": "White Peach",
                     "standfirst": "The Red Bull Summer Edition with the taste of white peach, a touch of citrus peel and floral notes.",
                     "color": "#E24585",
@@ -4913,7 +4913,7 @@
                 },
                 {
                     "id": "e56d29e0-59fc-4751-9169-e9ff51b93b50:en-US",
-                    "name": "Summer Edition Sugarfree",
+                    "name": "The Summer Edition Sugarfree",
                     "flavour": "White Peach",
                     "standfirst": "The Red Bull Summer Edition Sugarfree with the taste of white peach, a touch of citrus peel and floral notes.",
                     "color": "#E24585",
@@ -4923,7 +4923,7 @@
                 },
                 {
                     "id": "e3a50810-fdbc-40f3-a60f-a6e917586d49:en-US",
-                    "name": "Pink Edition",
+                    "name": "The Pink Edition",
                     "flavour": "Wild Berries",
                     "standfirst": "The Red Bull Pink Edition: The Energy Drink with the taste of raspberry and other fruits complemented by exciting herbal notes.",
                     "color": "#e77bab",
@@ -4933,7 +4933,7 @@
                 },
                 {
                     "id": "252c2121-8871-4996-90dd-06d374834ead:en-US",
-                    "name": "Pink Edition Sugarfree",
+                    "name": "The Pink Edition Sugarfree",
                     "flavour": "Wild Berries",
                     "standfirst": "The Red Bull Pink Edition: The Energy Drink with the taste of raspberry and other fruits complemented by exciting herbal notes.",
                     "color": "#e77bab",
@@ -4943,7 +4943,7 @@
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:en-US",
-                    "name": "Amber Edition",
+                    "name": "The Amber Edition",
                     "flavour": "Strawberry and apricot",
                     "standfirst": "The Red Bull Amber Edition with the taste of strawberry and apricot.",
                     "color": "#F28B0E",
@@ -4953,7 +4953,7 @@
                 },
                 {
                     "id": "5f608c0a-9aa5-453e-bad5-5d5a02a8d723:en-US",
-                    "name": "Amber Edition Sugarfree",
+                    "name": "The Amber Edition Sugarfree",
                     "flavour": "Sugarfree Apricot-Strawberry",
                     "standfirst": "The new Red Bull Amber Edition Sugarfree combines the wiiings of Energy Drink with the perfect blend of Strawberry and Apricot with a touch of peach*.  Now without sugar.",
                     "color": "#F28B0E",
@@ -4963,7 +4963,7 @@
                 },
                 {
                     "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:en-US",
-                    "name": "Green Edition",
+                    "name": "The Green Edition",
                     "flavour": "Curuba Elderflower",
                     "standfirst": "The Red Bull Green Edition with the taste of Curuba and Elderflower.",
                     "color": "#78b941",
@@ -4973,7 +4973,7 @@
                 },
                 {
                     "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:en-US",
-                    "name": "Sea Blue Edition",
+                    "name": "The Sea Blue Edition",
                     "flavour": "Juneberry",
                     "standfirst": "The Red Bull Sea Blue Edition with the extraordinary taste of Juneberry",
                     "color": "#007EBE",
@@ -4983,7 +4983,7 @@
                 },
                 {
                     "id": "cee3d7a2-2bcb-4b1c-b2d9-5196673c8cb0:en-US",
-                    "name": "Sea Blue Edition Sugarfree",
+                    "name": "The Sea Blue Edition Sugarfree",
                     "flavour": "Juneberry",
                     "standfirst": "Red Bull Sea Blue Editions gives you wiiings with the enticing Juneberry taste – now without sugar.",
                     "color": "#007EBE",
@@ -4993,7 +4993,7 @@
                 },
                 {
                     "id": "1ad9d76b-02ee-462b-a766-13ecb8ac24da:en-US",
-                    "name": "Coconut Edition",
+                    "name": "The Coconut Edition",
                     "flavour": "Coconut",
                     "standfirst": "The Red Bull Coconut Edition with the taste of coconut and blueberry.",
                     "color": "#006AAF",
@@ -5003,7 +5003,7 @@
                 },
                 {
                     "id": "87ed9394-b809-4156-9433-5402cb4fabbd:en-US",
-                    "name": "Blue Edition",
+                    "name": "The Blue Edition",
                     "flavour": "Blueberry",
                     "standfirst": "The Red Bull Blue Edition with the fruity taste of blueberry.",
                     "color": "#26266E",
@@ -5013,7 +5013,7 @@
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:en-US",
-                    "name": "Yellow Edition",
+                    "name": "The Yellow Edition",
                     "flavour": "Tropical/Tropical Fruits ",
                     "standfirst": "The Yellow Edition with the exotic taste of tropical fruits.",
                     "color": "#F6C300",
@@ -5023,7 +5023,7 @@
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:en-US",
-                    "name": "Red Edition",
+                    "name": "The Red Edition",
                     "flavour": "Watermelon",
                     "standfirst": "The Red Bull Red Edition with the taste of watermelon.",
                     "color": "#C53224",
@@ -5033,7 +5033,7 @@
                 },
                 {
                     "id": "3396bcc8-7bd0-4e76-8b0e-48bee78c56dc:en-US",
-                    "name": "Red Edition Sugarfree",
+                    "name": "The Red Edition Sugarfree",
                     "flavour": "Watermelon",
                     "standfirst": "The new Red Bull Red Edition Sugarfree combines the wiiings of Energy Drink with the taste of Watermelon*.  Now without sugar.",
                     "color": "#C53224",
