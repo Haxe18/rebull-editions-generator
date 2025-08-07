@@ -40,6 +40,25 @@ This project contains a Python script that scrapes Red Bull's websites for all a
     python redbull_editions_json_generate.py
     ```
 
+    **Available command line options:**
+    - `-v, --verbose`: Enable verbose (DEBUG) logging output
+    - `--skip-external-fetch`: Skip external data fetching and use only locally available data from `dist/redbull_editions_raw.previous.json`
+
+    **Examples:**
+    ```sh
+    # Normal run with external data fetching
+    python redbull_editions_json_generate.py
+
+    # Run with verbose logging
+    python redbull_editions_json_generate.py -v
+
+    # Skip external fetching, use local data only
+    python redbull_editions_json_generate.py --skip-external-fetch
+
+    # Combine both options
+    python redbull_editions_json_generate.py -v --skip-external-fetch
+    ```
+
 ## Automation
 
 This repository is configured with a GitHub Action that runs daily. The action executes the scraper script and creates a pull request if any changes to `redbull_editions.json` are detected.

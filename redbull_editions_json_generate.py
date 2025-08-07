@@ -317,48 +317,65 @@ class RedBullGenerator:
                     logging.warning("Could not find matching product details for ID '%s'.", product_id)
         return ai_response
 
-    def run(self):
+    def run(self, skip_external_fetch=False):
         """Executes the full generation process."""
         os.makedirs(OUTPUT_DIR, exist_ok=True)
-        new_raw_data = self.fetch_all_raw_data()
 
-        try:
-            with open(RAW_JSON_FILE, "w", encoding='utf-8') as raw_file:
-                json.dump(new_raw_data, raw_file, indent=4, ensure_ascii=False)
-            logging.info("Successfully saved new raw data to '%s'.", RAW_JSON_FILE)
+        if skip_external_fetch:
+            logging.info("--- SKIPPING EXTERNAL DATA FETCH ---")
+            logging.info("Using locally available data from previous run.")
 
-            has_changes, changelog_text = self.compare_raw_data_and_generate_changelog()
+            if not os.path.exists(PREVIOUS_RAW_JSON_FILE):
+                logging.critical("FATAL: No previous raw data file found at '%s'. Cannot proceed without external fetch.", PREVIOUS_RAW_JSON_FILE)
+                sys.exit(1)
 
-            if not has_changes:
-                logging.info("No changes detected. The existing '%s' is up to date.", FINAL_JSON_FILE)
+            try:
+                with open(PREVIOUS_RAW_JSON_FILE, "r", encoding='utf-8') as raw_file:
+                    new_raw_data = json.load(raw_file)
+                logging.info("Successfully loaded previous raw data from '%s'.", PREVIOUS_RAW_JSON_FILE)
+            except (IOError, json.JSONDecodeError) as error:
+                logging.critical("FATAL: Could not read or parse previous raw data file. Error: %s", error)
+                sys.exit(1)
+        else:
+            new_raw_data = self.fetch_all_raw_data()
+
+            try:
+                with open(RAW_JSON_FILE, "w", encoding='utf-8') as raw_file:
+                    json.dump(new_raw_data, raw_file, indent=4, ensure_ascii=False)
+                logging.info("Successfully saved new raw data to '%s'.", RAW_JSON_FILE)
+            except (IOError, OSError) as error:
+                logging.critical("FATAL: Could not save raw data file. Error: %s", error)
+                sys.exit(1)
+
+        has_changes, changelog_text = self.compare_raw_data_and_generate_changelog()
+
+        if not has_changes:
+            logging.info("No changes detected. The existing '%s' is up to date.", FINAL_JSON_FILE)
+            if not skip_external_fetch:
                 os.remove(RAW_JSON_FILE)
-                return
+            return
 
-            logging.info("Changes detected. Proceeding with AI normalization.")
-            logging.info("--- Changelog ---\n%s", changelog_text)
-            with open(CHANGELOG_FILE, "w", encoding="utf-8") as changelog_file:
-                changelog_file.write(changelog_text)
+        logging.info("Changes detected. Proceeding with AI normalization.")
+        logging.info("--- Changelog ---\n%s", changelog_text)
+        with open(CHANGELOG_FILE, "w", encoding="utf-8") as changelog_file:
+            changelog_file.write(changelog_text)
 
-            stripped_data, product_map, country_map = self._prepare_data_for_ai(new_raw_data)
-            final_data_from_ai = self.normalize_with_gemini(stripped_data)
+        stripped_data, product_map, country_map = self._prepare_data_for_ai(new_raw_data)
+        final_data_from_ai = self.normalize_with_gemini(stripped_data)
 
-            if final_data_from_ai:
-                final_data = self._rehydrate_ai_response(final_data_from_ai, product_map, country_map)
-                logging.info("--- STAGE 4: Saving final results ---")
-                with open(FINAL_JSON_FILE, "w", encoding='utf-8') as final_file:
-                    json.dump(final_data, final_file, indent=4, ensure_ascii=False)
-                logging.info("Successfully created final output '%s'.", FINAL_JSON_FILE)
+        if final_data_from_ai:
+            final_data = self._rehydrate_ai_response(final_data_from_ai, product_map, country_map)
+            logging.info("--- STAGE 4: Saving final results ---")
+            with open(FINAL_JSON_FILE, "w", encoding='utf-8') as final_file:
+                json.dump(final_data, final_file, indent=4, ensure_ascii=False)
+            logging.info("Successfully created final output '%s'.", FINAL_JSON_FILE)
+            if not skip_external_fetch:
                 os.replace(RAW_JSON_FILE, PREVIOUS_RAW_JSON_FILE)
                 logging.info("Updated reference file '%s'.", PREVIOUS_RAW_JSON_FILE)
-            else:
-                logging.critical("AI normalization failed. Final files were not updated.")
+        else:
+            logging.critical("AI normalization failed. Final files were not updated.")
+            if not skip_external_fetch and os.path.exists(RAW_JSON_FILE):
                 os.remove(RAW_JSON_FILE)
-
-        except (IOError, OSError) as error:
-            logging.critical("FATAL: A file operation failed. Error: %s", error)
-            if os.path.exists(RAW_JSON_FILE):
-                os.remove(RAW_JSON_FILE)
-            sys.exit(1)
 
         logging.info("Script finished.")
 
@@ -373,6 +390,11 @@ def main():
         '-v', '--verbose',
         action='store_true',
         help='Enable verbose (DEBUG) logging output.'
+    )
+    parser.add_argument(
+        '--skip-external-fetch',
+        action='store_true',
+        help='Skip external data fetching and use only locally available data from dist/redbull_editions_raw.previous.json'
     )
     args = parser.parse_args()
 
@@ -389,7 +411,7 @@ def main():
 
     logging.debug("Verbose mode enabled.")
     generator = RedBullGenerator()
-    generator.run()
+    generator.run(skip_external_fetch=args.skip_external_fetch)
 
 
 if __name__ == "__main__":
