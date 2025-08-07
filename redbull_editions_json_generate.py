@@ -231,6 +231,15 @@ class RedBullGenerator:
                     config=types.GenerateContentConfig(
                         system_instruction='You are an expert data normalization and translation AI. Your task is to process a raw JSON object containing Red Bull product data from various countries and transform it into a clean, standardized, internationalized english language and consolidated JSON format.',
                         response_mime_type='application/json',
+                        # A value of 1 means the model can only choose the single most likely word.
+                        # This is the most restrictive and deterministic setting.
+                        top_k=1,
+                        # Value 0 makes the model deterministic.
+                        # It will always choose the most likely next word, resulting in very predictable and consistent answers.
+                        temperature=0,
+                        # A specific seed, the "random" aspects of the generation process (if temperature > 0) become predictable.
+                        # Running the same prompt with the same seed will produce the exact same output every time.
+                        seed=11
                     )
                 )
                 logging.info("Received response from Gemini. Parsing JSON...")
