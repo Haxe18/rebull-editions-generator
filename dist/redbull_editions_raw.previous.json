@@ -745,7 +745,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/12/jvqdfg2am4qilthqjg99/red-bull-energy-drink-image",
                     "alt_text": "Red Bull Energy Drink - image",
-                    "product_url": "https://www.redbull.com/bg-bg/energydrink/red-bull-energy-drink"
+                    "product_url": "https://www.redbull.com/bg-bg/energydrink/products/red-bull-energy-drink"
                 },
                 {
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:bg-BG",
@@ -755,7 +755,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/12/h8qmbrc1hjp9pbxgxsow/red-bull-sugarfree-edition-image",
                     "alt_text": "Red Bull Sugarfree Edition - image",
-                    "product_url": "https://www.redbull.com/bg-bg/energydrink/red-bull-sugarfree"
+                    "product_url": "https://www.redbull.com/bg-bg/energydrink/products/red-bull-sugarfree"
                 },
                 {
                     "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:bg-BG",
@@ -765,7 +765,17 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/2/24/k7i6mqmafgogjashr5am/red-bull-zero-energy-drink",
                     "alt_text": "Red Bull Zero Energy Drink",
-                    "product_url": "https://www.redbull.com/bg-bg/energydrink/red-bull-zero"
+                    "product_url": "https://www.redbull.com/bg-bg/energydrink/products/red-bull-zero"
+                },
+                {
+                    "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:bg-BG",
+                    "name": "The Summer Edition",
+                    "flavour": "White Peach",
+                    "standfirst": "КРИЛААА ЗА ТВОЕТО ЛЯТО. RED BULL SUMMER EDITION с вкус на бяла праскова, подчертан от цитрусови кори и деликатни флорални нотки.",
+                    "color": "#E24585",
+                    "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/6/13/fslxoek4d1ofhdrc9ucc/red-bull-summer-edition",
+                    "alt_text": "Red Bull Summer Edition",
+                    "product_url": "https://www.redbull.com/bg-bg/energydrink/products/red-bull-summer-edition"
                 },
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:bg-BG",
@@ -775,7 +785,7 @@
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/12/rij4yvg9ui0b317utbjp/red-bull-yellow-edition-image",
                     "alt_text": "Red Bull Yellow Edition - image",
-                    "product_url": "https://www.redbull.com/bg-bg/energydrink/red-bull-yellow-edition"
+                    "product_url": "https://www.redbull.com/bg-bg/energydrink/products/red-bull-yellow-edition"
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:bg-BG",
@@ -785,7 +795,7 @@
                     "color": "#e03c31",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/12/affwyrad66swg1kfwjsl/red-bull-red-edition-image",
                     "alt_text": "Red Bull Red Edition - image",
-                    "product_url": "https://www.redbull.com/bg-bg/energydrink/red-bull-red-edition"
+                    "product_url": "https://www.redbull.com/bg-bg/energydrink/products/red-bull-red-edition"
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:bg-BG",
@@ -795,7 +805,7 @@
                     "color": "#f3911b",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/12/wmwfpxdesoinkvbvbwbg/red-bull-apricot-edition-image",
                     "alt_text": "Red Bull Apricot Edition - image",
-                    "product_url": "https://www.redbull.com/bg-bg/energydrink/red-bull-apricot-edition"
+                    "product_url": "https://www.redbull.com/bg-bg/energydrink/products/red-bull-apricot-edition"
                 }
             ],
             "flag_url": "https://rbds-static.redbull.com/@cosmos/foundation/latest/flags/cosmos-flag-BG.svg"
@@ -1414,6 +1424,16 @@
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/6/19/g6tqrrbffx57d8fk6wvt/red-bull-blue-edition-image",
                     "alt_text": "Red Bull Blue Edition - image",
                     "product_url": "https://www.redbull.com/dk-da/energydrink/products/red-bull-blue-edition"
+                },
+                {
+                    "id": "f0502df1-3142-402a-9af8-1344c8bf794e:da-DK",
+                    "name": "The Purple Edition",
+                    "flavour": "Skovbærsmag",
+                    "standfirst": "Red Bull Purple Edition med smagen af skovbærsmag.",
+                    "color": "#702082",
+                    "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/6/19/tzpu4mtxhwsawh9exapv/red-bull-the-purple-edition",
+                    "alt_text": "Red Bull The Purple Edition",
+                    "product_url": "https://www.redbull.com/dk-da/energydrink/products/red-bull-purple-edition"
                 }
             ],
             "flag_url": "https://rbds-static.redbull.com/@cosmos/foundation/latest/flags/cosmos-flag-DK.svg"
@@ -2560,6 +2580,16 @@
                     "product_url": "https://www.redbull.com/jp-ja/energydrink/red-bull-summer-edition"
                 },
                 {
+                    "id": "f78cf50c-38e3-423a-ba25-045cbfb7eb50:ja-JP",
+                    "name": "レッドブルグ⁠⁠リ⁠ーンエディション",
+                    "flavour": "Curuba Elderflower",
+                    "standfirst": "レッ⁠ド⁠ブ⁠ルグ⁠リ⁠ーンエ⁠デ⁠ィ⁠シ⁠ョ⁠ン",
+                    "color": "#6cc24a",
+                    "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/8/7/akl9xufy7iobkgk3quyl/red-bull-green-edition---image",
+                    "alt_text": "Red Bull Green Edition - image",
+                    "product_url": "https://www.redbull.com/jp-ja/energydrink/products/red-bull-green-edition"
+                },
+                {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:ja-JP",
                     "name": "イエローエディション",
                     "flavour": "Tropical/Tropical Fruits ",
@@ -2894,16 +2924,6 @@
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/17/akq6opoi8io1nlwdj7ft/red-bull-energy-drink",
                     "alt_text": "Red Bull Energy Drink",
                     "product_url": "https://www.redbull.com/energydrink"
-                },
-                {
-                    "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:en-MY",
-                    "name": "Sugarfree",
-                    "flavour": "Sugarfree",
-                    "standfirst": "Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.",
-                    "color": "#FFFFFF",
-                    "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/1/22/ur0mvj1wdnzik0jceu0l/red-bull-sugarfree",
-                    "alt_text": "Red Bull Sugarfree",
-                    "product_url": "https://www.redbull.com/sugarfree"
                 }
             ],
             "flag_url": "https://rbds-static.redbull.com/@cosmos/foundation/latest/flags/cosmos-flag-MY.svg"
@@ -3249,7 +3269,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/13/vc3j6xapl6fecsnsh94e/red-bull-energy-drink-image",
                     "alt_text": "Red Bull Energy Drink - image",
-                    "product_url": "https://www.redbull.com/mk-mk/energydrink/red-bull-energy-drink"
+                    "product_url": "https://www.redbull.com/mk-mk/energydrink/products/red-bull-energy-drink"
                 },
                 {
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:mk-MK",
@@ -3259,7 +3279,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/rdygf9vw7ykwea2t5emw/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "https://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/mk-mk/energydrink/products/red-bull-sugarfree"
                 },
                 {
                     "id": "add1ea51-ee5f-4c6c-a2d2-efd59791e8f8:mk-MK",
@@ -3267,9 +3287,9 @@
                     "flavour": "Curuba",
                     "standfirst": "Сѐ е подготвено за лето? Затоа што како што знаеш: Red Bull ти дава крииилја.",
                     "color": "#6cc24a",
-                    "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/13/kn402hdxvfbcgbkkvitu/red-bull-summer-edition-image",
+                    "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/8/7/ite6asrxnixnz2lytqla/red-bull-summer-edition-image",
                     "alt_text": "Red Bull Summer Edition - image",
-                    "product_url": "https://www.redbull.com/mk-mk/energydrink/red-bull-summer-edition"
+                    "product_url": "https://www.redbull.com/mk-mk/energydrink/products/red-bull-summer-edition"
                 },
                 {
                     "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:mk-MK",
@@ -3279,7 +3299,7 @@
                     "color": "#e03c31",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/5/31/i0i37ivqkwzuf3acotxt/red-bull-red-edition-image",
                     "alt_text": "Red Bull Red Edition - image",
-                    "product_url": "https://www.redbull.com/mk-mk/energydrink/red-bull-red-edition"
+                    "product_url": "https://www.redbull.com/mk-mk/energydrink/products/red-bull-red-edition"
                 },
                 {
                     "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:mk-MK",
@@ -3289,7 +3309,7 @@
                     "color": "#f3911b",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/7/3/ndrv9uea3kkzf7tsrylj/red-bull-apricot-edition-image",
                     "alt_text": "Red Bull Apricot Edition - image",
-                    "product_url": "https://www.redbull.com/mk-mk/energydrink/red-bull-apricot-edition"
+                    "product_url": "https://www.redbull.com/mk-mk/energydrink/products/red-bull-apricot-edition"
                 }
             ],
             "flag_url": "https://rbds-static.redbull.com/@cosmos/foundation/latest/flags/cosmos-flag-MK.svg"
