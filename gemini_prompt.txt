@@ -4,162 +4,166 @@ The input JSON contains Red Bull product data. The goal is to clean and structur
 COMPLETE EXAMPLE (FEW-SHOT):
 
 * Input Snippet:
-{{
-  "Albania": {{
-    "flag": "AL",
-    "editions": [
-      {{
-        "id": "82e096b8-cdbe-425f-ab64-9908419911af:sq-AL",
-        "name": "Energy Drink",
-        "flavour": "Energy Drink",
-        "standfirst": "Red Bull Energy Drink është vlerësuar në mbarë botën nga atletë të nivelit më të lartë, studentë, punonjës me mbingarkesë profesionale, si edhe gjatë udhёtimeve të gjata.",
-      }}
-    ]
-  }},
-  "Australia": {{
-    "flag": "AU",
-    "editions": [
-      {{
-        "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:en-AU",
-        "name": "Winter Edition",
-        "flavour": " Iced Vanilla Berry",
-        "standfirst": "The Red Bull Winter Ediation: The Energy Drink with the exceptional taste of blueberry, vanilla, and icy-fresh notes of eucalyptus.",
-      }}
-    ]
-  }},
-  "Germany": {{
-    "flag": "DE",
-    "editions": [
-      {{
-        "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:de-DE",
-        "name": "Sugarfree",
-        "flavour": "Sugarfree",
-        "standfirst": "Flügel ohne Zucker: Red Bull Sugarfree ist Red Bull Energy Drink ohne Zucker.",
+    ```json
+    {{
+      "Albania": {{
+        "flag": "AL",
+        "editions": [
+          {{
+            "id": "82e096b8-cdbe-425f-ab64-9908419911af:sq-AL",
+            "name": "Energy Drink",
+            "flavour": "Energy Drink",
+            "standfirst": "Red Bull Energy Drink është vlerësuar në mbarë botën nga atletë të nivelit më të lartë, studentë, punonjës me mbingarkesë profesionale, si edhe gjatë udhёtimeve të gjata."
+          }}
+        ]
       }},
-      {{
-        "id": "eb9c22db-6c3d-4a68-b4e3-c915c59b1414:de-DE",
-        "name": "Lilac Edition Sugarfree",
-        "flavour": "Wildflower-and-Pink Grapefruit",
-        "standfirst": "Die Red Bull Lilac Edition Sugarfree mit dem Geschmack von Waldmeister und Pink Grapefruit. ",
+      "Australia": {{
+        "flag": "AU",
+        "editions": [
+          {{
+            "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:en-AU",
+            "name": "Winter Edition",
+            "flavour": " Iced Vanilla Berry",
+            "standfirst": "The Red Bull Winter Ediation: The Energy Drink with the exceptional taste of blueberry, vanilla, and icy-fresh notes of eucalyptus."
+          }}
+        ]
+      }},
+      "Germany": {{
+        "flag": "DE",
+        "editions": [
+          {{
+            "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:de-DE",
+            "name": "SugarFree",
+            "flavour": "Sugarfree",
+            "standfirst": "Flügel ohne Zucker: Red Bull Sugarfree ist Red Bull Energy Drink ohne Zucker."
+          }},
+          {{
+            "id": "eb9c22db-6c3d-4a68-b4e3-c915c59b1414:de-DE",
+            "name": "Lilac Edition Sugarfree",
+            "flavour": "Wildflower-and-Pink Grapefruit",
+            "standfirst": "Die Red Bull Lilac Edition Sugarfree mit dem Geschmack von Waldmeister und Pink Grapefruit. "
+          }}
+        ]
       }}
-    ]
-  }}
-}}
+    }}
+    ```
 
 * Expected Output Snippet:
-{{
-  "Albania": {{
-    "flag": "🇦🇱",
-    "editions": [
-      {{
-        "id": "82e096b8-cdbe-425f-ab64-9908419911af:sq-AL",
-        "name": "Energy Drink",
-        "flavor": "Energy Drink",
-        "flavor_description": "Red Bull Energy Drink is appreciated worldwide by top athletes, busy professionals, university students and travellers on long journeys.",
-        "sugarfree": false,
-      }}
-    ]
-  }},
-  "Australia": {{
-    "flag": "🇦🇺",
-    "editions": [
-      {{
-        "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:en-AU",
-        "name": "Winter Edition",
-        "flavor": "Iced Vanilla Berry",
-        "flavor_description": "The Red Bull Winter Edition: The Energy Drink with the exceptional taste of blueberry, vanilla, and icy-fresh notes of eucalyptus.",
-        "sugarfree": false,
-      }}
-    ]
-  }},
-  "Germany": {{
-    "flag": "🇩🇪",
-    "editions": [
-      {{
-        "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:de-DE",
-        "name": "Energy Drink Sugarfree",
-        "flavor": "Sugarfree",
-        "flavor_description": "Wings without sugar: Red Bull Sugarfree is Red Bull Energy Drink without sugar.",
-        "sugarfree": true,
+    ```json
+    {{
+      "Albania": {{
+        "flag": "🇦🇱",
+        "editions": [
+          {{
+            "id": "82e096b8-cdbe-425f-ab64-9908419911af:sq-AL",
+            "name": "Energy Drink",
+            "flavor": "Energy Drink",
+            "flavor_description": "Red Bull Energy Drink is appreciated worldwide by top athletes, busy professionals, university students and travellers on long journeys.",
+            "sugarfree": false
+          }}
+        ]
       }},
-      {{
-        "id": "eb9c22db-6c3d-4a68-b4e3-c915c59b1414:de-DE",
-        "name": "Lilac Edition Sugarfree",
-        "flavor": "Woodruff & Pink Grapefruit",
-        "flavor_description": "The Red Bull Lilac Edition Sugarfree with the taste of woodruff and pink grapefruit. ",
-        "sugarfree": true,
+      "Australia": {{
+        "flag": "🇦🇺",
+        "editions": [
+          {{
+            "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:en-AU",
+            "name": "The Winter Edition",
+            "flavor": "Iced Vanilla Berry",
+            "flavor_description": "The Red Bull Winter Edition: The Energy Drink with the exceptional taste of blueberry, vanilla, and icy-fresh notes of eucalyptus.",
+            "sugarfree": false
+          }}
+        ]
+      }},
+      "Germany": {{
+        "flag": "🇩🇪",
+        "editions": [
+          {{
+            "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:de-DE",
+            "name": "Energy Drink Sugarfree",
+            "flavor": "Sugarfree",
+            "flavor_description": "Wings without sugar: Red Bull Sugarfree is Red Bull Energy Drink without sugar.",
+            "sugarfree": true
+          }},
+          {{
+            "id": "eb9c22db-6c3d-4a68-b4e3-c915c59b1414:de-DE",
+            "name": "The Lilac Edition Sugarfree",
+            "flavor": "Wildflower-Pink-Grapefruit",
+            "flavor_description": "The Red Bull Lilac Edition Sugarfree with the taste of woodruff and pink grapefruit.",
+            "sugarfree": true
+          }}
+        ]
       }}
-    ]
-  }}
-}}
+    }}
+    ```
 
 INSTRUCTIONS:
 
-1. Global Rules:
+**1. Global Rules:**
 - Analyze the entire input JSON to understand the data structure before processing each item.
 - The final output MUST be a single, valid JSON object.
-- The order and original casing of the root country keys (e.g., germany, international) MUST be preserved.
+- The order and original casing of the root country keys (e.g., `germany`, `international`) MUST be preserved.
 
-2. Per-Product Processing Logic:
-For each product object in the editions list, create a new object by applying the following rules in order:
+**2. Per-Product Processing Logic:**
+For each product object in the `editions` list, create a new object by applying the following rules in order:
 
-- id (string):
-  - Use the id from the input directly. Do not modify.
+- **`id` (string):**
+  - Use the `id` from the input directly. Do not modify.
 
-- sugarfree (boolean):
-  - Initialize as false.
-  - Analyze the original name from the input. If it contains a sugar-free keyword (e.g., 'Sugarfree', 'Zero', 'Zuckerfrei', '無糖'), set this field to true.
+- **`sugarfree` (boolean):**
+  - Initialize as `false`.
+  - Analyze the original `name` and `flavour` from the input. If either contains a sugar-free keyword (e.g., 'Sugarfree', 'Zero', 'Zuckerfrei', '無糖', 'ZERO CALORIAS'), set this field to `true`.
 
-- name (string):
-  - Goal: The final name MUST contain the edition's core title. Remove explicit flavor descriptions (e.g., "White Peach", "Watermelon", "Juneberry"), but **preserve functional modifiers** like "Sugarfree" or "Zero" if they are part of the original name.
-  - Step 0: Typo Correction: Before any other processing, correct common typos in the original name. Specifically, replace any instance of "Ediation" with "Edition".
-  - Step 1: Handle Non-Latin Scripts: If the original name is in a non-Latin script (e.g., 無糖能量飲料), translate the entire string to its clean English equivalent first (e.g., "Sugarfree Energy Drink"). Use this translated string as the base for the next steps.
-  - Step 2: Preserve Clean Names: If a name in a Latin script is already clean and contains no flavor text (e.g., "The Cereja Edition"), it MUST be preserved as is.
-  - Step 3: Separate Flavor: From the (potentially typo-corrected and translated) name, separate the core edition title from the flavor or Energy Drink description.
-    - Example 1: "The Green Edition Exotic Passion Fruit Flavor" -> Core title and name is "The Green Edition".
-    - Example 2: "The Summer Edition Juneberry" -> Core title and name is "The Summer Edition".
-  - Step 4: Ensure each name contains "Edition" starts with "The ".
-    - Example: "Purple Edition" -> "The Purple Edition"
-    - Example: "The Green Edition" -> "The Green Edition"
-  - Step 5: If the name would be only "Zero" or "Sugarfree", add a "Energy Drink" in front.
-    - Example 1: "Zero" -> "Energy Drink Zero"
-    - Example 2: "Sugarfree" -> "Energy Drink Sugarfree"
-  - Step 6: Finalize: The resulting core title is the final value for name.
-
-- flavor_description (string):
+- **`flavor_description` (string):**
   - This is a mandatory and unconditional step.
-  - Take the details.standfirst text from the input.
-  - If the text is not in English or non-Latin, translate into proper, natural-sounding English.
-  - It MUST ALWAYS be translated into proper, natural-sounding English, regardless of its original language or content.
-  - The resulting English text is the final value.
-  - Keep Title Case flavors like "Pink Grapefruit".
+  - Take the `standfirst` text from the input.
+  - It MUST ALWAYS be translated into proper, natural-sounding English, regardless of its original language.
+  - Preserve Title Case for flavors within the text like "Pink Grapefruit".
 
- - flavor (string):
-  - Step 1: Choose the Best Flavor Source: Your goal is to find the best representation of the product's taste.
-    The primary source is the English flavor_description you just created. Attempt to extract specific tastes from it. If multiple tastes are found, combine them with an hyphen '-' (e.g., "coconut" and "blueberry" becomes "Coconut-Blueberry"). Only given "Woodruff & Pink Grapefruit" must remain with an ampersand "&"
-    The secondary source is the flavour field from the input data translated into English. Remove duplicated Words, for example "Tropical-Tropical Fruits" -> "Tropical-Fruits"
-    Decision Logic: Prefer the original flavor, but use the extracting flavour_description field if it provides a more concise or accurate summary - BUT do not strip down the original original flavor !. For example, prefer "Iced Vanilla Berry" (from flavour field) over a longer list like "Blueberry & Vanilla & Eucalyptus" (from description) or keep "Curuba-Elderflower" instead of only "Curuba".
-  - Step 2: Fallback for No Flavor: If NO specific taste can be found in EITHER the flavor_description OR the original flavour field (e.g., text is generic), use the original flavour field's value as the base (e.g., "Energy Drink").
-  - Step 3: Mandatory Cleaning and Formatting: Apply these cleaning rules to the flavor base determined in the previous steps:
-    Remove the following keywords (case-insensitive): "Flavor", "Taste", "Flavour", "Sugarfree".
-    Preserve compound flavor names (e.g., "Pink Grapefruit").
-    Apply Title Case to the final string (e.g., "pink grapefruit" -> "Pink Grapefruit" or "dragon fruit" -> "Dragon Fruit" etc.).
-  - Step 4: The flavor field MUST NOT contain "Flavour"
+- **`flavor` (string):**
+  - **Goal:** Create a clean, standardized, English flavor name that respects the original's structure.
+  - **Step 1: Translate:** Take the original `flavour` field from the input and translate it to English if it's in another language (e.g., "열대과일향" -> "Tropical Fruit", "Pêche blanche" -> "White Peach").
+  - **Step 2: Normalize Separators while Preserving Intent:** This is a crucial step. Do NOT automatically convert all separators and spaces.
+    - **Rule A:** First, in the translated string, replace any slashes (`/`) with a hyphen (`-`).
+    - **Rule B:** If a hyphen (`-`) and the word `and` appear together (e.g., in a string like `word-and-word`), remove the redundant `and`.
+    - **Rule C (Crucial):** Do NOT replace natural language like `and` or simple spaces between words with a hyphen. Preserve them.
+      - Correct: `"Strawberry and apricot"` -> `"Strawberry and Apricot"`
+      - Correct: `"White Peach"` -> `"White Peach"`
+      - Incorrect: `"White Peach"` -> `"White-Peach"`
+    - **Rule D:** Preserve original hyphens (`-`) and ampersands (`&`) when they are the intended separator.
+  - **Step 3: Clean Keywords:** Remove generic, non-taste words (case-insensitive) such as "Flavor", "Flavour", "Taste", "Smag", "With", "sugarfree", "zero", and any lingering punctuation.
+  - **Step 4: Mandatory Deduplication:** If the string contains repeated words after standardization, simplify it. A string like "Tropical-Tropical-Fruits" must be simplified to "Tropical-Fruits".
+  - **Step 5: Final Formatting:** Apply Title Case to the entire final string (e.g., "dragon fruit" -> "Dragon Fruit", "strawberry and apricot" -> "Strawberry and Apricot"). Trim any leading/trailing whitespace.
+  - **Step 6: Fallback:** If after all cleaning the field is empty, use the value "Energy Drink".
 
-3. Final Output Structure & Cleanup:
-- Each country object must contain a flag and a list of editions.
-- Each product object in editions must contain id, name, flavor, flavor_description, and sugarfree.
-- Flag Conversion Logic:
+- **`name` (string):**
+  - **Goal:** The final `name` must contain the edition's core title, with flavor descriptions removed but functional modifiers (like "Sugarfree") preserved.
+  - **Step 1: Typo Correction:** First, correct common typos in the original `name`. Specifically, replace any instance of "Ediation" with "Edition".
+  - **Step 2: Isolate Core Title:** Analyze the (potentially typo-corrected) name to separate the core product title from descriptive flavor words.
+    - **Principle:** The core title represents the product line (often using words like "Edition", "Summer", "Winter", colors, or regional names like "Cereja"), while flavor words are specific tastes to be removed (like "Juneberry", "Watermelon", "White Peach"). Use your semantic understanding to make this distinction.
+    - **Example 1:** "The Summer Edition Juneberry" -> Core title is "The Summer Edition".
+    - **Example 2:** "The Green Edition Exotic Passion Fruit" -> Core title is "The Green Edition".
+    - **Example 3:** "Watermelon" -> This is only a flavor, so the core title is empty.
+  - **Step 3: Add "The" to Editions:** If the resulting core title contains the word "Edition" and does not already start with "The ", add it to the beginning. Example: "Winter Edition" -> "The Winter Edition".
+  - **Step 4: Handle Generic Names:** If the core title after Step 2 is ONLY "Zero", ONLY "Sugarfree", or is empty, the name becomes "Energy Drink". If the original was "Zero" or "Sugarfree", append that modifier.
+    - **Example 1:** "Zero" -> "Energy Drink Zero".
+    - **Example 2:** "SugarFree" -> "Energy Drink Sugarfree".
+    - **Example 3:** "Watermelon" (which resulted in an empty core title) -> "Energy Drink".
+  - **Step 5: Finalize:** The resulting string is the final value for `name`.
+
+**3. Final Output Structure & Cleanup:**
+- Each country object must contain a `flag` and a list of `editions`.
+- Each product object in `editions` must contain `id`, `name`, `flavor`, `flavor_description`, and `sugarfree`.
+- **Flag Conversion Logic:**
   - Country Codes: Convert standard codes to flag emojis (e.g., "US" -> 🇺🇸, "DE" -> 🇩🇪).
-  - International: If flag is "Worldwide" and the root key is international, use the globe emoji 🌍.
-  - Regions: If flag is "Worldwide" and the root key is a region do NOT use 🌍, use a suitable regional emoji ("caribbean" -> 🌴, "middle-east" -> 🐪, etc.).
-- Final Text Cleaning:
-  - Before outputting, trim leading/trailing whitespace and remove special characters like * or # from all final string values.
-  - **Mandatory Word Replacement:** In ALL final string values, especially within the `flavor_description`, you MUST replace every instance of the word "sugars" with "sugar". This is a non-negotiable final step.
+  - International: If `flag` is "Worldwide" and the root key is `international`, use the globe emoji 🌍.
+  - Regions: If `flag` is "Worldwide" and the root key is a region, use a suitable regional emoji ("caribbean" -> 🌴, "middle-east" -> 🐪, etc.).
+- **Final Text Cleaning:**
+  - Before outputting, trim leading/trailing whitespace and remove special characters like `*` or `#` from all final string values.
+  - **Mandatory Word Replacement:** In ALL final string values, especially within `flavor_description`, you MUST replace every instance of the word "sugars" with "sugar". This is a non-negotiable final step.
 
-
-RESPONSE FORMAT:
+**RESPONSE FORMAT:**
 Your response must be ONLY the final, clean JSON object. Do not include any other text, explanations, or Markdown formatting.
 
 INPUT DATA (RAW JSON):
-{raw_json_str}
+```{raw_json_str}```
