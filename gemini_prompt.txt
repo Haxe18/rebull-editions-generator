@@ -28,6 +28,28 @@ COMPLETE EXAMPLE (FEW-SHOT):
           }}
         ]
       }},
+      "Belgium": {{
+        "flag": "BE",
+        "editions": [
+          {{
+            "id": "611996f5-8813-46c3-9b18-4c193d39d9d0:nl-BE",
+            "name": "The Lime Green Edition",
+            "flavour": "Curuba",
+            "standfirst": "De Red Bull Lime Green Edition heeft de exotische smaak van  curuba, afgewerkt met een vleugje vlierbloesem.",
+          }}
+        ]
+      }},
+      "Czech Republic": {{
+        "flag": "CZ",
+        "editions": [
+          {{
+            "id": "9f5e826b-3589-4e15-8da7-86759325fc9b:cs-CZ"
+            "name": "The Green Edition",
+            "flavour": "Curuba Elderflower",
+            "standfirst": "Red Bull Green Edition s příchutí exotické curuby, doplněná tóny bezového květu.",
+          }}
+        ]
+      }},
       "Germany": {{
         "flag": "DE",
         "editions": [
@@ -75,6 +97,28 @@ COMPLETE EXAMPLE (FEW-SHOT):
           }}
         ]
       }},
+      "Belgium": {{
+        "flag": "🇧🇪",
+        "editions": [
+          {{
+            "id": "611996f5-8813-46c3-9b18-4c193d39d9d0:nl-BE",
+            "name": "The Lime Green Edition",
+            "flavour": "Curuba-Elderflower",
+            "standfirst": "The Red Bull Lime Green Edition has the exotic taste of Curuba, finished with a hint of elderflower."
+          }}
+        ]
+      }},
+      "Czech Republic": {{
+        "flag": "🇨🇿",
+        "editions": [
+          {{
+            "id": "9f5e826b-3589-4e15-8da7-86759325fc9b:cs-CZ"
+            "name": "The Green Edition",
+            "flavour": "Curuba-Elderflower",
+            "standfirst": "Red Bull Green Edition with the flavour of exotic curuba complemented by elderflower notes",
+          }}
+        ]
+      }},
       "Germany": {{
         "flag": "🇩🇪",
         "editions": [
@@ -88,7 +132,7 @@ COMPLETE EXAMPLE (FEW-SHOT):
           {{
             "id": "eb9c22db-6c3d-4a68-b4e3-c915c59b1414:de-DE",
             "name": "The Lilac Edition Sugarfree",
-            "flavor": "Wildflower-Pink-Grapefruit",
+            "flavor": "Woodruff & Pink Grapefruit",
             "flavor_description": "The Red Bull Lilac Edition Sugarfree with the taste of woodruff and pink grapefruit.",
             "sugarfree": true
           }}
@@ -123,18 +167,17 @@ For each product object in the `editions` list, create a new object by applying 
 - **`flavor` (string):**
   - **Goal:** Create a clean, standardized, English flavor name that respects the original's structure.
   - **Step 1: Translate:** Take the original `flavour` field from the input and translate it to English if it's in another language (e.g., "열대과일향" -> "Tropical Fruit", "Pêche blanche" -> "White Peach").
+  - **CRITICAL Failsafe:** You MUST perform a direct translation. Do NOT invent or substitute flavors. For example, if an input flavor is "Iced Vanilla Berry", the output MUST be a direct translation of that, NOT "Curuba-Elderflower" or any other unrelated flavor. This is a strict rule to prevent data corruption.
   - **Step 2: Normalize Separators while Preserving Intent:** This is a crucial step. Do NOT automatically convert all separators and spaces.
     - **Rule A:** First, in the translated string, replace any slashes (`/`) with a hyphen (`-`).
-    - **Rule B:** If a hyphen (`-`) and the word `and` appear together (e.g., in a string like `word-and-word`), remove the redundant `and`.
-    - **Rule C (Crucial):** Do NOT replace natural language like `and` or simple spaces between words with a hyphen. Preserve them.
+    - **Rule B (Crucial):** Do NOT replace natural language like `and` or simple spaces between words with a hyphen. Preserve them.
       - Correct: `"Strawberry and apricot"` -> `"Strawberry and Apricot"`
       - Correct: `"White Peach"` -> `"White Peach"`
       - Incorrect: `"White Peach"` -> `"White-Peach"`
-    - **Rule D:** Preserve original hyphens (`-`) and ampersands (`&`) when they are the intended separator.
+    - **Rule C:** Preserve original hyphens (`-`) and ampersands (`&`) when they are the intended separator.
   - **Step 3: Clean Keywords:** Remove generic, non-taste words (case-insensitive) such as "Flavor", "Flavour", "Taste", "Smag", "With", "sugarfree", "zero", and any lingering punctuation.
-  - **Step 4: Mandatory Deduplication:** If the string contains repeated words after standardization, simplify it. A string like "Tropical-Tropical-Fruits" must be simplified to "Tropical-Fruits".
-  - **Step 5: Final Formatting:** Apply Title Case to the entire final string (e.g., "dragon fruit" -> "Dragon Fruit", "strawberry and apricot" -> "Strawberry and Apricot"). Trim any leading/trailing whitespace.
-  - **Step 6: Fallback:** If after all cleaning the field is empty, use the value "Energy Drink".
+  - **Step 4: Final Formatting:** Apply Title Case to the entire final string (e.g., "dragon fruit" -> "Dragon Fruit", "strawberry and apricot" -> "Strawberry and Apricot"). Trim any leading/trailing whitespace.
+  - **Step 5: Fallback:** If after all cleaning the field is empty, use the value "Energy Drink".
 
 - **`name` (string):**
   - **Goal:** The final `name` must contain the edition's core title, with flavor descriptions removed but functional modifiers (like "Sugarfree") preserved.
@@ -143,13 +186,15 @@ For each product object in the `editions` list, create a new object by applying 
     - **Principle:** The core title represents the product line (often using words like "Edition", "Summer", "Winter", colors, or regional names like "Cereja"), while flavor words are specific tastes to be removed (like "Juneberry", "Watermelon", "White Peach"). Use your semantic understanding to make this distinction.
     - **Example 1:** "The Summer Edition Juneberry" -> Core title is "The Summer Edition".
     - **Example 2:** "The Green Edition Exotic Passion Fruit" -> Core title is "The Green Edition".
-    - **Example 3:** "Watermelon" -> This is only a flavor, so the core title is empty.
+    - **Example 3:** "The Green Edition  仲夏熱情果味" -> Core title is "The Green Edition".
+    - **Example 4:** "Watermelon" -> This is only a flavor, so the core title is empty.
   - **Step 3: Add "The" to Editions:** If the resulting core title contains the word "Edition" and does not already start with "The ", add it to the beginning. Example: "Winter Edition" -> "The Winter Edition".
   - **Step 4: Handle Generic Names:** If the core title after Step 2 is ONLY "Zero", ONLY "Sugarfree", or is empty, the name becomes "Energy Drink". If the original was "Zero" or "Sugarfree", append that modifier.
     - **Example 1:** "Zero" -> "Energy Drink Zero".
     - **Example 2:** "SugarFree" -> "Energy Drink Sugarfree".
     - **Example 3:** "Watermelon" (which resulted in an empty core title) -> "Energy Drink".
-  - **Step 5: Finalize:** The resulting string is the final value for `name`.
+  - **Step 5: Translate:** If the core title is in a non-Latin script (e.g., `無糖能量飲料`), translate the entire string to its clean English equivalent
+  - **Step 6: Finalize:** The resulting string is the final value for `name`.
 
 **3. Final Output Structure & Cleanup:**
 - Each country object must contain a `flag` and a list of `editions`.
@@ -157,9 +202,8 @@ For each product object in the `editions` list, create a new object by applying 
 - **Flag Conversion Logic:**
   - Country Codes: Convert standard codes to flag emojis (e.g., "US" -> 🇺🇸, "DE" -> 🇩🇪).
   - International: If `flag` is "Worldwide" and the root key is `international`, use the globe emoji 🌍.
-  - Regions: If `flag` is "Worldwide" and the root key is a region, use a suitable regional emoji ("caribbean" -> 🌴, "middle-east" -> 🐪, etc.).
+  - Regions: If `flag` is "Worldwide" do NOT use 🌍, choose a suitable regional emoji ("caribbean" -> 🌴, "middle-east" -> 🐪, etc.).
 - **Final Text Cleaning:**
-  - Before outputting, trim leading/trailing whitespace and remove special characters like `*` or `#` from all final string values.
   - **Mandatory Word Replacement:** In ALL final string values, especially within `flavor_description`, you MUST replace every instance of the word "sugars" with "sugar". This is a non-negotiable final step.
 
 **RESPONSE FORMAT:**

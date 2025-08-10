@@ -25,6 +25,7 @@ from random import randint
 import time
 import argparse
 import copy
+import re
 from typing import Dict, Any, Optional, Tuple
 
 import requests
@@ -123,6 +124,23 @@ class RedBullGenerator:
             logging.error("Error fetching or parsing GraphQL data for %s: %s", graphql_id, exc)
             return None
 
+    @staticmethod
+    def _clean_duplicated_text(text):
+        # Replace slashes with spaces to separate the words
+        text = text.replace("/", " ")
+
+        # Remove any extra spaces that may have been created and trim whitespace from ends
+        text = re.sub(r'\s+', ' ', text).strip()
+
+        # Use a regular expression to find and remove duplicated words.
+        # The regex (\b\w+\b) captures a whole word.
+        # \s+ matches one or more spaces.
+        # \1 refers to the word captured in the first group.
+        # The re.I flag makes the matching case-insensitive.
+        text = re.sub(r'(\b\w+\b)\s+\1', r'\1', text, flags=re.I)
+
+        return text
+
     def _extract_relevant_gql_details(self, gql_data: Dict[str, Any]) -> Dict[str, Any]:
         """Safely extracts and formats relevant fields from the GraphQL response."""
         image_url_template = gql_data.get('image', {}).get('imageEssence', {}).get('imageURL')
@@ -131,11 +149,12 @@ class RedBullGenerator:
             formatted_image_url = image_url_template.format(op='e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000')
 
         product_id = gql_data.get('id', '').replace('rrn:content:energy-drinks:', '')
+        flavour = self._clean_duplicated_text(gql_data.get('flavour', ''))
 
         return {
             "id": product_id,
             "name": f"The {title}" if "Edition" in (title := gql_data.get('title') or "") else title,
-            "flavour": gql_data.get('flavour'),
+            "flavour": flavour,
             "standfirst": gql_data.get('standfirst').strip(' "'),
             "color": gql_data.get('brandingHexColorCode'),
             "image_url": formatted_image_url,
@@ -308,6 +327,7 @@ class RedBullGenerator:
     def _rehydrate_ai_response(self, ai_response: Dict, product_map: Dict, country_map: Dict) -> Dict:
         """Re-inserts preserved details back into the AI-normalized data."""
         logging.info("Re-inserting preserved details into the normalized data.")
+
         for country_name, country_value in ai_response.items():
             # The country_name is the key, so we use it directly to look up in country_map
             if country_name in country_map:
@@ -324,6 +344,14 @@ class RedBullGenerator:
                     edition.update(product_map[product_id])
                 else:
                     logging.warning("Could not find matching product details for ID '%s'.", product_id)
+
+                if 'flavor' in edition:
+                    edition["flavor"] = edition["flavor"].replace(" and ", "-")
+
+                if 'flavor_description' in edition:
+                    # Cleanup, string remove *# etc ...
+                    edition["flavor_description"] = re.sub(r'[^a-zA-Z0-9 ]', '', edition["flavor_description"])
+
         return ai_response
 
     def run(self, skip_external_fetch=False):
