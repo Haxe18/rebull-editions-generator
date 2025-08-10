@@ -108,7 +108,7 @@
                 {
                     "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:es-AR",
                     "name": "The Winter Edition",
-                    "flavour": " Iced Vanilla Berry",
+                    "flavour": "Iced Vanilla Berry",
                     "standfirst": "Red Bull Winter Edition con el excepcional sabor a arándanos, vainilla y notas frescas de eucalipto.",
                     "color": "#53b2c2",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/6/27/hzrpshsnq3buirq0x3kf/red-bull-winter-edition",
@@ -174,7 +174,7 @@
                 {
                     "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:en-AU",
                     "name": "The Winter Edition",
-                    "flavour": " Iced Vanilla Berry",
+                    "flavour": "Iced Vanilla Berry",
                     "standfirst": "The Red Bull Winter Ediation: The Energy Drink with the exceptional taste of blueberry, vanilla, and icy-fresh notes of eucalyptus.",
                     "color": "#53b2c2",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/3/5/vanooyiiygnijmrbbef5/red-bull-winter-edition",
@@ -204,7 +204,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:en-AU",
                     "name": "The Tropical Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "The Tropical Edition. Experience the exotic taste of tropical fruits.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/9/20/ipyklqsoqeppbuugt8cy/red-bull-tropical-edition-image",
@@ -340,7 +340,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:de-AT",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Die Red Bull Yellow Edition. Lass dich vom exotischen Geschmack tropischer Früchte überraschen.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/11/echj0nokgzy6n0ud2dqp/red-bull-yellow-edition-image",
@@ -426,7 +426,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:az-AZ",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Red Bull Yellow Edition. Ekzotik tropik meyvələr dadı ilə.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/11/exlcrhvffjsfd3glhk4s/red-bull-yellow-edition-image",
@@ -568,7 +568,7 @@
                 {
                     "id": "365b9d1d-1fe3-41ea-86f1-c6f9967799a7:bs-BA",
                     "name": "The Spring Edition Sugarfree",
-                    "flavour": "Woodruff & Pink Grapefruit ",
+                    "flavour": "Woodruff & Pink Grapefruit",
                     "standfirst": "Kriiila za vaše proljeće: Red Bull Spring Edition Energy Drink Sugarfree kombinira okuse ružičastog grejpa i mirisnog broća, s blagim cvjetnim notama.",
                     "color": "#7d62ce",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/3/4/x4mqeqilv2mdx5veahur/spring-edition-sugarfree",
@@ -644,7 +644,7 @@
                 {
                     "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:pt-BR",
                     "name": "The Winter Edition",
-                    "flavour": " Iced Vanilla Berry",
+                    "flavour": "Iced Vanilla Berry",
                     "standfirst": "Red Bull Winter Edition: Energia com o sabor de Blueberry e Baunilha.",
                     "color": "#53b2c2",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/6/5/sl1tz0jjecm4tqd2b20k/red-bull-winter-edition",
@@ -724,7 +724,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:pt-BR",
                     "name": "The Tropical Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Seja surpreendido pelo sabor das frutas tropicais do Red Bull Tropical Edition.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/4/29/igdvrimilowp1uajwxgz/red-bull-tropical-edition-image",
@@ -780,7 +780,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:bg-BG",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "The Yellow Edition. Опитайте екзотичния вкус на тропически плодове.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/12/rij4yvg9ui0b317utbjp/red-bull-yellow-edition-image",
@@ -876,7 +876,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:fr-CA",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Le Red Bull Yellow Edition. Laissez-vous surprendre par le goût exotique des fruits tropicaux*.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/12/t5zfmdrfmgvk8q25nsmc/red-bull-yellow-edition-image",
@@ -972,7 +972,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:es-CAR",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "La edición tropical de Red Bull. Déjate sorprender por el exótico sabor de las frutas tropicales.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/2/15/hlkc50fxgpediiy19xjk/red-bull-yellow-edition-image",
@@ -1018,7 +1018,7 @@
                 {
                     "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:es-CL",
                     "name": "The Winter Edition",
-                    "flavour": " Iced Vanilla Berry",
+                    "flavour": "Iced Vanilla Berry",
                     "standfirst": "Red Bull Winter Edition: La bebida energética con un sabor excepcional de arándano, vainilla y notas refrescantes de eucalipto",
                     "color": "#53b2c2",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/6/16/qldejztrad022qgjahus/red-bull-winter-edition",
@@ -1038,7 +1038,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:es-CL",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Red Bull Yellow Edition. Sorpréndete con el exótico sabor a frutas tropicales.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/12/aw0ej0eh4ecea7lahlre/red-bull-yellow-edition-image",
@@ -1120,7 +1120,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:es-CO",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Red Bull Yellow Edition con sabor a frutas tropicales",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/4/2/cef5su0w1ejqnut6kxgc/red-bull-yellow-edition-image",
@@ -1206,7 +1206,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:hr-HR",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Red Bull The Yellow Edition. Iznenadi se egzotičnim okusom tropskog voća.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/12/criosahwkvg5po6183ag/red-bull-yellow-edition-image",
@@ -1302,7 +1302,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:cs-CZ",
                     "name": "The Tropical Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Red Bull Tropical Edition. Nechte se překvapit svěží chutí tropického ovoce.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/12/jtywyplref794cm9n3cx/red-bull-tropical-edition-image",
@@ -1610,7 +1610,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:et-EE",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Red Bull Yellow Edition. Üllatu troopiliste puuviljade eksootilisest maitsest.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/12/djlyfwbxxxes4cgqkman/red-bull-yellow-edition-image",
@@ -1948,7 +1948,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:de-DE",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Die Red Bull Yellow Edition. Lass dich vom exotischen Geschmack tropischer Früchte überraschen.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/13/fneqiz9nzwy0svkkim8t/red-bull-yellow-edition-image",
@@ -2084,7 +2084,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:el-GR",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Red Bull Yellow Edition. Απόλαυσε την εξωτική γεύση των τροπικών φρούτων.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/12/zoqiy3mzrvz4hhhv1xdf/red-bull-tropical-edition-image",
@@ -2262,7 +2262,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:en-IN",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "The Red Bull Yellow Edition. Experience the exotic taste of tropical fruits.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/5/31/ts2q4zp2gzl9nuackln3/red-bull-yellow-edition-image",
@@ -2410,7 +2410,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:en-IE",
                     "name": "The Tropical Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "The Tropical Edition. Experience the exotic taste of tropical fruits.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/12/zoqiy3mzrvz4hhhv1xdf/red-bull-tropical-edition-image",
@@ -2592,7 +2592,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:ja-JP",
                     "name": "イエローエディション",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "黄色のレッドブル、翼をさずける。",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/13/usuu2hvhcwfyfvcmol5s/red-bull-yellow-edition-image",
@@ -2648,7 +2648,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:ru-KZ",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Red Bull Yellow Edition. Восхититесь экзотическим вкусом тропических фруктов.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/10/15/hyhq8iuvqsamozeprhoe/red-bull-yellow-edition-image",
@@ -2862,7 +2862,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:lt-LT",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Red Bull YELLOW EDITION. Leisk egzotiškų tropinių vaisių skoniui tave nustebinti!",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/13/eppjqdw816wjeeol0s4n/red-bull-yellow-edition-image",
@@ -2954,7 +2954,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:es-MX",
                     "name": "The Tropical Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Red Bull Tropical Edition. Déjate sorprender por el exótico sabor de las frutas tropicales.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/5/21/g6xgo4bauy1i35idaxlm/red-bull-tropical-edition-image",
@@ -3010,7 +3010,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:en-MEA",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "The Yellow Edition. Experience the exotic taste of tropical fruits.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/18/tswy3cl648aczrxecfbu/red-bull-yellow-edition-image",
@@ -3146,7 +3146,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:nl-NL",
                     "name": "The Tropical Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Laat je verrassen door de exotische smaak van tropisch fruit.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/12/zoqiy3mzrvz4hhhv1xdf/red-bull-tropical-edition-image",
@@ -3192,7 +3192,7 @@
                 {
                     "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:en-NZ",
                     "name": "The Winter Edition",
-                    "flavour": " Iced Vanilla Berry",
+                    "flavour": "Iced Vanilla Berry",
                     "standfirst": "The Red Bull Winter Ediation: The Energy Drink with the exceptional taste of blueberry, vanilla, and icy-fresh notes of eucalyptus.",
                     "color": "#53b2c2",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/4/17/oh7fexlv6xamssncjllo/red-bull-winter-edition",
@@ -3380,7 +3380,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:no-NO",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Red Bull Yellow Edition. La deg overraske av den eksotiske smaken av tropiske frukter.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/13/demwkhnpxxzum8isgebm/red-bull-yellow-edition-image",
@@ -3512,7 +3512,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:es-PE",
                     "name": "The Tropical Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Sorpréndete con el sabor de frutas tropicales en el Red Bull Tropical Edition.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/14/zprcuxljtlkxdrbdlzoz/red-bul-tropical-edition-image",
@@ -3624,7 +3624,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:pl-PL",
                     "name": "The Tropical Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Red Bull Tropical Edition. Daj się zaskoczyć egzotycznym smakiem owoców tropikalnych.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/12/zoqiy3mzrvz4hhhv1xdf/red-bull-tropical-edition-image",
@@ -3700,7 +3700,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:pt-PT",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Red Bull Yellow Edition. Prepara-te para ser surpreendido pelo sabor exótico de frutos tropicais.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/14/iv2jcdayaxo4i5wmznnt/red-bull-yellow-edition-image",
@@ -3786,7 +3786,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:ro-RO",
                     "name": "Tropical",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Red Bull Tropical. Fii surprins de gustul exotic de fructe tropicale.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/9/18/s8tx1vvycsa5kp8et6zp/red-bull-tropical-edition-image",
@@ -3984,7 +3984,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:sk-SK",
                     "name": "The Tropical Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Red Bull Tropical Edition. Nechajte sa prekvapiť sviežou chuťou tropického ovocia.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/17/cbt5jt0j4nk43x93xesa/red-bull-tropical-edition-image",
@@ -4080,7 +4080,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:sl-SI",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Red Bull Yellow Edition. Naj te preseneti eksotični okus tropskega sadja.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/11/12/e1pfa93nopcmpsojpfgt/red-bull-yellow-edition-image",
@@ -4146,7 +4146,7 @@
                 {
                     "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:en-ZA",
                     "name": "The Winter Edition",
-                    "flavour": " Iced Vanilla Berry",
+                    "flavour": "Iced Vanilla Berry",
                     "standfirst": "The Red Bull Winter Ediation: The Energy Drink with the exceptional taste of blueberry, vanilla, and icy-fresh notes of eucalyptus.",
                     "color": "#53b2c2",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/3/24/os0xvfzvb2goz2qyy4lx/red-bull-winter-edition",
@@ -4636,7 +4636,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:tr-TR",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Red Bull Yellow Edition. Tropikal Meyvelerin egzotik tadını deneyimle",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/17/lrnf0cqhgisvzazkz4uo/red-bull-yellow-edition-image",
@@ -4712,7 +4712,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:uk-UA",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "Red Bull Yellow Edition. Здивує екзотичним смаком тропічних фруктів.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/17/y4suhb1qj6jluvwbckar/red-bull-yellow-edition-image",
@@ -4828,7 +4828,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:en-GB",
                     "name": "The Tropical Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "The Tropical Edition. Experience the exotic taste of tropical fruits.",
                     "color": "#FFCD00",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/7/9/tcwcy0ctalp1ewcm1ysv/red-bull-tropical-edition-image",
@@ -5024,7 +5024,7 @@
                 {
                     "id": "c17571d1-556a-4cc7-ad79-8b78ced3adbc:en-US",
                     "name": "The Yellow Edition",
-                    "flavour": "Tropical/Tropical Fruits ",
+                    "flavour": "Tropical Fruits",
                     "standfirst": "The Yellow Edition with the exotic taste of tropical fruits.",
                     "color": "#F6C300",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/4/23/urw42t9wckbrzwo9jgmm/red-bull-yellow-edition-image",

@@ -1,4 +1,40 @@
 # Red Bull Edition Data Update
 
 ## 🔄 Updated Countries
+- Argentina
+- Australia
+- Austria
+- Azerbaijan
+- Bosnia and Herzegovina
+- Brazil
+- Bulgaria
+- Canada
+- Caribbean
+- Chile
+- Colombia
+- Croatia
+- Czech Republic
+- Estonia
+- Germany
+- Greece
+- India
+- Ireland
 - Japan
+- Kazakhstan
+- Lithuania
+- Mexico
+- Middle East
+- Netherlands
+- New Zealand
+- Norway
+- Peru
+- Poland
+- Portugal
+- Romania
+- Slovakia
+- Slovenia
+- South Africa
+- Türkiye
+- Ukraine
+- United Kingdom
+- United States
