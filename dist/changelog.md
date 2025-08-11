@@ -1,39 +1,66 @@
 # Red Bull Edition Data Update
 
 ## 🔄 Updated Countries
+- Albania
+- Algeria
 - Argentina
 - Australia
 - Austria
 - Azerbaijan
+- Belgium
 - Bosnia and Herzegovina
 - Brazil
 - Bulgaria
 - Canada
 - Caribbean
 - Chile
+- China
 - Colombia
 - Croatia
 - Czech Republic
+- Denmark
+- Egypt
 - Estonia
+- Finland
+- France
 - Germany
 - Greece
+- Hong Kong
+- Hungary
 - India
+- Indonesia
+- International
 - Ireland
+- Italy
 - Japan
 - Kazakhstan
+- Kenya
+- Korea
+- Latvia
 - Lithuania
+- Malaysia
 - Mexico
 - Middle East
 - Netherlands
 - New Zealand
+- Nigeria
+- North Macedonia
 - Norway
+- Pakistan
 - Peru
+- Philippines
 - Poland
 - Portugal
 - Romania
+- Serbia
+- Singapore
 - Slovakia
 - Slovenia
 - South Africa
+- Spain
+- Sweden
+- Switzerland
+- Taiwan
 - Türkiye
 - Ukraine
 - United Kingdom
