@@ -26,7 +26,7 @@ import time
 import argparse
 import copy
 import re
-from typing import Dict, Any, Optional, Tuple
+from typing import Dict, Any, Optional, Tuple, List
 
 import requests
 from google import genai
@@ -47,14 +47,64 @@ LANG_API_URL = 'https://www.redbull.com/v3/api/custom/header/v2?locale={locale}'
 GRAPHQL_URL = 'https://www.redbull.com/v3/api/graphql/v1/?rb3ResourceId={graphql_id}&rb3Schema=v1:assetInfo'
 FLAG_BASE_URL = 'https://rbds-static.redbull.com/@cosmos/foundation/latest/flags/cosmos-flag-{flag_code}.svg'
 
+# --- Data Fixes Configuration ---
+# Manual corrections to apply before AI processing
+# Format: {"id": "product_id", "field": "field_name", "search": "text_to_find", "replace": "text_to_replace"}
+# Manual fixes to apply before AI processing, Data broken from the API
+DATA_FIXES = [
+    {
+        "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:fi-FI",
+        "field": "flavor",
+        "search": "Dragon fruit",
+        "replace": "Curuba-Elderflower"
+    },
+    {
+        "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:en-MEA",
+        "field": "standfirst",
+        "search": "Summer Edition",
+        "replace": "The Apricot Edition"
+    },
+    {
+        "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:pt-BR",
+        "field": "flavor",
+        "search": "apricot",
+        "replace": "Peach"
+    },
+    {
+        "id": "5436c81e-e0b1-4f5f-9ae2-85046d74ccad:pt-PT",
+        "field": "flavor",
+        "search": "ZERO CALORIAS",
+        "replace": "Zero Sugar"
+    },
+    {
+        "id": "add1ea51-ee5f-4c6c-a2d2-efd59791e8f8:pt-PT",
+        "field": "flavor",
+        "search": "Maracuja-banana",
+        "replace": "White Peach"
+    },
+    {
+        "id": "9f5e826b-3589-4e15-8da7-86759325fc9b:en-GB",
+        "field": "flavor",
+        "search": "Dragon Fruit",
+        "replace": "Curuba-Elderflower"
+    },
+    {
+        "id": "9f5e826b-3589-4e15-8da7-86759325fc9b:en-GB",
+        "field": "standfirst",
+        "search": "Dragon Fruit",
+        "replace": "Curuba Elderflower"
+    }
+]
+
 
 class RedBullGenerator:
     """
     Generates Red Bull editions JSON by fetching raw data and using a conditional AI step for normalization.
     """
 
-    def __init__(self):
+    def __init__(self, force_mode=False):
         """Initializes the generator, session, and Gemini model."""
+        self.force_mode = force_mode
         self.session = requests.Session()
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (https://github.com/Haxe18/rebull-editions-generator) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'
@@ -149,12 +199,12 @@ class RedBullGenerator:
             formatted_image_url = image_url_template.format(op='e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000')
 
         product_id = gql_data.get('id', '').replace('rrn:content:energy-drinks:', '')
-        flavour = self._clean_duplicated_text(gql_data.get('flavour', ''))
+        flavor = self._clean_duplicated_text(gql_data.get('flavour', ''))
 
         return {
             "id": product_id,
             "name": f"The {title}" if "Edition" in (title := gql_data.get('title') or "") else title,
-            "flavour": flavour,
+            "flavor": flavor,
             "standfirst": gql_data.get('standfirst').strip(' "'),
             "color": gql_data.get('brandingHexColorCode'),
             "image_url": formatted_image_url,
@@ -302,6 +352,9 @@ class RedBullGenerator:
         edition_keys_to_remove = ["color", "image_url", "alt_text", "product_url"]
         country_keys_to_remove = ["flag_url"]
 
+        # Text fields that need cleaning (remove special characters)
+        text_fields_to_clean = ["standfirst"]
+
         for country_name, country_content in stripped_data.get("raw_data_by_locale", {}).items():
             country_details_map[country_name] = {
                 "flag_url": raw_data["raw_data_by_locale"][country_name].get("flag_url")
@@ -318,11 +371,102 @@ class RedBullGenerator:
                         "alt_text": edition.get("alt_text"),
                         "product_url": edition.get("product_url")
                     }
+
+                # Clean text fields - remove unwanted characters like *, #, @, etc. but keep umlauts and accented characters
+                for field in text_fields_to_clean:
+                    if field in edition and edition[field]:
+                        # Remove only unwanted characters but keep letters (including umlauts), numbers, spaces, and common punctuation
+                        cleaned_text = re.sub(r'[#*@$^<>[\]{}|\\/`~!]', '', str(edition[field]))
+                        # Remove multiple spaces
+                        cleaned_text = re.sub(r'\s+', ' ', cleaned_text).strip()
+                        edition[field] = cleaned_text
+                        logging.debug("Cleaned %s field: '%s' → '%s'", field, edition.get(field, ""), cleaned_text)
+
                 for key in edition_keys_to_remove:
                     if key in edition:
                         del edition[key]
 
         return stripped_data, product_details_map, country_details_map
+
+    def _apply_data_fixes(self, raw_data: Dict[str, Any]) -> Tuple[Dict[str, Any], List[str]]:
+        """Applies manual data corrections before AI processing."""
+        logging.info("Applying manual data corrections...")
+        applied_fixes = []
+        skipped_fixes = []
+
+        for fix in DATA_FIXES:
+            target_id = fix["id"]
+            field = fix["field"]
+            search_text = fix["search"]
+            replace_text = fix["replace"]
+
+            # Find the product in the data
+            found = False
+            for country_data in raw_data.get("raw_data_by_locale", {}).values():
+                for edition in country_data.get("editions", []):
+                    if edition.get("id") == target_id:
+                        found = True
+                        current_value = edition.get(field, "")
+
+                        if search_text.lower() in current_value.lower():
+                            # Apply the fix - preserve original case in the replacement
+                            new_value = current_value.replace(search_text, replace_text)
+                            # Also try case-insensitive replacement for different cases
+                            if search_text.lower() != search_text:
+                                new_value = re.sub(re.escape(search_text), replace_text, current_value, flags=re.IGNORECASE)
+                            edition[field] = new_value
+                            applied_fixes.append(f"Fixed {field} for {target_id}: '{search_text}' → '{replace_text}'")
+                            logging.info("Applied fix: %s for %s", applied_fixes[-1], target_id)
+                        else:
+                            # Fix not needed - text not found
+                            skipped_fixes.append(f"Skipped {field} fix for {target_id}: '{search_text}' not found in '{current_value}'")
+                            logging.info("Skipped fix: %s", skipped_fixes[-1])
+                        break
+                if found:
+                    break
+
+            if not found:
+                skipped_fixes.append(f"Product not found: {target_id}")
+                logging.warning("Product not found for fix: %s", target_id)
+
+                # Add fix information to changelog - only show skipped fixes for manual cleanup
+        if skipped_fixes:
+            changelog_additions = ["## Data Fixes - Manual Cleanup Needed"]
+            changelog_additions.append("### Skipped Fixes (can be removed from DATA_FIXES)")
+            changelog_additions.extend([f"- {fix}" for fix in skipped_fixes])
+            changelog_additions.append("")
+            changelog_additions.append("*These fixes were not applied and can be safely removed from the DATA_FIXES configuration.*")
+
+            return raw_data, changelog_additions
+
+        return raw_data, []
+
+    @staticmethod
+    def _capitalize_second_word(text: str) -> str:
+        """
+        Capitalizes the second word in a hyphen-separated string.
+
+        Example:
+        'strawberry-apricot' -> 'strawberry-Apricot'
+        'one-two-three' -> 'one-Two-three'
+
+        Args:
+            text: The input string.
+
+        Returns:
+            The modified string. If there is no hyphen, the original
+            string is returned.
+        """
+        # Split the string into a list of words
+        parts = text.split('-')
+
+        # Check if a second word exists
+        if len(parts) > 1:
+            # Capitalize the second word (at index 1)
+            parts[1] = parts[1].capitalize()
+
+        # Join the parts back together with a hyphen
+        return '-'.join(parts)
 
     def _rehydrate_ai_response(self, ai_response: Dict, product_map: Dict, country_map: Dict) -> Dict:
         """Re-inserts preserved details back into the AI-normalized data."""
@@ -346,11 +490,11 @@ class RedBullGenerator:
                     logging.warning("Could not find matching product details for ID '%s'.", product_id)
 
                 if 'flavor' in edition:
-                    edition["flavor"] = edition["flavor"].replace(" and ", "-")
+                    edition["flavor"] = self._capitalize_second_word(edition["flavor"])
 
                 if 'flavor_description' in edition:
                     # Cleanup, string remove *# etc ...
-                    edition["flavor_description"] = re.sub(r'[^a-zA-Z0-9 ]', '', edition["flavor_description"])
+                    edition["flavor_description"] = re.sub(r'[^a-zA-Z0-9:%\. ]', '', edition["flavor_description"]).replace('  ', ' ')
 
         return ai_response
 
@@ -384,15 +528,32 @@ class RedBullGenerator:
                 logging.critical("FATAL: Could not save raw data file. Error: %s", error)
                 sys.exit(1)
 
-        has_changes, changelog_text = self.compare_raw_data_and_generate_changelog()
+        if skip_external_fetch:
+            # Skip comparison when using local data - assume changes exist
+            has_changes = True
+            changelog_text = "# Local Data Processing\n\nProcessing existing data with AI normalization and manual fixes."
+            logging.info("Skipping data comparison - processing local data with AI.")
+        else:
+            has_changes, changelog_text = self.compare_raw_data_and_generate_changelog()
 
-        if not has_changes:
-            logging.info("No changes detected. The existing '%s' is up to date.", FINAL_JSON_FILE)
-            if not skip_external_fetch:
-                os.remove(RAW_JSON_FILE)
-            return
+            if not has_changes:
+                logging.info("No changes detected. The existing '%s' is up to date.", FINAL_JSON_FILE)
+                if not self.force_mode:
+                    os.remove(RAW_JSON_FILE)
+                    return
+                else:
+                    logging.info("Force mode enabled - proceeding with AI processing despite no changes.")
+                    changelog_text = "# Force Mode Processing\n\nProcessing data despite no changes detected."
 
         logging.info("Changes detected. Proceeding with AI normalization.")
+
+        # Apply manual data fixes before AI processing
+        new_raw_data, fix_changelog = self._apply_data_fixes(new_raw_data)
+
+        # Combine changelog with fix information
+        if fix_changelog:
+            changelog_text += "\n\n" + "\n".join(fix_changelog)
+
         logging.info("--- Changelog ---\n%s", changelog_text)
         with open(CHANGELOG_FILE, "w", encoding="utf-8") as changelog_file:
             changelog_file.write(changelog_text)
@@ -433,6 +594,11 @@ def main():
         action='store_true',
         help='Skip external data fetching and use only locally available data from dist/redbull_editions_raw.previous.json'
     )
+    parser.add_argument(
+        '--force',
+        action='store_true',
+        help='Force processing even when no changes are detected'
+    )
     args = parser.parse_args()
 
     log_level = logging.DEBUG if args.verbose else logging.INFO
@@ -447,7 +613,7 @@ def main():
             logging.getLogger(logger_name).setLevel(logging.WARNING)
 
     logging.debug("Verbose mode enabled.")
-    generator = RedBullGenerator()
+    generator = RedBullGenerator(force_mode=args.force)
     generator.run(skip_external_fetch=args.skip_external_fetch)
 
 

@@ -29,7 +29,13 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run data generation script
-        run: python3 redbull_editions_json_generate.py
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "Manual trigger detected - running with force mode"
+            python3 redbull_editions_json_generate.py --force
+          else
+            python3 redbull_editions_json_generate.py
+          fi
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
