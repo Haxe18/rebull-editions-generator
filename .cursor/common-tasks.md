@@ -28,6 +28,15 @@ $env:GEMINI_API_KEY="your_api_key_here"
 export GEMINI_API_KEY="your_api_key_here"
 ```
 
+### Force Processing
+```bash
+# Force processing even when no changes detected
+python redbull_editions_json_generate.py --force
+
+# Combine with other options
+python redbull_editions_json_generate.py --force -v
+```
+
 ### Install Dependencies
 ```bash
 pip install -r requirements.txt
