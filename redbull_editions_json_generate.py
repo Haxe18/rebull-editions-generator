@@ -28,6 +28,7 @@ import copy
 import re
 from typing import Dict, Any, Optional, Tuple, List
 
+import unicodedata
 import requests
 from google import genai
 from google.genai.errors import APIError as google_exceptions
@@ -50,8 +51,14 @@ FLAG_BASE_URL = 'https://rbds-static.redbull.com/@cosmos/foundation/latest/flags
 # --- Data Fixes Configuration ---
 # Manual corrections to apply before AI processing
 # Format: {"id": "product_id", "field": "field_name", "search": "text_to_find", "replace": "text_to_replace"}
-# Manual fixes to apply before AI processing, Data broken from the API
+# Manual fixes to apply before AI processing, Data broken/wrong from the API
 DATA_FIXES = [
+    {
+        "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:en-MEA",
+        "field": "flavor_description",
+        "search": "Summer Edition",
+        "replace": "The Apricot Edition"
+    },
     {
         "id": "ac367322-24c1-44a9-ad4a-1e022f9347d6:fi-FI",
         "field": "flavor",
@@ -59,10 +66,16 @@ DATA_FIXES = [
         "replace": "Curuba-Elderflower"
     },
     {
-        "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:en-MEA",
-        "field": "standfirst",
-        "search": "Summer Edition",
-        "replace": "The Apricot Edition"
+        "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:hr-HR",
+        "field": "flavor_description",
+        "search": "merale",
+        "replace": "Juneberry"
+    },
+    {
+        "id": "f78cf50c-38e3-423a-ba25-045cbfb7eb50:ja-JP",
+        "field": "flavor",
+        "search": "Curuba Elderflower",
+        "replace": "Nutmeg"
     },
     {
         "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:pt-BR",
@@ -83,6 +96,12 @@ DATA_FIXES = [
         "replace": "White Peach"
     },
     {
+        "id": "77e43776-f55c-4250-a143-f126e7b543ed:en-SE",
+        "field": "flavor",
+        "search": "Grapefruit-Woodruff",
+        "replace": "Woodruff & Pink Grapefruit"
+    },
+    {
         "id": "9f5e826b-3589-4e15-8da7-86759325fc9b:en-GB",
         "field": "flavor",
         "search": "Dragon Fruit",
@@ -90,7 +109,7 @@ DATA_FIXES = [
     },
     {
         "id": "9f5e826b-3589-4e15-8da7-86759325fc9b:en-GB",
-        "field": "standfirst",
+        "field": "flavor_description",
         "search": "Dragon Fruit",
         "replace": "Curuba Elderflower"
     }
@@ -99,11 +118,45 @@ DATA_FIXES = [
 
 class RedBullGenerator:
     """
-    Generates Red Bull editions JSON by fetching raw data and using a conditional AI step for normalization.
+    Generates comprehensive Red Bull editions JSON data from worldwide sources.
+
+    This class orchestrates a two-stage data pipeline:
+    1. Raw data collection from Red Bull's APIs across all available regions
+    2. AI-powered normalization and translation using Google Gemini
+
+    The generator intelligently handles locale deduplication, applies manual data fixes,
+    and only processes data through AI when changes are detected to minimize API costs.
+
+    :param force_mode: When True, forces AI processing even if no changes detected
+    :type force_mode: bool
+
+    :ivar session: Persistent HTTP session for API requests
+    :type session: requests.Session
+    :ivar gemini_client: Google Gemini AI client for data normalization
+    :type gemini_client: genai.Client
+    :ivar force_mode: Flag to force processing regardless of changes
+    :type force_mode: bool
+
+    :raises KeyError: If GEMINI_API_KEY environment variable is not set
+    :raises SystemExit: If critical initialization fails
+
+    .. note::
+        Requires GEMINI_API_KEY environment variable to be set
+
+    .. example::
+        generator = RedBullGenerator(force_mode=True)
+        generator.run(skip_external_fetch=False)
     """
 
-    def __init__(self, force_mode=False):
-        """Initializes the generator, session, and Gemini model."""
+    def __init__(self, force_mode: bool = False) -> None:
+        """
+        Initialize the Red Bull data generator with required services.
+
+        :param force_mode: Force AI processing even without detected changes
+        :type force_mode: bool
+        :raises KeyError: If GEMINI_API_KEY environment variable is missing
+        :raises SystemExit: If Gemini client initialization fails
+        """
         self.force_mode = force_mode
         self.session = requests.Session()
         self.session.headers.update({
@@ -123,13 +176,22 @@ class RedBullGenerator:
             logging.critical("FATAL: Could not initialize Gemini model. Error: %s", exc)
             sys.exit(1)
 
-    def compare_raw_data_and_generate_changelog(self) -> Tuple[bool, str]:
+    @staticmethod
+    def compare_raw_data_and_generate_changelog() -> Tuple[bool, str]:
         """
-        Compares the new raw data with the previous version on a per-country basis.
-        Generates a markdown changelog and returns if changes were detected.
+        Compare new raw data with previous version and generate changelog.
 
-        Returns:
-            A tuple (has_changes: bool, changelog_content: str)
+        Performs country-level comparison to detect additions, removals, and updates.
+        Generates a formatted markdown changelog documenting all changes.
+
+        :return: Tuple of (changes_detected, changelog_markdown)
+        :rtype: Tuple[bool, str]
+
+        :raises IOError: If raw data files cannot be read
+        :raises json.JSONDecodeError: If JSON parsing fails
+
+        .. note::
+            Returns (True, "Initial Data Release") on first run when no previous data exists
         """
         if not os.path.exists(PREVIOUS_RAW_JSON_FILE):
             logging.info("No previous raw data file found. Assuming first run.")
@@ -164,7 +226,17 @@ class RedBullGenerator:
         return True, "\n".join(changelog_parts)
 
     def _get_graphql_data(self, graphql_id: str) -> Optional[Dict[str, Any]]:
-        """Fetches GraphQL data for a given ID with a small delay."""
+        """
+        Fetch product details from Red Bull's GraphQL API.
+
+        :param graphql_id: The GraphQL resource ID for the product
+        :type graphql_id: str
+        :return: GraphQL data dictionary or None if fetch fails
+        :rtype: Optional[Dict[str, Any]]
+
+        .. note::
+            Includes random delay between requests to avoid rate limiting
+        """
         try:
             time.sleep(randint(REQUEST_DELAY_FROM,REQUEST_DELAY_TO))
             gql_response = self.session.get(GRAPHQL_URL.format(graphql_id=graphql_id))
@@ -175,7 +247,25 @@ class RedBullGenerator:
             return None
 
     @staticmethod
-    def _clean_duplicated_text(text):
+    def _clean_duplicated_text(text: str) -> str:
+        """
+        Clean duplicated words and normalize spacing in text.
+
+        Removes consecutive duplicate words (case-insensitive) and normalizes
+        whitespace. Useful for cleaning product names from APIs that may
+        contain formatting issues.
+
+        :param text: Input text to clean
+        :type text: str
+        :return: Cleaned text with duplicates removed
+        :rtype: str
+
+        :Example::
+            >>> _clean_duplicated_text("Red Bull Bull Energy")
+            "Red Bull Energy"
+            >>> _clean_duplicated_text("Tropical/Tropical Edition")
+            "Tropical Edition"
+        """
         # Replace slashes with spaces to separate the words
         text = text.replace("/", " ")
 
@@ -192,7 +282,19 @@ class RedBullGenerator:
         return text
 
     def _extract_relevant_gql_details(self, gql_data: Dict[str, Any]) -> Dict[str, Any]:
-        """Safely extracts and formats relevant fields from the GraphQL response."""
+        """
+        Extract and format relevant product details from GraphQL response.
+
+        :param gql_data: Raw GraphQL response data
+        :type gql_data: Dict[str, Any]
+        :return: Formatted product details dictionary
+        :rtype: Dict[str, Any]
+
+        .. note::
+            - Normalizes Açai variations to 'Acai'
+            - Formats image URLs with proper dimensions
+            - Cleans duplicated text in product names
+        """
         image_url_template = gql_data.get('image', {}).get('imageEssence', {}).get('imageURL')
         formatted_image_url = ""
         if image_url_template:
@@ -201,11 +303,26 @@ class RedBullGenerator:
         product_id = gql_data.get('id', '').replace('rrn:content:energy-drinks:', '')
         flavor = self._clean_duplicated_text(gql_data.get('flavour', ''))
 
+        flavor_description_space_cleaned = gql_data.get('standfirst').strip(' "')
+        flavor_description_upper_cleaned = " ".join([word.capitalize() if word.isupper() else word for word in flavor_description_space_cleaned.split()])
+
+        # Normalize all Açai variations to 'Acai' in flavor_description
+        # This handles: açai, açaí, açaï, açaì, Açai, Açaí, etc.
+        flavor_description_normalized = unicodedata.normalize('NFD', flavor_description_upper_cleaned)
+
+        # Pattern matches all variations of açai with different diacritics in NFD form
+        # After NFD normalization: ç becomes c + \u0327, í becomes i + \u0301
+        pattern = r'[aA][çc]\u0327?[aA][iI]\u0301?'
+        flavor_description_acai_fix = re.sub(pattern, 'Acai', flavor_description_normalized, flags=re.IGNORECASE)
+
+        # Normalize back to composed form
+        flavor_description_acai_fix = unicodedata.normalize('NFC', flavor_description_acai_fix)
+
         return {
             "id": product_id,
             "name": f"The {title}" if "Edition" in (title := gql_data.get('title') or "") else title,
             "flavor": flavor,
-            "standfirst": gql_data.get('standfirst').strip(' "'),
+            "flavor_description": flavor_description_acai_fix,
             "color": gql_data.get('brandingHexColorCode'),
             "image_url": formatted_image_url,
             "alt_text": gql_data.get('image', {}).get('altText'),
@@ -213,7 +330,23 @@ class RedBullGenerator:
         }
 
     def _fetch_editions_for_locale(self, lang_info: Dict[str, Any]) -> Optional[Dict[str, Any]]:
-        """Fetches all editions for a single locale."""
+        """
+        Fetch all product editions for a specific locale/country.
+
+        :param lang_info: Locale information dictionary containing domain, countryName, flagCode
+        :type lang_info: Dict[str, Any]
+        :return: Dictionary with country data or None if no editions found
+        :rtype: Optional[Dict[str, Any]]
+
+        :Example return::
+            {
+                "Germany": {
+                    "flag": "DE",
+                    "editions": [...],
+                    "flag_url": "https://..."
+                }
+            }
+        """
         lang_code = lang_info.get('domain')
         country_name = lang_info.get('countryName')
         flag_code = lang_info.get('flagCode', 'Worldwide')
@@ -253,9 +386,33 @@ class RedBullGenerator:
         return None
 
     def fetch_all_raw_data(self) -> Dict[str, Any]:
-        """Fetches all raw product data from all available locales."""
+        """
+        Fetch comprehensive raw product data from all Red Bull locales worldwide.
+
+        Implements intelligent locale deduplication:
+        - Caribbean region: Keeps all locales (English and Spanish)
+        - Other regions: Prefers English locale when multiple exist
+        - Falls back to first available locale if no English version
+
+        :return: Dictionary containing all raw data organized by locale
+        :rtype: Dict[str, Any]
+
+        :raises SystemExit: If main language list cannot be fetched
+
+        :Example return::
+            {
+                "raw_data_by_locale": {
+                    "Germany": {...},
+                    "United States": {...},
+                    "Caribbean (English)": {...},
+                    "Caribbean (Spanish)": {...}
+                }
+            }
+        """
         logging.info("--- STAGE 1: Fetching all raw data from Red Bull APIs ---")
         all_raw_data = {}
+        countries_processed = {}  # Track which countries have been processed
+
         logging.info("Fetching list of all available Red Bull locales...")
         try:
             start_api_url = LANG_API_URL.format(locale='int-en')
@@ -266,15 +423,75 @@ class RedBullGenerator:
             logging.critical("FATAL: Could not fetch the main language list. Error: %s", exc)
             sys.exit(1)
 
+        # Group locales by country
+        countries_locales = {}
         for lang_info in all_langs:
-            if country_data := self._fetch_editions_for_locale(lang_info):
-                all_raw_data.update(country_data)
+            country_name = lang_info.get('countryName')
+            if country_name not in countries_locales:
+                countries_locales[country_name] = []
+            countries_locales[country_name].append(lang_info)
 
-        logging.info("Finished fetching raw data for %d locales.", len(all_raw_data))
+        # Process each country
+        for country_name, locales in countries_locales.items():
+            # Special case: Caribbean should keep all locales (both English and Spanish)
+            if country_name == 'Caribbean':
+                logging.info("Processing Caribbean with all %d locales", len(locales))
+                for locale in locales:
+                    if country_data := self._fetch_editions_for_locale(locale):
+                        all_raw_data.update(country_data)
+                        countries_processed[f"{country_name} ({locale.get('language', 'default')})"] = locale.get('label')
+            else:
+                # For other countries, use deduplication logic
+                selected_locale = None
+
+                if len(locales) == 1:
+                    # Only one locale for this country
+                    selected_locale = locales[0]
+                    logging.debug("Single locale for %s: %s", country_name, selected_locale.get('label'))
+                else:
+                    # Multiple locales - prefer English
+                    english_locales = [l for l in locales if '(en)' in l.get('label', '')]
+
+                    if english_locales:
+                        selected_locale = english_locales[0]
+                        logging.info("Multiple locales for %s, selected English: %s",
+                                    country_name, selected_locale.get('label'))
+                    else:
+                        # No English version, use first available
+                        selected_locale = locales[0]
+                        logging.info("Multiple locales for %s, no English found, using: %s",
+                                    country_name, selected_locale.get('label'))
+
+                    # Log skipped locales
+                    for locale in locales:
+                        if locale != selected_locale:
+                            logging.debug("Skipping duplicate locale: %s", locale.get('label'))
+
+                # Fetch data for selected locale
+                if selected_locale and (country_data := self._fetch_editions_for_locale(selected_locale)):
+                    all_raw_data.update(country_data)
+                    countries_processed[country_name] = selected_locale.get('label')
+
+        logging.info("Finished fetching raw data for %d countries.", len(all_raw_data))
+        logging.debug("Countries processed: %s", countries_processed)
         return {"raw_data_by_locale": all_raw_data}
 
     def normalize_with_gemini(self, raw_data: Dict[str, Any]) -> Optional[Dict[str, Any]]:
-        """Sends the entire raw data to Gemini for normalization with retry logic for 503 errors."""
+        """
+        Normalize raw data using Google Gemini AI with retry logic.
+
+        :param raw_data: Prepared raw data dictionary for AI processing
+        :type raw_data: Dict[str, Any]
+        :return: Normalized data dictionary or None if AI processing fails
+        :rtype: Optional[Dict[str, Any]]
+
+        :raises FileNotFoundError: If prompt file is not found
+
+        .. note::
+            - Uses deterministic settings (temperature=0, seed=11)
+            - Retries up to 3 times on 503 errors with 60-second delay
+            - Model: gemini-2.5-flash-lite for cost efficiency
+        """
         logging.info("--- STAGE 3: Normalizing data with Gemini API ---")
         try:
             with open(PROMPT_FILE, "r", encoding="utf-8") as prompt_file:
@@ -323,15 +540,15 @@ class RedBullGenerator:
             except google_exceptions as exc:
                 error_message = str(exc)
                 if "503" in error_message and "UNAVAILABLE" in error_message and attempt < max_retries:
-                    logging.warning("Gemini API returned 503 (overloaded). Retrying in %d seconds... (Attempt %d/%d)", 
+                    logging.warning("Gemini API returned 503 (overloaded). Retrying in %d seconds... (Attempt %d/%d)",
                                   retry_delay, attempt, max_retries)
                     time.sleep(retry_delay)
                     continue
-                else:
-                    logging.critical("FATAL: An error occurred with the Gemini API. Error: %s", exc)
-                    if 'response' in locals():
-                        logging.info("--- Gemini Response ---\n%s", response)
-                    return None
+
+                logging.critical("FATAL: An error occurred with the Gemini API. Error: %s", exc)
+                if 'response' in locals():
+                    logging.info("--- Gemini Response ---\n%s", response)
+                return None
 
             except ValueError as exc:
                 logging.critical("FATAL: An error occurred with the Gemini API. Error: %s", exc)
@@ -343,7 +560,21 @@ class RedBullGenerator:
         return None
 
     def _prepare_data_for_ai(self, raw_data: Dict[str, Any]) -> Tuple[Dict, Dict, Dict]:
-        """Strips non-essential data and creates lookup maps for re-hydration."""
+        """
+        Prepare raw data for AI processing by stripping non-essential fields.
+
+        Creates lookup maps to preserve data that AI doesn't need to process,
+        reducing token usage and improving AI focus on core normalization tasks.
+
+        :param raw_data: Complete raw data dictionary
+        :type raw_data: Dict[str, Any]
+        :return: Tuple of (stripped_data, product_details_map, country_details_map)
+        :rtype: Tuple[Dict, Dict, Dict]
+
+        .. note::
+            Removes: color, image_url, alt_text, product_url, flag_url
+            Cleans: Special characters from flavor_description
+        """
         logging.info("Creating lookup maps and stripping data for AI.")
         product_details_map = {}
         country_details_map = {}
@@ -353,7 +584,7 @@ class RedBullGenerator:
         country_keys_to_remove = ["flag_url"]
 
         # Text fields that need cleaning (remove special characters)
-        text_fields_to_clean = ["standfirst"]
+        text_fields_to_clean = ["flavor_description"]
 
         for country_name, country_content in stripped_data.get("raw_data_by_locale", {}).items():
             country_details_map[country_name] = {
@@ -375,12 +606,14 @@ class RedBullGenerator:
                 # Clean text fields - remove unwanted characters like *, #, @, etc. but keep umlauts and accented characters
                 for field in text_fields_to_clean:
                     if field in edition and edition[field]:
+                        original_text = str(edition[field])
                         # Remove only unwanted characters but keep letters (including umlauts), numbers, spaces, and common punctuation
-                        cleaned_text = re.sub(r'[#*@$^<>[\]{}|\\/`~!]', '', str(edition[field]))
+                        cleaned_text = re.sub(r'[#*@$^<>[\]{}|\\/`~!]', ' ', original_text)
                         # Remove multiple spaces
                         cleaned_text = re.sub(r'\s+', ' ', cleaned_text).strip()
+                        if original_text != cleaned_text:
+                            logging.debug("Cleaned %s field: '%s' → '%s'", field, original_text, cleaned_text)
                         edition[field] = cleaned_text
-                        logging.debug("Cleaned %s field: '%s' → '%s'", field, edition.get(field, ""), cleaned_text)
 
                 for key in edition_keys_to_remove:
                     if key in edition:
@@ -389,7 +622,18 @@ class RedBullGenerator:
         return stripped_data, product_details_map, country_details_map
 
     def _apply_data_fixes(self, raw_data: Dict[str, Any]) -> Tuple[Dict[str, Any], List[str]]:
-        """Applies manual data corrections before AI processing."""
+        """
+        Apply manual data corrections for known API issues.
+
+        :param raw_data: Raw data dictionary to fix
+        :type raw_data: Dict[str, Any]
+        :return: Tuple of (fixed_data, changelog_entries)
+        :rtype: Tuple[Dict[str, Any], List[str]]
+
+        .. note::
+            Fixes are defined in DATA_FIXES configuration array
+            Logs warnings for fixes that couldn't be applied
+        """
         logging.info("Applying manual data corrections...")
         applied_fixes = []
         skipped_fixes = []
@@ -444,18 +688,20 @@ class RedBullGenerator:
     @staticmethod
     def _capitalize_second_word(text: str) -> str:
         """
-        Capitalizes the second word in a hyphen-separated string.
+        Capitalize the second word in hyphen-separated flavor names.
 
-        Example:
-        'strawberry-apricot' -> 'strawberry-Apricot'
-        'one-two-three' -> 'one-Two-three'
+        :param text: Input string, typically a flavor name
+        :type text: str
+        :return: String with second word capitalized after hyphen
+        :rtype: str
 
-        Args:
-            text: The input string.
-
-        Returns:
-            The modified string. If there is no hyphen, the original
-            string is returned.
+        :Example::
+            >>> _capitalize_second_word('strawberry-apricot')
+            'strawberry-Apricot'
+            >>> _capitalize_second_word('curuba-elderflower')
+            'curuba-Elderflower'
+            >>> _capitalize_second_word('single')
+            'single'
         """
         # Split the string into a list of words
         parts = text.split('-')
@@ -469,7 +715,24 @@ class RedBullGenerator:
         return '-'.join(parts)
 
     def _rehydrate_ai_response(self, ai_response: Dict, product_map: Dict, country_map: Dict) -> Dict:
-        """Re-inserts preserved details back into the AI-normalized data."""
+        """
+        Re-insert preserved details and apply final cleanup to AI-normalized data.
+
+        :param ai_response: Normalized data from Gemini AI
+        :type ai_response: Dict
+        :param product_map: Map of product IDs to preserved details
+        :type product_map: Dict
+        :param country_map: Map of countries to preserved details
+        :type country_map: Dict
+        :return: Complete final data with all details restored
+        :rtype: Dict
+
+        .. note::
+            - Restores: color, image_url, alt_text, product_url, flag_url
+            - Fixes: 'description' -> 'flavor_description' field naming
+            - Cleans: Punctuation spacing, removes trailing periods
+            - Normalizes: 'sugars' -> 'sugar' variations
+        """
         logging.info("Re-inserting preserved details into the normalized data.")
 
         for country_name, country_value in ai_response.items():
@@ -489,17 +752,58 @@ class RedBullGenerator:
                 else:
                     logging.warning("Could not find matching product details for ID '%s'.", product_id)
 
+                # Fix field naming: rename 'description' to 'flavor_description' if AI used wrong field name
+                if 'description' in edition and 'flavor_description' not in edition:
+                    edition['flavor_description'] = edition.pop('description')
+                    logging.warning("Fixed field name: renamed 'description' to 'flavor_description' for product ID '%s'", product_id)
+
                 if 'flavor' in edition:
                     edition["flavor"] = self._capitalize_second_word(edition["flavor"])
 
                 if 'flavor_description' in edition:
                     # Cleanup, string remove *# etc ...
-                    edition["flavor_description"] = re.sub(r'[^a-zA-Z0-9:%\. ]', '', edition["flavor_description"]).replace('  ', ' ')
+                    desc = edition["flavor_description"]
+
+                    # Remove special characters except allowed ones
+                    desc = re.sub(r'[^a-zA-Z0-9:%\.,!? ]', '', desc)
+
+                    # Fix spacing around punctuation (space before -> no space, ensure space after)
+                    desc = re.sub(r'\s+([.,!?])', r'\1', desc)  # Remove spaces before punctuation
+                    desc = re.sub(r'([.,!?])(?=[a-zA-Z0-9])', r'\1 ', desc)  # Add space after if missing
+
+                    # Remove multiple spaces
+                    desc = re.sub(r'\s+', ' ', desc).strip()
+
+                    # Remove trailing period at the end of the description
+                    if desc.endswith('.'):
+                        desc = desc[:-1].strip()
+
+                    # Replace "sugars" with "sugar" (preserve most cases, normalize SUGARS)
+                    desc = re.sub(r'\bSugars\b', 'Sugar', desc)  # Capitalized
+                    desc = re.sub(r'\bsugars\b', 'sugar', desc)  # Lowercase
+                    desc = re.sub(r'\bSUGARS\b', 'Sugar', desc)  # UPPERCASE -> Normal case
+
+                    edition["flavor_description"] = desc
 
         return ai_response
 
-    def run(self, skip_external_fetch=False):
-        """Executes the full generation process."""
+    def run(self, skip_external_fetch: bool = False) -> None:
+        """
+        Execute the complete Red Bull editions data generation pipeline.
+
+        :param skip_external_fetch: Use cached data instead of fetching from APIs
+        :type skip_external_fetch: bool
+
+        :raises SystemExit: If critical errors occur during processing
+
+        .. note::
+            Pipeline stages:
+            1. Fetch/load raw data
+            2. Compare with previous run
+            3. Apply manual fixes (if changes detected)
+            4. Process with Gemini AI (if changes detected)
+            5. Save final normalized data
+        """
         os.makedirs(OUTPUT_DIR, exist_ok=True)
 
         if skip_external_fetch:
@@ -541,9 +845,9 @@ class RedBullGenerator:
                 if not self.force_mode:
                     os.remove(RAW_JSON_FILE)
                     return
-                else:
-                    logging.info("Force mode enabled - proceeding with AI processing despite no changes.")
-                    changelog_text = "# Force Mode Processing\n\nProcessing data despite no changes detected."
+
+                logging.info("Force mode enabled - proceeding with AI processing despite no changes.")
+                changelog_text = "# Force Mode Processing\n\nProcessing data despite no changes detected."
 
         logging.info("Changes detected. Proceeding with AI normalization.")
 
@@ -578,8 +882,23 @@ class RedBullGenerator:
         logging.info("Script finished.")
 
 
-def main():
-    """Main script execution function."""
+def main() -> None:
+    """
+    Main entry point for the Red Bull editions generator script.
+
+    Parses command-line arguments and executes the generation pipeline.
+
+    :Command-line arguments:
+        -v, --verbose: Enable DEBUG level logging
+        --skip-external-fetch: Use cached data only
+        --force: Force processing even without changes
+
+    :Environment variables:
+        GEMINI_API_KEY: Required Google Gemini API key
+
+    :Example::
+        python redbull_editions_json_generate.py --verbose --force
+    """
     parser = argparse.ArgumentParser(
         description="Fetches and normalizes Red Bull edition data using Red Bull APIs and Google Gemini.",
         formatter_class=argparse.RawTextHelpFormatter

@@ -13,7 +13,7 @@ COMPLETE EXAMPLE (FEW-SHOT):
             "id": "82e096b8-cdbe-425f-ab64-9908419911af:sq-AL",
             "name": "Energy Drink",
             "flavor": "Energy Drink",
-            "standfirst": "Red Bull Energy Drink është vlerësuar në mbarë botën nga atletë të nivelit më të lartë, studentë, punonjës me mbingarkesë profesionale, si edhe gjatë udhёtimeve të gjata."
+            "flavor_description": "Red Bull Energy Drink është vlerësuar në mbarë botën nga atletë të nivelit më të lartë, studentë, punonjës me mbingarkesë profesionale, si edhe gjatë udhёtimeve të gjata."
           }}
         ]
       }},
@@ -24,7 +24,7 @@ COMPLETE EXAMPLE (FEW-SHOT):
             "id": "9ed8b16c-83bf-4802-b0d4-fd276f9a5bf7:en-AU",
             "name": "Winter Edition",
             "flavor": " Iced Vanilla Berry",
-            "standfirst": "The Red Bull Winter Ediation: The Energy Drink with the exceptional taste of blueberry, vanilla, and icy-fresh notes of eucalyptus."
+            "flavor_description": "The Red Bull Winter Ediation: The Energy Drink with the exceptional taste of blueberry, vanilla, and icy-fresh notes of eucalyptus."
           }}
         ]
       }},
@@ -35,7 +35,7 @@ COMPLETE EXAMPLE (FEW-SHOT):
             "id": "611996f5-8813-46c3-9b18-4c193d39d9d0:nl-BE",
             "name": "The Lime Green Edition",
             "flavor": "Curuba",
-            "standfirst": "De Red Bull Lime Green Edition heeft de exotische smaak van  curuba, afgewerkt met een vleugje vlierbloesem.",
+            "flavor_description": "De Red Bull Lime Green Edition heeft de exotische smaak van  curuba, afgewerkt met een vleugje vlierbloesem.",
           }}
         ]
       }},
@@ -46,7 +46,7 @@ COMPLETE EXAMPLE (FEW-SHOT):
             "id": "9f5e826b-3589-4e15-8da7-86759325fc9b:cs-CZ",
             "name": "The Green Edition",
             "flavor": "Curuba Elderflower",
-            "standfirst": "Red Bull Green Edition s příchutí exotické curuby, doplněná tóny bezového květu.",
+            "flavor_description": "Red Bull Green Edition s příchutí exotické curuby, doplněná tóny bezového květu.",
           }}
         ]
       }},
@@ -57,13 +57,13 @@ COMPLETE EXAMPLE (FEW-SHOT):
             "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:de-DE",
             "name": "SugarFree",
             "flavor": "Sugarfree",
-            "standfirst": "Flügel ohne Zucker: Red Bull Sugarfree ist Red Bull Energy Drink ohne Zucker."
+            "flavor_description": "Flügel ohne Zucker: Red Bull Sugarfree ist Red Bull Energy Drink ohne Zucker."
           }},
           {{
             "id": "eb9c22db-6c3d-4a68-b4e3-c915c59b1414:de-DE",
             "name": "Lilac Edition Sugarfree",
             "flavor": "Wildflower-and-Pink Grapefruit",
-            "standfirst": "Die Red Bull Lilac Edition Sugarfree mit dem Geschmack von Waldmeister und Pink Grapefruit. "
+            "flavor_description": "Die Red Bull Lilac Edition Sugarfree mit dem Geschmack von Waldmeister und Pink Grapefruit. "
           }}
         ]
       }}
@@ -145,6 +145,13 @@ COMPLETE EXAMPLE (FEW-SHOT):
 
 INSTRUCTIONS:
 
+**CRITICAL WARNINGS:**
+- DO NOT modify standard edition names like "The Blue Edition", "The Purple Edition", "The Green Edition", etc.
+- DO NOT add "Energy Drink" or flavor descriptions to color-based edition names
+- PRESERVE the exact edition name format when it already follows the pattern "The [Descriptor] [Color] Edition" or "The [Color] Edition"
+- **CONSISTENCY RULE:** To ensure stable outputs across multiple runs, preserve original wording whenever possible. Do not change synonyms (flavor/taste, delicious/tasty, etc.) unless required for translation or error correction
+- **VERBATIM RULE:** For English text that is already correct, copy it EXACTLY as-is. Do not rephrase, reorder words, or make stylistic improvements
+
 **1. Global Rules:**
 - Analyze the entire input JSON to understand the data structure before processing each item.
 - The final output MUST be a single, valid JSON object.
@@ -158,16 +165,33 @@ For each product object in the `editions` list, create a new object by applying 
 
 - **`sugarfree` (boolean):**
   - Initialize as `false`.
-  - Analyze the original `name` and `flavor` from the input. If either contains a sugar-free keyword (e.g., 'Sugarfree', 'Zero', 'Zuckerfrei', '無糖', 'ZERO CALORIAS'), set this field to `true`.
+  - Analyze the original `name`, `flavor` and `flavor_description` from the input. If one of them contains a sugar-free keyword (e.g., 'Sugarfree', 'without sugar', 'no sugar', 'Zero', 'Zuckerfrei', 'ohne Zucker' '無糖', 'ZERO CALORIAS'), set this field to `true`.
+  - **Once** set, this field NEVER changes.
 
 - **`flavor_description` (string):**
-  - This is a mandatory and unconditional step.
-  - Take the `standfirst` text from the input.
-  - It MUST ALWAYS be translated into proper, natural-sounding English, regardless of its original language.
-  - Preserve Title Case for flavors within the text.
+  - **CRITICAL Failsafe:** The final field in the output json MUST be named `flavor_description` and NEVER only `description`. You MUST preserve the word Acai as it is, do not modify!
+  - **CRITICAL RULE - NO FLAVOR SWAPPING:** Do NOT replace the whole `flavor_description` field with a completely different flavor_description just because something sounds similar. "Red Bull Winter Edition with an exceptional taste of blueberry vanilla" CAN NOT be "Red Bull Winter Edition with the taste of tumbo". Also do not change Edition e.g. "Red Bull Tropical Edition" in the description to "Red Bull Yellow Edition"
+  - **CRITICAL RULE - PRESERVE EXISTING FLAVORS:** NEVER change "Iced Vanilla Berry" to "Curuba-Elderflower" or any other flavor. Each product's flavor identity MUST be preserved. Only translate or fix typos, NEVER swap one flavor for a completely different one
+  - **STABILITY RULE - PRESERVE EXACT WORDING:** To ensure consistent outputs, you MUST preserve the EXACT original wording and word order. Do NOT:
+    - Change "with the taste of X" to "with X flavor" or vice versa
+    - Change "juicy" to "fruity" or any other synonym
+    - Change "combination" to "blend" or similar words
+    - Change "accents" to "notes" or similar words
+    - Rearrange phrases like "Red Bull Winter Edition" to "Winter Edition of Red Bull"
+    - Change "fresh watermelon taste" to "the fresh taste of watermelon"
+    - Make ANY stylistic changes that don't fix actual errors
+    Only change text when: 1) Translating from non-English, 2) Fixing obvious typos, 3) Applying the specific rules above
+  - Start with the text from the flavor_description field and translate into natural and proper English.
+    - If a flavor is matched from the APPROVED FLAVOR LIST, you must use the exact casing from the list for that flavor name (e.g., "Juneberry", "Curuba-Elderflower", "Curuba"). For all other names or flavors not on the list, preserve the original capitalization.
+    - Remove marketing words like "wiiings" to "wings" - case insensitive.
+    - Preserve all words in Edition names exactly as they appear
+  - The field MUST be named, `flavor_description` NOT only `description`
 
 - **`flavor` (string): (Lookup-First Approach)**
   - **Goal:** Match the product's flavor to a pre-approved list, falling back to intelligent creation only when necessary.
+  - **CRITICAL: DO NOT SWAP FLAVORS:** NEVER replace one flavor with a completely different one. "Iced Vanilla Berry" must stay "Iced Vanilla Berry", not become "Curuba-Elderflower". Each product keeps its original flavor identity!
+
+  - **Step 1: Typo Correction:** First, correct common typos in the original `flavor`. Specifically, replace any instance of "Ediation" with "Edition".
 
   - **APPROVED FLAVOR LIST (Source of Truth):**
     ```
@@ -199,59 +223,85 @@ For each product object in the `editions` list, create a new object by applying 
     ]
     ```
 
-  - **Step 1: Create a Candidate Flavor.**
-    - To find the most accurate flavor, analyze both the `flavor` and `standfirst` fields from the input. Prioritize `standfirst` if it contains more specific flavor information (e.g., `Waldmeister` is more specific than a generic term).
-    - **CRITICAL Failsafe:** You MUST perform a direct translation. Do NOT invent or substitute flavors. For example, if an input flavor is "Iced Vanilla Berry", the output MUST be a direct translation of that, NOT "Curuba-Elderflower" or any other unrelated flavor. This is a strict rule in ALL steps to prevent data corruption.
+  - **Step 2: Create a Candidate Flavor**
+    - To find the most accurate flavor, analyze both the `flavor` and `flavor_description` fields from the input and also check the created sugarfree value.
+    - Prioritize `flavor_description` if it contains more specific flavor information (e.g., `Waldmeister` is more specific than a generic term).
     - Translate the identified flavor text to clean English. Remove generic words like "Taste", "Flavor" or "flavor". This result is your "candidate flavor".
-    - Example: For a German product with `standfirst` containing "Geschmack von Waldmeister und Pink Grapefruit", the candidate flavor is "Woodruff and Pink Grapefruit".
+    - Example: For a German product with `flavor_description` containing "Geschmack von Waldmeister und Pink Grapefruit", the candidate flavor is "Woodruff and Pink Grapefruit".
 
-  - **Step 2: Match Against Approved List.**
+  - **Step 3: Match Against Approved List**
     - Compare your "candidate flavor" semantically against the "APPROVED FLAVOR LIST". This match must be intelligent, not literal.
-    - **CRITICAL RULE:** Only match if the flavors are TRULY the same product. Do NOT match different flavors just because they sound similar.
-    - Ignore "and", "-" (hypen) or "&" ampersands in source flavor when comparing the list.
+    - **CRITICAL RULE:** Only match if the flavors are TRULY the same product. Do NOT match different flavors just because they sound similar. Also a flavor NEVER contains "Red Bull" !
+    - **ZERO HANDLING:** If the candidate flavor is "Zero", "Red Bull Zero", "Energy Drink Zero", or similar zero-calorie variants, it MUST be matched to "Zero Sugar" from the approved list. The flavor is "Zero Sugar", NOT the name.
+    - Ignore "and", "-" (hyphen) or "&" ampersand in source flavor when comparing the list.
       - Example: "Strawberry and apricot" -> "Strawberry-Apricot"
     - **Crucially, you must recognize variations:**
       - A flavor candidate like "Curuba Elderflower" (with a space) MUST be matched to `"Curuba-Elderflower"` (with a hyphen) from the list.
       - A flavor candidate like "ZERO CALORIES" MUST be matched to `"Zero Sugar"` from the list.
       - A flavor candidate like "Aprikose Erdbeere" (German) MUST be matched to `"Strawberry-Apricot"` from the list.
-    - If a confident match is found, use the **exact string** from the approved list as the final value.
+    - If a confident match is found, use the **exact string** from the approved list as the final value. Stop processing all further flavor steps !
 
-  - **Step 3: Intelligent Fallback for Unlisted Flavors.
+  - **Step 4: Intelligent Fallback for Unlisted Flavors**
     - **Execute this step ONLY if NO confident match was found in Step 2.**
     - Use the "candidate flavor" from Step 1 and apply the following formatting rules to create a new, standardized flavor name:
-    - **A. Standardize Initial Separators: First, replace all slashes (/) and the word "and" (case-insensitive) with a single space to create a clean baseline. CRUCIALLY, leave ampersands (&) untouched at this stage.
-    - **B. Apply Semantic Formatting: Next, analyze the flavor components and apply the following logic:
-      - **Step 1: Check for descriptive adjectives. If a word is a simple adjective describing the main flavor (like a color or attribute), separate the words with a space.
-        - Example: `White Peach` -> `White Peach`
-      - **Step 2: Join all other flavors with a hyphen. If Step 1 does not apply, all flavor components are joined with a hyphen (-). This is the default rule for all flavor blends.
-        - Example: `Curuba Elderflower -> `Curuba-Elderflower`
-    - C. Final Formatting: Apply Title Case (capitalizing every word, even after a hyphen) and trim whitespace.
+    - **A. Isolate Modifiers: First, identify and temporarily remove any functional modifiers from your candidate flavor. The primary modifiers to look for are Sugarfree and Zero (and their direct translations like Zuckerfrei).
+    - **B.1: Identify Descriptive Flavors. First, analyze the relationship between the core flavor words. If one word is a simple adjective describing the main flavor (like a color, attribute, or temperature), join them with a space.
+        - Correct Example: A candidate of "White Peach" becomes "White Peach".
+        - Correct Example: A candidate of "Iced Berry" becomes "Iced Berry".
+    - **B.2: Join Blended Flavors. If the words represent two or more distinct, equal flavors being blended (and Step B.1 does not apply), join them with a hyphen (-). This is the default for all flavor combinations.
+        - Example: A candidate of "Strawberry Apricot" becomes "Strawberry-Apricot".
+        - Example: A candidate of "Curuba Elderflower" becomes "Curuba-Elderflower".
+    - Crucially, never use an ampersand (&) for a newly created flavor. The & is only permissible if the flavor is a direct match from the APPROVED FLAVOR LIST.
+    - **C. Re-combine with Space: Take the result from Step B and append the modifier from Step A, separated by a single space. If there was no modifier, this step is skipped.
+        - Example: The candidate Strawberry Apricot Sugarfree resulted in Strawberry-Apricot in Step B and Sugarfree in Step A. The final combination is Strawberry-Apricot Sugarfree.
+    - **D. Final Formatting: Trim any leading/trailing whitespace. The flavor must never contain "Red Bull".
 
 - **`name` (string):**
-  - **Goal:** The final `name` must contain the edition's core title, with flavor descriptions removed but functional modifiers (like "Sugarfree", "Zero", "Zuckerfrei", or their translations) preserved. Functional modifiers are never considered part of the flavor and must remain in the name.
-  - **Step 1: Typo Correction:** First, correct common typos in the original `name`. Specifically, replace any instance of "Ediation" with "Edition".
-  - **Step 2: Isolate Core Title:** Analyze the (potentially typo-corrected) name to separate the core product title from descriptive flavor words.
-    - **Principle:** The core title represents the product line (often using words like "Edition", "Summer", "Winter", colors), while flavor words are specific tastes to be removed. Use your semantic understanding to make this distinction. Sugarfree/Zero modifiers may appear either in the middle or at the end of the name and must be preserved in their correct position.
+  - **Goal:** The final `name` must contain the edition's core title, with flavor descriptions removed. Functional modifiers like "Sugarfree", "Zero", "Zuckerfrei", or their translations MUST BE preserved. Functional modifiers are never considered part of the flavor and must remain in the name.
+  - **CRITICAL RULE 0 - ZERO PRODUCTS:** If the original name is EXACTLY "Zero", "Red Bull Zero", "ZERO", or any case variation of just "Zero", the final name MUST be "Energy Drink Zero". Never output just "Zero" as the name. This rule takes absolute precedence.
+  - **CRITICAL RULE 1:** The name NEVER contains "Red Bull". When the product name is "Zero" or contains "Zero", it becomes "Energy Drink Zero" - NOT "Energy Drink Zero Sugar". The word "Sugar" must NEVER be added to "Energy Drink Zero". For products with sugarfree=true (but WITHOUT "Zero" in the name), add " Sugarfree" to the end of the name.
+  - **CRITICAL RULE 2:** When the original name contains "The [Color] Edition" or "The [Descriptor] [Color] Edition" (e.g., "The Blue Edition", "The Purple Edition", "The Green Edition"), you MUST preserve this EXACT format. Do NOT add flavor words to these names. Do NOT modify the edition type. These are standard product line names that must remain unchanged.
+  - **MARKETING FILTER:** If the original name is a marketing slogan like "New Taste. Same Wings." or similar promotional text, IGNORE IT completely and derive the name from the flavor and sugarfree status instead.
+  - **Step 1: Translate:** If the core title is in a non-Latin script, translate it to its clean English equivalent.
+  - **Step 2: Check for Energy Drink:** If the core title is only "Energy Drink", use this as final value for `name`. Skip all other name related steps.
+  - **Step 3: Check for Standard Edition Names:** If the name matches one of these standard patterns, preserve it EXACTLY (only adding "The" if missing):
+    - "The Blue Edition" -> Keep as "The Blue Edition" (NOT "The Blue Edition Energy Drink")
+    - "The Sea Blue Edition" -> Keep as "The Sea Blue Edition" (NOT "The Blue Edition")
+    - "The Purple Edition" -> Keep as "The Purple Edition" (NOT "The Purple Edition Energy Drink")
+    - "The Green Edition" -> Keep as "The Green Edition" (NOT "The Green Edition Summer Passion Fruit Flavour")
+    - "The Yellow Edition" -> Keep as "The Yellow Edition"
+    - "The Red Edition" -> Keep as "The Red Edition"
+    - "The White Edition" -> Keep as "The White Edition"
+    - "The Coconut Edition" -> Keep as "The Coconut Edition"
+    - "The Summer Edition" -> Keep as "The Summer Edition"
+    - "The Winter Edition" -> Keep as "The Winter Edition"
+    - If any of these patterns are found, use them as-is and skip to Step 8 (Finalize).
+  - **Step 4: Isolate Core Title:** Analyze the (potentially typo-corrected) name to separate the core product title from descriptive flavor words.
+    - **Principle:** The core title represents the product line (often using words like "Edition", "Summer", "Winter", or color descriptions), while flavor words are specific tastes to be removed. Use your semantic understanding to make this distinction. Sugarfree/Zero modifiers may appear either in the middle or at the end of the name and must be preserved in their correct position. Check the `flavor_description` for a given Edition Name. Ensure the first letter in each word is capital and all others are lowercase.
+    - **IMPORTANT:** Color-based editions (Blue, Green, Purple, Yellow, Red, etc.) should NEVER have flavor words added to their names.
     - **Example 1:** "The Summer Edition Juneberry" -> Core title is "The Summer Edition".
-    - **Example 2:** "The Green Edition Exotic Passion Fruit" -> Core title is "The Green Edition".
-    - **Example 3:** "The Coconut Edition Sugarfree" -> Core title is "The Coconut Edition Sugarfree"
-    - **Example 4:** "Energy Drink Sugarfree" -> Core title is "Energy Drink Sugarfree"
-  - **Step 3: Add "The" to Editions:** If the resulting core title contains the word "Edition" and does not already start with "The ", add it to the beginning.
-  - **Step 4: Translate:** If the core title is in a non-Latin script, translate it to its clean English equivalent.
-  - **Step 5: Handle Generic Names:** If the core title after Step 2 is ONLY "Zero", ONLY "Sugarfree", or is empty, the name becomes "Energy Drink". If the original was "Zero" or "Sugarfree", append that modifier.
+    - **Example 2:** "The Summer Edition" -> Core title is "The Summer Edition".
+    - **Example 3:** "The Green Edition Exotic Passion Fruit" -> Core title is "The Green Edition".
+    - **Example 4:** "The Coconut Edition Sugarfree" -> Core title is "The Coconut Edition Sugarfree"
+    - **Example 5:** "Energy Drink SugarFree" or "Sugarfree Energy Drink" -> Core title is "Energy Drink Sugarfree"
+    - **Example 6:** If you encounter "Zero Sugar" or just "Zero" -> Core title is "Energy Drink Zero" (never add "Sugar")
+    - **Example 7:** "The Purple Edition" -> Core title is "The Purple Edition" (do NOT add "Energy Drink" or flavor text)
+  - **Step 5: Add "The" to Editions:** If the resulting core title contains the word "Edition" and does not already start with "The ", add it to the beginning.
+  - **Step 6: Handle Generic Names:** If the core title after Step 2 is ONLY "Zero", ONLY "Sugarfree", or is empty, the name becomes "Energy Drink". If the original was "Zero" or "Sugarfree", append that modifier. Ensure the first letter is capital all others are lowercase.
     - **Example 1:** "Zero" -> "Energy Drink Zero".
     - **Example 2:** "SugarFree" -> "Energy Drink Sugarfree".
-    - **Example 3:** "Watermelon" (which resulted in an empty core title) -> "Energy Drink".
-  - **Step 6: Finalize:** The resulting string is the final value for `name`.
+  - **Step 7: Edition Handling for Non-Standard Names:** Only for names that don't match the standard patterns in Step 3 and don't already contain "Edition":
+    - **Example 1:** "Afine Canadiene" -> "The Afine Canadiene Edition"
+    - **Example 2:** "Tropical" -> "The Tropical Edition"
+  - **Step 8: Finalize:** The resulting string is the final value for `name`.
 
-**3. Final Output Structure & Cleanup:**
+**3. Final Output Structure:**
 - Each country object must contain a `flag` and a list of `editions`.
 - Each product object in `editions` must contain `id`, `name`, `flavor`, `flavor_description`, and `sugarfree`.
 - **Flag Conversion Logic:**
   - Country Codes: Convert standard codes to flag emojis (e.g., "US" -> 🇺🇸, "DE" -> 🇩🇪).
   - International: If `flag` is "Worldwide" *and* the root key is `international`, set the flag to the globe emoji 🌍.
-  - Regions: If `flag` is "Worldwide" choose a suitable regional emoji ("caribbean" -> 🌴, "middle-east" -> 🐪, etc.), do NOT use a globe emoji 🌍.
-- **Final Text Cleaning:** In ALL final string values, especially within `flavor_description`, you MUST replace every instance of the word "sugars" with "sugar" case insensitive. This is a non-negotiable final step.
+  - Regions: If `flag` is "Worldwide", do NOT use a globe emoji 🌍! Choose a suitable regional emoji ("Caribbean" -> 🌴, "Middle-East" -> 🐪, etc.)
 
 **RESPONSE FORMAT:**
 Your response must be ONLY the final, clean JSON object. Do not include any other text, explanations, or Markdown formatting.
