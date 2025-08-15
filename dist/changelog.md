@@ -3,3 +3,4 @@
 ## 🔄 Updated Countries
 - Bosnia and Herzegovina
 - Japan
+- Nigeria

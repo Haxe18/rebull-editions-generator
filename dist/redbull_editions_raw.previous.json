@@ -543,7 +543,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/17/akq6opoi8io1nlwdj7ft/red-bull-energy-drink",
                     "alt_text": "Red Bull Energy Drink",
-                    "product_url": "https://www.redbull.com/energydrink"
+                    "product_url": "https://www.redbull.com/ba-bs/energydrink/products/red-bull-energy-drink"
                 },
                 {
                     "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:bs-BA",
@@ -553,7 +553,7 @@
                     "color": "#FFFFFF",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/21/a7gray7pe7pj9kykb4eh/red-bull-sugarfree",
                     "alt_text": "Red Bull Sugarfree",
-                    "product_url": "https://www.redbull.com/sugarfree"
+                    "product_url": "https://www.redbull.com/ba-bs/energydrink/products/red-bull-sugarfree"
                 },
                 {
                     "id": "e527f999-b4f8-4204-8bae-c2c6caf33dcc:bs-BA",
@@ -563,37 +563,7 @@
                     "color": "#E24585",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/5/12/dmbvyxjqafu8wxq126hd/red-bull-summer-edition",
                     "alt_text": "Red Bull Summer Edition",
-                    "product_url": "https://www.redbull.com/ba-bs/energydrink/red-bull-summer-edition"
-                },
-                {
-                    "id": "365b9d1d-1fe3-41ea-86f1-c6f9967799a7:bs-BA",
-                    "name": "The Spring Edition Sugarfree",
-                    "flavor": "Woodruff & Pink Grapefruit",
-                    "standfirst": "Kriiila za vaše proljeće: Red Bull Spring Edition Energy Drink Sugarfree kombinira okuse ružičastog grejpa i mirisnog broća, s blagim cvjetnim notama.",
-                    "color": "#7d62ce",
-                    "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/3/4/x4mqeqilv2mdx5veahur/spring-edition-sugarfree",
-                    "alt_text": "Red Bull Spring Edition Sugarfree",
-                    "product_url": "https://www.redbull.com/ba-bs/energydrink/red-bull-spring-edition-sugarfree"
-                },
-                {
-                    "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:bs-BA",
-                    "name": "The Blue Edition",
-                    "flavor": "Juneberry",
-                    "standfirst": "Red Bull Blue Edition s primamljivim ukusom bobičastog voća – juneberry.",
-                    "color": "#0085C8",
-                    "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/4/24/txlioocm2p5v80dhquhs/red-bull-the-blue-edition-image",
-                    "alt_text": "Red Bull The Blue Edition - Image",
-                    "product_url": "https://www.redbull.com/ba-bs/energydrink/red-bull-blue-edition-juneberry"
-                },
-                {
-                    "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:bs-BA",
-                    "name": "The Red Edition",
-                    "flavor": "Watermelon",
-                    "standfirst": "Red Bull Red Edition s osvježavajućim okusom lubenice.",
-                    "color": "#e03c31",
-                    "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/12/dxuzrkttapvijup5strw/red-bull-red-edition-image",
-                    "alt_text": "Red Bull Red Edition - image",
-                    "product_url": "https://www.redbull.com/ba-bs/energydrink/red-bull-red-edition"
+                    "product_url": "https://www.redbull.com/ba-bs/energydrink/products/red-bull-summer-edition"
                 },
                 {
                     "id": "9f5e826b-3589-4e15-8da7-86759325fc9b:bs-BA",
@@ -603,7 +573,27 @@
                     "color": "#2ca44a",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/12/i9dbbaa4gmxigaen0yk5/red-bull-green-edition-image",
                     "alt_text": "Red Bull Green Edition - image",
-                    "product_url": "https://www.redbull.com/ba-bs/energydrink/red-bull-green-edition"
+                    "product_url": "https://www.redbull.com/ba-bs/energydrink/products/red-bull-green-edition"
+                },
+                {
+                    "id": "22f260ac-2e6a-4082-9469-3bba2de2b523:bs-BA",
+                    "name": "The Blue Edition",
+                    "flavor": "Juneberry",
+                    "standfirst": "Red Bull Blue Edition s primamljivim ukusom bobičastog voća – juneberry.",
+                    "color": "#0085C8",
+                    "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/4/24/txlioocm2p5v80dhquhs/red-bull-the-blue-edition-image",
+                    "alt_text": "Red Bull The Blue Edition - Image",
+                    "product_url": "https://www.redbull.com/ba-bs/energydrink/products/red-bull-blue-edition"
+                },
+                {
+                    "id": "2617ce8e-0aa4-48aa-b0ee-735367f31eff:bs-BA",
+                    "name": "The Red Edition",
+                    "flavor": "Watermelon",
+                    "standfirst": "Red Bull Red Edition s osvježavajućim okusom lubenice.",
+                    "color": "#e03c31",
+                    "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2024/6/12/dxuzrkttapvijup5strw/red-bull-red-edition-image",
+                    "alt_text": "Red Bull Red Edition - image",
+                    "product_url": "https://www.redbull.com/ba-bs/energydrink/products/red-bull-red-edition"
                 }
             ],
             "flag_url": "https://rbds-static.redbull.com/@cosmos/foundation/latest/flags/cosmos-flag-BA.svg"
@@ -2583,7 +2573,7 @@
                     "id": "f78cf50c-38e3-423a-ba25-045cbfb7eb50:ja-JP",
                     "name": "レッドブル グ⁠⁠リ⁠ー⁠ン⁠エ⁠ディション",
                     "flavor": "Curuba Elderflower",
-                    "standfirst": "レッ⁠ド⁠ブ⁠ルグ⁠リ⁠ーンエ⁠デ⁠ィ⁠シ⁠ョ⁠ン",
+                    "standfirst": "マスカット味のレッドブル、再登場！",
                     "color": "#6cc24a",
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/8/7/akl9xufy7iobkgk3quyl/red-bull-green-edition---image",
                     "alt_text": "Red Bull Green Edition - image",
@@ -3254,6 +3244,16 @@
                     "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2023/8/17/akq6opoi8io1nlwdj7ft/red-bull-energy-drink",
                     "alt_text": "Red Bull Energy Drink",
                     "product_url": "https://www.redbull.com/energydrink"
+                },
+                {
+                    "id": "a87efb73-0db7-4115-b761-0e00fedb86e9:en-NG",
+                    "name": "Sugarfree",
+                    "flavor": "Sugarfree",
+                    "standfirst": "Wings without sugars: Red Bull Sugarfree is Red Bull Energy Drink without sugars.",
+                    "color": "#FFFFFF",
+                    "image_url": "https://img.redbull.com/images/e_trim:1:transparent/c_limit,w_800,h_800/bo_5px_solid_rgb:00000000/redbullcom/2025/8/14/v7xwx0sb1dqll2nh3l2p/red-bull-sugarfree",
+                    "alt_text": "Red Bull Sugarfree",
+                    "product_url": "https://www.redbull.com/ng-en/energydrink/red-bull-sugarfree"
                 }
             ],
             "flag_url": "https://rbds-static.redbull.com/@cosmos/foundation/latest/flags/cosmos-flag-NG.svg"
