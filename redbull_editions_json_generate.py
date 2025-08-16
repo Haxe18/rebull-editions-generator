@@ -75,7 +75,7 @@ DATA_FIXES = [
         "id": "f78cf50c-38e3-423a-ba25-045cbfb7eb50:ja-JP",
         "field": "flavor",
         "search": "Curuba Elderflower",
-        "replace": "Nutmeg"
+        "replace": "Muscat"
     },
     {
         "id": "f900c5b7-d33e-4a8e-a186-5cee5bd291a1:pt-BR",
@@ -112,6 +112,12 @@ DATA_FIXES = [
         "field": "flavor_description",
         "search": "Dragon Fruit",
         "replace": "Curuba Elderflower"
+    },
+    {
+        "id": "b72f0639-7324-4c1b-9b22-9058ff040feb:de-DE",
+        "field": "name",
+        "search": "Pink Edition",
+        "replace": "Pink Edition Sugarfree"
     }
 ]
 

@@ -151,6 +151,20 @@ INSTRUCTIONS:
 - PRESERVE the exact edition name format when it already follows the pattern "The [Descriptor] [Color] Edition" or "The [Color] Edition"
 - **CONSISTENCY RULE:** To ensure stable outputs across multiple runs, preserve original wording whenever possible. Do not change synonyms (flavor/taste, delicious/tasty, etc.) unless required for translation or error correction
 - **VERBATIM RULE:** For English text that is already correct, copy it EXACTLY as-is. Do not rephrase, reorder words, or make stylistic improvements
+- **DETERMINISTIC OUTPUT RULE:** Your output must be 100% consistent across multiple runs with the same input. This means:
+  - NEVER vary capitalization (always use "Wings" not "wings" for the Red Bull slogan)
+  - NEVER change punctuation unless fixing errors (keep periods, commas, colons exactly as they are)
+  - NEVER rephrase text that is already in English (keep "0% sugar. 100% Wings" exactly, not "Zero sugar. 100% Wings")
+  - NEVER add or remove articles ("The Red Bull" vs "Red Bull") unless fixing grammar errors
+  - NEVER change hyphenation or spacing in compound flavors unless they match the APPROVED FLAVOR LIST
+
+**ABSOLUTE RULE - NEVER SWAP FLAVORS:**
+This is the MOST CRITICAL rule. You MUST NOT replace one flavor with a completely different flavor under ANY circumstances:
+- Winter Edition with "Iced Vanilla Berry" (blueberry/vanilla) MUST STAY "Iced Vanilla Berry" - NEVER change to "Curuba-Elderflower" or "tumbo"
+- Summer Edition with "Curuba-Elderflower" MUST STAY "Curuba-Elderflower" - NEVER change to "Iced Vanilla Berry"
+- Each product has its OWN unique flavor that defines it. These are NOT interchangeable!
+- Even if products have the same edition name (like "Winter Edition"), they keep their ORIGINAL flavors
+- ONLY translate the words, NEVER substitute different fruits or flavors
 
 **1. Global Rules:**
 - Analyze the entire input JSON to understand the data structure before processing each item.
@@ -172,6 +186,7 @@ For each product object in the `editions` list, create a new object by applying 
   - **CRITICAL Failsafe:** The final field in the output json MUST be named `flavor_description` and NEVER only `description`. You MUST preserve the word Acai as it is, do not modify!
   - **CRITICAL RULE - NO FLAVOR SWAPPING:** Do NOT replace the whole `flavor_description` field with a completely different flavor_description just because something sounds similar. "Red Bull Winter Edition with an exceptional taste of blueberry vanilla" CAN NOT be "Red Bull Winter Edition with the taste of tumbo". Also do not change Edition e.g. "Red Bull Tropical Edition" in the description to "Red Bull Yellow Edition"
   - **CRITICAL RULE - PRESERVE EXISTING FLAVORS:** NEVER change "Iced Vanilla Berry" to "Curuba-Elderflower" or any other flavor. Each product's flavor identity MUST be preserved. Only translate or fix typos, NEVER swap one flavor for a completely different one
+  - **ABSOLUTE PROHIBITION:** If you see "arándano" (Spanish for blueberry) or "vainilla" (Spanish for vanilla), translate to "blueberry" and "vanilla" - NEVER to "tumbo" or "curuba"! Each product ID is tied to a SPECIFIC flavor that must be preserved!
   - **STABILITY RULE - PRESERVE EXACT WORDING:** To ensure consistent outputs, you MUST preserve the EXACT original wording and word order. Do NOT:
     - Change "with the taste of X" to "with X flavor" or vice versa
     - Change "juicy" to "fruity" or any other synonym
@@ -180,10 +195,20 @@ For each product object in the `editions` list, create a new object by applying 
     - Rearrange phrases like "Red Bull Winter Edition" to "Winter Edition of Red Bull"
     - Change "fresh watermelon taste" to "the fresh taste of watermelon"
     - Make ANY stylistic changes that don't fix actual errors
+    - Change "0% sugar" to "Zero sugar" or vice versa - keep the exact format
+    - Change "100% Wings" to "100% wings" - always capitalize "Wings" in slogans
+    - Add or remove "The" from "Red Bull" product references
+    - Change punctuation like periods to commas or vice versa
+    - Modify spacing or hyphenation in flavor combinations (unless matching APPROVED FLAVOR LIST)
     Only change text when: 1) Translating from non-English, 2) Fixing obvious typos, 3) Applying the specific rules above
-  - Start with the text from the flavor_description field and translate into natural and proper English.
+  - **ENGLISH TEXT PRESERVATION:** If the flavor_description is already in English and grammatically correct, copy it VERBATIM. Do not make ANY changes except:
+    - Fixing actual typos (like "Ediation" → "Edition")  
+    - Replacing marketing variations like "wiiings" → "Wings" (always capitalize)
+    - Matching flavors to the APPROVED FLAVOR LIST exact casing
+  - Start with the text from the flavor_description field and translate into natural and proper English ONLY if it's not already in English.
+    - **CRITICAL TRANSLATION:** "Waldmeister" (German) MUST always be translated to "Woodruff", NEVER "Wildflower"
     - If a flavor is matched from the APPROVED FLAVOR LIST, you must use the exact casing from the list for that flavor name (e.g., "Juneberry", "Curuba-Elderflower", "Curuba"). For all other names or flavors not on the list, preserve the original capitalization.
-    - Remove marketing words like "wiiings" to "wings" - case insensitive.
+    - Replace marketing words like "wiiings" to "Wings" - always capitalize "Wings".
     - Preserve all words in Edition names exactly as they appear
   - The field MUST be named, `flavor_description` NOT only `description`
 
@@ -226,13 +251,15 @@ For each product object in the `editions` list, create a new object by applying 
   - **Step 2: Create a Candidate Flavor**
     - To find the most accurate flavor, analyze both the `flavor` and `flavor_description` fields from the input and also check the created sugarfree value.
     - Prioritize `flavor_description` if it contains more specific flavor information (e.g., `Waldmeister` is more specific than a generic term).
-    - Translate the identified flavor text to clean English. Remove generic words like "Taste", "Flavor" or "flavor". This result is your "candidate flavor".
+    - Translate the identified flavor text to clean English. **CRITICAL:** "Waldmeister" MUST be translated to "Woodruff", NEVER "Wildflower". 
+    - **CRITICAL:** ALWAYS remove "Red Bull" from any flavor text. If the input is "Red Bull Zero", the candidate becomes just "Zero".
+    - Remove generic words like "Taste", "Flavor" or "flavor". This result is your "candidate flavor".
     - Example: For a German product with `flavor_description` containing "Geschmack von Waldmeister und Pink Grapefruit", the candidate flavor is "Woodruff and Pink Grapefruit".
 
   - **Step 3: Match Against Approved List**
     - Compare your "candidate flavor" semantically against the "APPROVED FLAVOR LIST". This match must be intelligent, not literal.
     - **CRITICAL RULE:** Only match if the flavors are TRULY the same product. Do NOT match different flavors just because they sound similar. Also a flavor NEVER contains "Red Bull" !
-    - **ZERO HANDLING:** If the candidate flavor is "Zero", "Red Bull Zero", "Energy Drink Zero", or similar zero-calorie variants, it MUST be matched to "Zero Sugar" from the approved list. The flavor is "Zero Sugar", NOT the name.
+    - **ZERO HANDLING:** If the candidate flavor (after removing "Red Bull") is "Zero", "Energy Drink Zero", or similar zero-calorie variants, it MUST be matched to "Zero Sugar" from the approved list. The flavor is "Zero Sugar", NOT the name. Remember: "Red Bull" should already be removed in Step 2.
     - Ignore "and", "-" (hyphen) or "&" ampersand in source flavor when comparing the list.
       - Example: "Strawberry and apricot" -> "Strawberry-Apricot"
     - **Crucially, you must recognize variations:**
@@ -254,14 +281,22 @@ For each product object in the `editions` list, create a new object by applying 
     - Crucially, never use an ampersand (&) for a newly created flavor. The & is only permissible if the flavor is a direct match from the APPROVED FLAVOR LIST.
     - **C. Re-combine with Space: Take the result from Step B and append the modifier from Step A, separated by a single space. If there was no modifier, this step is skipped.
         - Example: The candidate Strawberry Apricot Sugarfree resulted in Strawberry-Apricot in Step B and Sugarfree in Step A. The final combination is Strawberry-Apricot Sugarfree.
-    - **D. Final Formatting: Trim any leading/trailing whitespace. The flavor must never contain "Red Bull".
+    - **D. Final Formatting: Trim any leading/trailing whitespace. **FINAL CHECK:** If the flavor still contains "Red Bull" at this point, remove it immediately. The flavor must NEVER contain "Red Bull" in the final output.
 
 - **`name` (string):**
   - **Goal:** The final `name` must contain the edition's core title, with flavor descriptions removed. Functional modifiers like "Sugarfree", "Zero", "Zuckerfrei", or their translations MUST BE preserved. Functional modifiers are never considered part of the flavor and must remain in the name.
+  - **CRITICAL MARKETING SLOGAN DETECTION:** BEFORE ANY OTHER PROCESSING, check if the name is a marketing slogan. Marketing slogans are promotional phrases that describe the product rather than name it. Common patterns include:
+    - Any variation of "New Taste. Same Wings." in ANY language (e.g., "Nouveau goût. Mêmes ailes.", "Neuer Geschmack. Gleiche Flügel.")
+    - Phrases with "100% Wings", "0% Sugar", "Zero Calories" as the main name
+    - Any phrase that sounds like an advertisement rather than a product name
+    - If detected, COMPLETELY IGNORE the marketing text and determine the name based on:
+      1. Check the flavor field and sugarfree status
+      2. If it's a Zero/Sugarfree product, name should be "Energy Drink Zero" or "Energy Drink Sugarfree"
+      3. If it's a regular energy drink, name should be "Energy Drink"
+      4. If it has a specific edition color/season, use that edition name
   - **CRITICAL RULE 0 - ZERO PRODUCTS:** If the original name is EXACTLY "Zero", "Red Bull Zero", "ZERO", or any case variation of just "Zero", the final name MUST be "Energy Drink Zero". Never output just "Zero" as the name. This rule takes absolute precedence.
   - **CRITICAL RULE 1:** The name NEVER contains "Red Bull". When the product name is "Zero" or contains "Zero", it becomes "Energy Drink Zero" - NOT "Energy Drink Zero Sugar". The word "Sugar" must NEVER be added to "Energy Drink Zero". For products with sugarfree=true (but WITHOUT "Zero" in the name), add " Sugarfree" to the end of the name.
   - **CRITICAL RULE 2:** When the original name contains "The [Color] Edition" or "The [Descriptor] [Color] Edition" (e.g., "The Blue Edition", "The Purple Edition", "The Green Edition"), you MUST preserve this EXACT format. Do NOT add flavor words to these names. Do NOT modify the edition type. These are standard product line names that must remain unchanged.
-  - **MARKETING FILTER:** If the original name is a marketing slogan like "New Taste. Same Wings." or similar promotional text, IGNORE IT completely and derive the name from the flavor and sugarfree status instead.
   - **Step 1: Translate:** If the core title is in a non-Latin script, translate it to its clean English equivalent.
   - **Step 2: Check for Energy Drink:** If the core title is only "Energy Drink", use this as final value for `name`. Skip all other name related steps.
   - **Step 3: Check for Standard Edition Names:** If the name matches one of these standard patterns, preserve it EXACTLY (only adding "The" if missing):
