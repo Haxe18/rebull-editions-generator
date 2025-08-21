@@ -1,4 +1,4 @@
 # Red Bull Edition Data Update
 
-## 🔄 Updated Countries
-- Canada
+## ➖ Removed Countries
+- Netherlands
